@@ -67,9 +67,11 @@ def main():
         proc.wait()
         log_f.close()
         ret = proc.returncode
-        print(f"Worker {c['worker_id']} (Cases {c['start']}-{c['start']+c['num']-1}) finished with exit code {ret}.")
+        wid = c['worker_id']
+        print(f"Worker {wid} (Cases {c['start']}-{c['start']+c['num']-1}) finished with exit code {ret}.")
         if ret != 0:
-            print(f"ERROR: Worker {c['worker_id']} failed! Check {RESULTS_DIR / f'worker_{c[\"worker_id\"]}.log'}")
+            log_path = RESULTS_DIR / f"worker_{wid}.log"
+            print(f"ERROR: Worker {wid} failed! Check {log_path}")
 
     # Merge results
     merged_data = []
