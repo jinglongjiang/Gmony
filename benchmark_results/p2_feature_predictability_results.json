@@ -1,0 +1,106 @@
+{
+  "train_samples": 271,
+  "test_samples": 119,
+  "features": [
+    "dmin_curr",
+    "closing_speed",
+    "travel_4s",
+    "disp_4s",
+    "ratio_4s",
+    "reversals_4s",
+    "dist_to_goal",
+    "goal_heading_error",
+    "safe_actions_ratio",
+    "current_speed"
+  ],
+  "models": {
+    "heuristic": {
+      "model": "Heuristic Rule Gate",
+      "auc": 0.6579,
+      "precision": 0.381,
+      "recall": 0.4444,
+      "f1": 0.4103,
+      "tp": 8,
+      "fp": 13,
+      "tn": 88,
+      "fn": 10
+    },
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "auc": 0.7668,
+      "precision": 0.3,
+      "recall": 0.8333,
+      "f1": 0.4412,
+      "tp": 15,
+      "fp": 35,
+      "tn": 66,
+      "fn": 3
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "auc": 0.8614,
+      "precision": 0.3571,
+      "recall": 0.8333,
+      "f1": 0.5,
+      "tp": 15,
+      "fp": 27,
+      "tn": 74,
+      "fn": 3
+    },
+    "cagis_mlp": {
+      "model": "CAGIS Meta-MLP",
+      "auc": 0.8212,
+      "precision": 0.3077,
+      "recall": 0.2222,
+      "f1": 0.2581,
+      "tp": 4,
+      "fp": 9,
+      "tn": 92,
+      "fn": 14
+    }
+  },
+  "feature_weights": {
+    "dmin_curr": {
+      "logreg_coef": 0.0555,
+      "rf_importance": 0.4001
+    },
+    "closing_speed": {
+      "logreg_coef": -0.3234,
+      "rf_importance": 0.1222
+    },
+    "travel_4s": {
+      "logreg_coef": -0.3988,
+      "rf_importance": 0.0615
+    },
+    "disp_4s": {
+      "logreg_coef": 0.1767,
+      "rf_importance": 0.0357
+    },
+    "ratio_4s": {
+      "logreg_coef": 0.0477,
+      "rf_importance": 0.0316
+    },
+    "reversals_4s": {
+      "logreg_coef": 0.1225,
+      "rf_importance": 0.0094
+    },
+    "dist_to_goal": {
+      "logreg_coef": 0.058,
+      "rf_importance": 0.0549
+    },
+    "goal_heading_error": {
+      "logreg_coef": -0.1214,
+      "rf_importance": 0.0547
+    },
+    "safe_actions_ratio": {
+      "logreg_coef": 0.7612,
+      "rf_importance": 0.1655
+    },
+    "current_speed": {
+      "logreg_coef": 0.0145,
+      "rf_importance": 0.0644
+    }
+  },
+  "harm_rejection_rate": 100.0,
+  "optimal_threshold": 0.7499999999999999
+}
