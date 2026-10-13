@@ -176,6 +176,17 @@ class BenchmarkB0Policy(MambaRLPolicy):
                     inp = torch.tensor(feat_norm, dtype=torch.float32).unsqueeze(0).to(self.device)
                     prob = torch.sigmoid(self.meta_model(inp)).item()
                 should_intervene = (prob >= self.cagis_threshold)
+            elif self.mode == 'cagis_hybrid' and self.meta_model is not None:
+                is_symptom = (features['ratio_4s'] >= 1.8 or features['reversals_4s'] >= 2)
+                if is_symptom:
+                    feat_vec = np.array([features[k] for k in FEATURE_KEYS], dtype=np.float32)
+                    feat_norm = (feat_vec - self.scaler_mean) / (self.scaler_scale + 1e-8)
+                    with torch.no_grad():
+                        inp = torch.tensor(feat_norm, dtype=torch.float32).unsqueeze(0).to(self.device)
+                        prob = torch.sigmoid(self.meta_model(inp)).item()
+                    should_intervene = (prob >= self.cagis_threshold)
+                else:
+                    should_intervene = False
 
             if should_intervene:
                 self.committed_intent = cand_intent
@@ -225,7 +236,7 @@ def load_benchmark_policy(mode='base', device='cpu'):
     policy.test_action_smoothing = 0.3
     install_selection(policy, 'ttc5')
 
-    if mode == 'cagis':
+    if mode in ('cagis', 'cagis_hybrid'):
         ckpt_meta = MODELS_DIR / 'cagis_meta_policy.pth'
         policy.init_meta_model(ckpt_meta, device=device)
 
@@ -286,12 +297,13 @@ def run_chunk_benchmark(start_case, num_cases, device='cuda', out_file=None):
     robot = Robot(env_config, 'robot')
     env.set_robot(robot)
 
-    # Preload all 4 policies once
+    # Preload all 5 policies once
     policies = {
         'arm1_base': load_benchmark_policy('base', device=device),
         'arm2_fixed': load_benchmark_policy('fixed', device=device),
         'arm3_heuristic': load_benchmark_policy('heuristic', device=device),
-        'arm4_cagis': load_benchmark_policy('cagis', device=device)
+        'arm4_cagis': load_benchmark_policy('cagis', device=device),
+        'arm5_hybrid': load_benchmark_policy('cagis_hybrid', device=device)
     }
 
     records = []
@@ -327,9 +339,9 @@ def mcnemar_exact_test(arm_a_outcomes, arm_b_outcomes):
     if n == 0:
         return 1.0, b, c
     # Exact binomial two-sided test
-    from scipy.stats import binomtest
-    res = binomtest(min(b, c), n, 0.5, alternative='two-sided')
-    return float(res.pvalue), b, c
+    from scipy.stats import binom_test
+    pval = binom_test(min(b, c), n, 0.5)
+    return float(pval), b, c
 
 def main():
     parser = argparse.ArgumentParser(description="Phase P3 CAGIS 4-Arm Benchmark")
@@ -405,17 +417,18 @@ def main():
     print("=" * 95)
 
     # Compute comparative metrics
-    arm_keys = ['arm1_base', 'arm2_fixed', 'arm3_heuristic', 'arm4_cagis']
+    arm_keys = ['arm1_base', 'arm2_fixed', 'arm3_heuristic', 'arm4_cagis', 'arm5_hybrid']
     arm_labels = {
         'arm1_base': 'Pure B0 Baseline',
         'arm2_fixed': 'B0 + Fixed Dwell-4',
         'arm3_heuristic': 'B0 + Heuristic Gate',
-        'arm4_cagis': 'B0 + CAGIS (Learned)'
+        'arm4_cagis': 'B0 + CAGIS (Pure Learned)',
+        'arm5_hybrid': 'B0 + CAGIS (Hybrid Gated)'
     }
 
     N = len(merged_data)
-    print(f"{'Method / Arm':<25} | {'Success%':<9} | {'Collision%':<11} | {'Timeout%':<9} | {'Stagnation%':<12} | {'Time (s)':<9} | {'Interv/Ep'}")
-    print("-" * 95)
+    print(f"{'Method / Arm':<27} | {'Success%':<9} | {'Collision%':<11} | {'Timeout%':<9} | {'Stagnation%':<12} | {'Time (s)':<9} | {'Interv/Ep'}")
+    print("-" * 105)
 
     stats = {}
     for arm in arm_keys:
@@ -429,9 +442,9 @@ def main():
         avg_interv = np.mean([d[arm]['interventions'] for d in merged_data])
 
         stats[arm] = {'sr': sr, 'cr': cr, 'tr': tr, 'sor': sor, 'avg_time': avg_t, 'outcomes': outcomes}
-        print(f"{arm_labels[arm]:<25} | {sr:7.1f}% | {cr:9.1f}% | {tr:7.1f}% | {sor:10.1f}% | {avg_t:7.2f}s  | {avg_interv:6.1f}")
+        print(f"{arm_labels[arm]:<27} | {sr:7.1f}% | {cr:9.1f}% | {tr:7.1f}% | {sor:10.1f}% | {avg_t:7.2f}s  | {avg_interv:6.1f}")
 
-    print("-" * 95)
+    print("-" * 105)
 
     # Statistical significance testing
     print("\n" + "=" * 95)
@@ -439,13 +452,13 @@ def main():
     print("=" * 95)
     
     base_outs = stats['arm1_base']['outcomes']
-    for arm in ['arm2_fixed', 'arm3_heuristic', 'arm4_cagis']:
+    for arm in ['arm2_fixed', 'arm3_heuristic', 'arm4_cagis', 'arm5_hybrid']:
         p_val, b, c = mcnemar_exact_test(base_outs, stats[arm]['outcomes'])
-        print(f"{arm_labels[arm]:<25} vs Base B0: p = {p_val:.4f} (Base won {b}, Candidate won {c})")
+        print(f"{arm_labels[arm]:<27} vs Base B0: p = {p_val:.4f} (Base won {b}, Candidate won {c})")
 
     # CAGIS vs Heuristic
-    p_c_vs_h, b_ch, c_ch = mcnemar_exact_test(stats['arm3_heuristic']['outcomes'], stats['arm4_cagis']['outcomes'])
-    print(f"{arm_labels['arm4_cagis']:<25} vs Heuristic: p = {p_c_vs_h:.4f} (Heuristic won {b_ch}, CAGIS won {c_ch})")
+    p_c_vs_h, b_ch, c_ch = mcnemar_exact_test(stats['arm3_heuristic']['outcomes'], stats['arm5_hybrid']['outcomes'])
+    print(f"{arm_labels['arm5_hybrid']:<27} vs Heuristic: p = {p_c_vs_h:.4f} (Heuristic won {b_ch}, Hybrid won {c_ch})")
     print("=" * 95)
 
 if __name__ == '__main__':
