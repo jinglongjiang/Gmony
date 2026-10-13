@@ -1,0 +1,4302 @@
+[
+  {
+    "case_id": 90200,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.053,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90201,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.126,
+      "stagnation": true,
+      "interventions": 77
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.19,
+      "stagnation": true,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90202,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.195,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 3.0,
+      "total_steps": 12,
+      "min_clearance": 0.049,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.195,
+      "stagnation": true,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.195,
+      "stagnation": true,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90203,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 21.25,
+      "total_steps": 85,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.062,
+      "stagnation": false,
+      "interventions": 29
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.0,
+      "total_steps": 76,
+      "min_clearance": 0.182,
+      "stagnation": false,
+      "interventions": 11
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 21.5,
+      "total_steps": 86,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90204,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.198,
+      "stagnation": false,
+      "interventions": 24
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.071,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 6.5,
+      "total_steps": 26,
+      "min_clearance": 0.024,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90205,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 21.25,
+      "total_steps": 85,
+      "min_clearance": 0.143,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 10.75,
+      "total_steps": 43,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.143,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.128,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.128,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90206,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 23.5,
+      "total_steps": 94,
+      "min_clearance": 0.194,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.5,
+      "total_steps": 54,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 16
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.193,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.194,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90207,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.182,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.178,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 13.5,
+      "total_steps": 54,
+      "min_clearance": 0.159,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.175,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90208,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.182,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.5,
+      "total_steps": 54,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 15
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.182,
+      "stagnation": true,
+      "interventions": 39
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.182,
+      "stagnation": true,
+      "interventions": 7
+    }
+  },
+  {
+    "case_id": 90209,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.182,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 48.25,
+      "total_steps": 193,
+      "min_clearance": 0.144,
+      "stagnation": false,
+      "interventions": 59
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.074,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 8.0,
+      "total_steps": 32,
+      "min_clearance": 0.068,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.074,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90210,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.215,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.197,
+      "stagnation": true,
+      "interventions": 68
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 28.75,
+      "total_steps": 115,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 30.5,
+      "total_steps": 122,
+      "min_clearance": 0.197,
+      "stagnation": false,
+      "interventions": 8
+    }
+  },
+  {
+    "case_id": 90211,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.146,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.0,
+      "total_steps": 76,
+      "min_clearance": 0.158,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90212,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.25,
+      "total_steps": 73,
+      "min_clearance": 0.102,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 11.75,
+      "total_steps": 47,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.102,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.102,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.102,
+      "stagnation": false,
+      "interventions": 7
+    }
+  },
+  {
+    "case_id": 90213,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.02,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.072,
+      "stagnation": false,
+      "interventions": 18
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.02,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.02,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.02,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90214,
+    "arm1_base": {
+      "outcome": "COLLISION",
+      "final_time": 7.75,
+      "total_steps": 31,
+      "min_clearance": 0.036,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.08,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "COLLISION",
+      "final_time": 7.75,
+      "total_steps": 31,
+      "min_clearance": 0.047,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 7.75,
+      "total_steps": 31,
+      "min_clearance": 0.036,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 7.75,
+      "total_steps": 31,
+      "min_clearance": 0.036,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90215,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.124,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 19.0,
+      "total_steps": 76,
+      "min_clearance": 0.168,
+      "stagnation": false,
+      "interventions": 27
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 33.25,
+      "total_steps": 133,
+      "min_clearance": 0.124,
+      "stagnation": false,
+      "interventions": 22
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 21.25,
+      "total_steps": 85,
+      "min_clearance": 0.124,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.124,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90216,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.03,
+      "stagnation": true,
+      "interventions": 138
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": true,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.072,
+      "stagnation": true,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.206,
+      "stagnation": true,
+      "interventions": 8
+    }
+  },
+  {
+    "case_id": 90217,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.039,
+      "stagnation": false,
+      "interventions": 29
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.176,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90218,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.137,
+      "stagnation": false,
+      "interventions": 18
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.169,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90219,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.047,
+      "stagnation": false,
+      "interventions": 95
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.197,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90220,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 24
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 4.5,
+      "total_steps": 18,
+      "min_clearance": 0.025,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90221,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 39.25,
+      "total_steps": 157,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.022,
+      "stagnation": false,
+      "interventions": 31
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 31.25,
+      "total_steps": 125,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 35.75,
+      "total_steps": 143,
+      "min_clearance": 0.189,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 33.25,
+      "total_steps": 133,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90222,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.143,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.118,
+      "stagnation": true,
+      "interventions": 94
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.09,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.195,
+      "stagnation": true,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.199,
+      "stagnation": true,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90223,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.197,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.055,
+      "stagnation": true,
+      "interventions": 72
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.063,
+      "stagnation": true,
+      "interventions": 37
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.148,
+      "stagnation": false,
+      "interventions": 11
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.063,
+      "stagnation": true,
+      "interventions": 8
+    }
+  },
+  {
+    "case_id": 90224,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 39.0,
+      "total_steps": 156,
+      "min_clearance": 0.121,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.148,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 25.75,
+      "total_steps": 103,
+      "min_clearance": 0.121,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 33.0,
+      "total_steps": 132,
+      "min_clearance": 0.121,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.121,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90225,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.173,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.184,
+      "stagnation": false,
+      "interventions": 24
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.173,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.197,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.173,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90226,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.182,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.015,
+      "stagnation": false,
+      "interventions": 28
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 29.25,
+      "total_steps": 117,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90227,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.15,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 19
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.15,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.152,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.15,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90228,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.083,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 11.0,
+      "total_steps": 44,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.083,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.193,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.083,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90229,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.099,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.191,
+      "stagnation": true,
+      "interventions": 85
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.099,
+      "stagnation": true,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.193,
+      "stagnation": true,
+      "interventions": 21
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.099,
+      "stagnation": true,
+      "interventions": 13
+    }
+  },
+  {
+    "case_id": 90230,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.134,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 11.5,
+      "total_steps": 46,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 15
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.134,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.134,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.134,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90231,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.162,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.162,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.162,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.162,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90232,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.206,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.206,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.206,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90233,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.151,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 4.25,
+      "total_steps": 17,
+      "min_clearance": 0.045,
+      "stagnation": false,
+      "interventions": 11
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.151,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.151,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.151,
+      "stagnation": true,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90234,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.164,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.194,
+      "stagnation": false,
+      "interventions": 25
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.164,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.164,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.164,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90235,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.055,
+      "stagnation": false,
+      "interventions": 33
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 25.5,
+      "total_steps": 102,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.176,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90236,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.082,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.108,
+      "stagnation": false,
+      "interventions": 27
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.25,
+      "total_steps": 73,
+      "min_clearance": 0.082,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.082,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.082,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90237,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 21.5,
+      "total_steps": 86,
+      "min_clearance": 0.163,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.193,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.163,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 22.0,
+      "total_steps": 88,
+      "min_clearance": 0.163,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.163,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90238,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.116,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 6.5,
+      "total_steps": 26,
+      "min_clearance": -0.001,
+      "stagnation": false,
+      "interventions": 16
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.116,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.116,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.116,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90239,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.164,
+      "stagnation": false,
+      "interventions": 28
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.193,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90240,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.117,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.126,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.117,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.117,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.117,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90241,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.11,
+      "stagnation": false,
+      "interventions": 34
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90242,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.083,
+      "stagnation": false,
+      "interventions": 22
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.093,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90243,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 11.75,
+      "total_steps": 47,
+      "min_clearance": 0.21,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.047,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90244,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 28.25,
+      "total_steps": 113,
+      "min_clearance": 0.129,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 4.5,
+      "total_steps": 18,
+      "min_clearance": 0.012,
+      "stagnation": false,
+      "interventions": 14
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.108,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 29.75,
+      "total_steps": 119,
+      "min_clearance": 0.108,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90245,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.126,
+      "stagnation": false,
+      "interventions": 28
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 20.5,
+      "total_steps": 82,
+      "min_clearance": 0.082,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90246,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.129,
+      "stagnation": false,
+      "interventions": 30
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.181,
+      "stagnation": true,
+      "interventions": 29
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 23.5,
+      "total_steps": 94,
+      "min_clearance": 0.181,
+      "stagnation": false,
+      "interventions": 16
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 24.5,
+      "total_steps": 98,
+      "min_clearance": 0.007,
+      "stagnation": false,
+      "interventions": 12
+    }
+  },
+  {
+    "case_id": 90247,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.142,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90248,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.206,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 9
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90249,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.204,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.075,
+      "stagnation": true,
+      "interventions": 80
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.198,
+      "stagnation": true,
+      "interventions": 8
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.161,
+      "stagnation": true,
+      "interventions": 13
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90250,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.201,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.12,
+      "stagnation": false,
+      "interventions": 106
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 34
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90251,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.186,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 19
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 3.5,
+      "total_steps": 14,
+      "min_clearance": 0.012,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90252,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.142,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 12.5,
+      "total_steps": 50,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 14
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.142,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.142,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.142,
+      "stagnation": true,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90253,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 29.0,
+      "total_steps": 116,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 24
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 24.75,
+      "total_steps": 99,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 25.0,
+      "total_steps": 100,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 20.25,
+      "total_steps": 81,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90254,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.184,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.5,
+      "total_steps": 54,
+      "min_clearance": 0.113,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.184,
+      "stagnation": true,
+      "interventions": 29
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.184,
+      "stagnation": true,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.184,
+      "stagnation": true,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90255,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.192,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.178,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.192,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.192,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.192,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90256,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.209,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.094,
+      "stagnation": false,
+      "interventions": 85
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.185,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 21.25,
+      "total_steps": 85,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 10
+    }
+  },
+  {
+    "case_id": 90257,
+    "arm1_base": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": 0.005,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 5.25,
+      "total_steps": 21,
+      "min_clearance": 0.018,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm3_heuristic": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": 0.005,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": 0.005,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": 0.005,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90258,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 40.5,
+      "total_steps": 162,
+      "min_clearance": 0.191,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 23.5,
+      "total_steps": 94,
+      "min_clearance": 0.028,
+      "stagnation": false,
+      "interventions": 45
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 24.0,
+      "total_steps": 96,
+      "min_clearance": 0.141,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 27.25,
+      "total_steps": 109,
+      "min_clearance": 0.077,
+      "stagnation": false,
+      "interventions": 9
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 34.5,
+      "total_steps": 138,
+      "min_clearance": 0.191,
+      "stagnation": false,
+      "interventions": 11
+    }
+  },
+  {
+    "case_id": 90259,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 25.0,
+      "total_steps": 100,
+      "min_clearance": 0.179,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 19.0,
+      "total_steps": 76,
+      "min_clearance": 0.078,
+      "stagnation": false,
+      "interventions": 36
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.153,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 25.5,
+      "total_steps": 102,
+      "min_clearance": 0.165,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 19.75,
+      "total_steps": 79,
+      "min_clearance": 0.153,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90260,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.209,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.149,
+      "stagnation": false,
+      "interventions": 25
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.169,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.086,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.169,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90261,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.065,
+      "stagnation": false,
+      "interventions": 22
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90262,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.215,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 2.5,
+      "total_steps": 10,
+      "min_clearance": 0.019,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.215,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 11
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.215,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90263,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 41.5,
+      "total_steps": 166,
+      "min_clearance": 0.207,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 3.25,
+      "total_steps": 13,
+      "min_clearance": 0.061,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.165,
+      "stagnation": false,
+      "interventions": 29
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.206,
+      "stagnation": false,
+      "interventions": 9
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.201,
+      "stagnation": true,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90264,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.136,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 2.5,
+      "total_steps": 10,
+      "min_clearance": 0.001,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.136,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 3.75,
+      "total_steps": 15,
+      "min_clearance": 0.03,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.136,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90265,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 11.25,
+      "total_steps": 45,
+      "min_clearance": 0.095,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 12.75,
+      "total_steps": 51,
+      "min_clearance": 0.031,
+      "stagnation": false,
+      "interventions": 18
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 11.25,
+      "total_steps": 45,
+      "min_clearance": 0.095,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 12.5,
+      "total_steps": 50,
+      "min_clearance": 0.095,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 11.25,
+      "total_steps": 45,
+      "min_clearance": 0.095,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90266,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.201,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.026,
+      "stagnation": false,
+      "interventions": 27
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 23.75,
+      "total_steps": 95,
+      "min_clearance": 0.173,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 24.25,
+      "total_steps": 97,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 24.0,
+      "total_steps": 96,
+      "min_clearance": 0.209,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90267,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.143,
+      "stagnation": false,
+      "interventions": 32
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90268,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 12.0,
+      "total_steps": 48,
+      "min_clearance": 0.099,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.75,
+      "total_steps": 55,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 18
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 12.0,
+      "total_steps": 48,
+      "min_clearance": 0.099,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.144,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 12.0,
+      "total_steps": 48,
+      "min_clearance": 0.099,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90269,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.158,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.037,
+      "stagnation": false,
+      "interventions": 30
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.75,
+      "total_steps": 79,
+      "min_clearance": 0.158,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 22.75,
+      "total_steps": 91,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 9
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.158,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90270,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.204,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 25
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.204,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 11
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90271,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.048,
+      "stagnation": false,
+      "interventions": 39
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 24.75,
+      "total_steps": 99,
+      "min_clearance": 0.112,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.197,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.13,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90272,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.209,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 5.25,
+      "total_steps": 21,
+      "min_clearance": 0.026,
+      "stagnation": false,
+      "interventions": 15
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.209,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.209,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90273,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.112,
+      "stagnation": false,
+      "interventions": 29
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 12.25,
+      "total_steps": 49,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 13.0,
+      "total_steps": 52,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90274,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 33.5,
+      "total_steps": 134,
+      "min_clearance": 0.198,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 4.0,
+      "total_steps": 16,
+      "min_clearance": 0.107,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 21.0,
+      "total_steps": 84,
+      "min_clearance": 0.198,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 30.5,
+      "total_steps": 122,
+      "min_clearance": 0.198,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90275,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 24.5,
+      "total_steps": 98,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.156,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 23.25,
+      "total_steps": 93,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": 0.18,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 9.25,
+      "total_steps": 37,
+      "min_clearance": 0.028,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90276,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 4.75,
+      "total_steps": 19,
+      "min_clearance": -0.001,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.197,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90277,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 20.75,
+      "total_steps": 83,
+      "min_clearance": 0.156,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 4.25,
+      "total_steps": 17,
+      "min_clearance": 0.001,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.156,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.156,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.156,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90278,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 43.25,
+      "total_steps": 173,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.122,
+      "stagnation": false,
+      "interventions": 24
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 21.25,
+      "total_steps": 85,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90279,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.172,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.183,
+      "stagnation": false,
+      "interventions": 31
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.172,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.172,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.172,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 90280,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.203,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.146,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.202,
+      "stagnation": true,
+      "interventions": 12
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 22.0,
+      "total_steps": 88,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 28.75,
+      "total_steps": 115,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 11
+    }
+  },
+  {
+    "case_id": 90281,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 33.0,
+      "total_steps": 132,
+      "min_clearance": 0.128,
+      "stagnation": false,
+      "interventions": 60
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.194,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90282,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.096,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 22.0,
+      "total_steps": 88,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 22.25,
+      "total_steps": 89,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 90283,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.186,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 3.0,
+      "total_steps": 12,
+      "min_clearance": 0.02,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.25,
+      "total_steps": 57,
+      "min_clearance": 0.186,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.0,
+      "total_steps": 56,
+      "min_clearance": 0.159,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90284,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.167,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 5.25,
+      "total_steps": 21,
+      "min_clearance": 0.019,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.167,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.11,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.167,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90285,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.137,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.127,
+      "stagnation": false,
+      "interventions": 26
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.137,
+      "stagnation": true,
+      "interventions": 35
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.086,
+      "stagnation": true,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.137,
+      "stagnation": true,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90286,
+    "arm1_base": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 24.5,
+      "total_steps": 98,
+      "min_clearance": 0.008,
+      "stagnation": false,
+      "interventions": 44
+    },
+    "arm3_heuristic": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.085,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90287,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.09,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.09,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.09,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.09,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90288,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.168,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.043,
+      "stagnation": false,
+      "interventions": 21
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.168,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.168,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.75,
+      "total_steps": 59,
+      "min_clearance": 0.168,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90289,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.078,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.202,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.199,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90290,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 29.25,
+      "total_steps": 117,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 41.5,
+      "total_steps": 166,
+      "min_clearance": 0.11,
+      "stagnation": false,
+      "interventions": 80
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 41.25,
+      "total_steps": 165,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 19.5,
+      "total_steps": 78,
+      "min_clearance": 0.195,
+      "stagnation": false,
+      "interventions": 10
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 22.75,
+      "total_steps": 91,
+      "min_clearance": 0.188,
+      "stagnation": false,
+      "interventions": 13
+    }
+  },
+  {
+    "case_id": 90291,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 15.5,
+      "total_steps": 62,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.05,
+      "stagnation": false,
+      "interventions": 19
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 13
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 15.0,
+      "total_steps": 60,
+      "min_clearance": 0.213,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90292,
+    "arm1_base": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.011,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 11.0,
+      "total_steps": 44,
+      "min_clearance": 0.186,
+      "stagnation": false,
+      "interventions": 17
+    },
+    "arm3_heuristic": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.011,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.176,
+      "stagnation": true,
+      "interventions": 9
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 2.25,
+      "total_steps": 9,
+      "min_clearance": 0.011,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90293,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.103,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.204,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.103,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.103,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 14.5,
+      "total_steps": 58,
+      "min_clearance": 0.103,
+      "stagnation": false,
+      "interventions": 0
+    }
+  },
+  {
+    "case_id": 90294,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.217,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": -0.011,
+      "stagnation": false,
+      "interventions": 23
+    },
+    "arm3_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.169,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm4_cagis": {
+      "outcome": "COLLISION",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.006,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "COLLISION",
+      "final_time": 13.25,
+      "total_steps": 53,
+      "min_clearance": 0.006,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 90295,
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.138,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "COLLISION",
+      "final_time": 3.75,
+      "total_steps": 15,
+      "min_clearance": 0.043,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.138,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.25,
+      "total_steps": 73,
+      "min_clearance": 0.189,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm5_hybrid": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.138,
+      "stagnation": false,
+      "interventions": 5
+    }
+  },
+  {
+    "case_id": 90296,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.038,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 20.5,
+      "total_steps": 82,
+      "min_clearance": 0.01,
+      "stagnation": false,
+      "interventions": 39
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.038,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 20.75,
+      "total_steps": 83,
+      "min_clearance": 0.038,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 22.0,
+      "total_steps": 88,
+      "min_clearance": 0.038,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 90297,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 20
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.198,
+      "stagnation": false,
+      "interventions": 7
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90298,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.174,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.002,
+      "stagnation": true,
+      "interventions": 104
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.124,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.146,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.124,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 90299,
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_fixed": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.109,
+      "stagnation": false,
+      "interventions": 27
+    },
+    "arm3_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 18.5,
+      "total_steps": 74,
+      "min_clearance": 0.205,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm4_cagis": {
+      "outcome": "SUCCESS",
+      "final_time": 18.75,
+      "total_steps": 75,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm5_hybrid": {
+      "outcome": "SUCCESS",
+      "final_time": 18.25,
+      "total_steps": 73,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 1
+    }
+  }
+]
