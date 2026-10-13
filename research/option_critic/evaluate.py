@@ -126,7 +126,7 @@ def evaluate_single_episode(policy, env, case_id: int) -> Dict:
             dists = [math.hypot(env.robot.px - h.px, env.robot.py - h.py) - env.robot.radius - h.radius for h in env.humans]
             min_clearance = min(min_clearance, min(dists))
 
-        act = policy.predict(state, deterministic=True)
+        act = policy.predict(state)
         traj_x.append(env.robot.px)
         traj_y.append(env.robot.py)
 
@@ -136,7 +136,7 @@ def evaluate_single_episode(policy, env, case_id: int) -> Dict:
     last_event = last_info.get('event', 'nothing') if last_info else 'nothing'
     if last_event == 'collision':
         outcome = 'COLLISION'
-    elif last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
+    elif last_event in ('reach_goal', 'reachgoal'):
         outcome = 'SUCCESS'
     else:
         outcome = 'TIMEOUT'
@@ -258,17 +258,122 @@ def run_benchmark(
             'mcnemar_p': p_val
         }
 
+    return arm_results, summary
+
+
+def run_parallel_benchmark(
+    start_case: int = 90800,
+    num_cases: int = 500,
+    num_workers: int = 5,
+    device: str = 'cuda' if torch.cuda.is_available() else 'cpu',
+    standard_oc_ckpt: str = 'research/option_critic/checkpoints/standard_oc_trained.pth',
+    cf_oc_ckpt: str = 'research/option_critic/checkpoints/cf_oc_trained.pth'
+):
+    import subprocess
+    print("=" * 90)
+    print(f"[BENCHMARK] Multi-Worker Benchmark: {num_cases} Cases using {num_workers} parallel workers")
+    print(f"Cases Range: {start_case} to {start_case + num_cases - 1}")
+    print("=" * 90)
+
+    cases_per_worker = num_cases // num_workers
+    workers = []
+    chunk_files = []
+
+    for w in range(num_workers):
+        w_start = start_case + w * cases_per_worker
+        w_num = cases_per_worker if w < num_workers - 1 else (num_cases - w * cases_per_worker)
+        w_out = RESULTS_DIR / f'oc_eval_chunk_{w}.json'
+        chunk_files.append(w_out)
+
+        cmd = [
+            sys.executable, str(Path(__file__).resolve()),
+            '--start_case', str(w_start),
+            '--num_cases', str(w_num),
+            '--device', device,
+            '--standard_oc', standard_oc_ckpt,
+            '--cf_oc', cf_oc_ckpt,
+            '--chunk_mode',
+            '--out_file', str(w_out)
+        ]
+        log_f = open(RESULTS_DIR / f'worker_oc_{w}.log', 'w')
+        p = subprocess.Popen(cmd, stdout=log_f, stderr=log_f)
+        workers.append((p, log_f))
+        print(f"  Launched Worker {w}: Cases {w_start} - {w_start + w_num - 1}")
+
+    # Wait for completion
+    t_start = time.time()
+    for w, (p, log_f) in enumerate(workers):
+        p.wait()
+        log_f.close()
+        print(f"  Worker {w} finished (exit code {p.returncode})")
+
+    elapsed = time.time() - t_start
+    print(f"[BENCHMARK] All {num_workers} workers completed in {elapsed / 60.0:.1f} minutes. Merging results...")
+
+    # Merge chunks
+    merged_results = {}
+    for c_file in chunk_files:
+        with open(c_file, 'r') as f:
+            c_data = json.load(f)
+            for arm, recs in c_data.items():
+                if arm not in merged_results:
+                    merged_results[arm] = []
+                merged_results[arm].extend(recs)
+
+    # Statistical summary
+    b0_success = np.array([r['outcome'] == 'SUCCESS' for r in merged_results['arm1_base_b0']])
+    summary = {}
+
+    print("\n" + "=" * 90)
+    print("FINAL 500-CASE STATISTICAL SUMMARY")
+    print("=" * 90)
+    print(f"{'Arm':<22} | {'SR (%)':<8} | {'CR (%)':<8} | {'TO (%)':<8} | {'Stag':<6} | {'Time (s)':<8} | {'McNemar (vs B0)'}")
+    print("-" * 90)
+
+    for arm_name, records in merged_results.items():
+        n = len(records)
+        sr = 100.0 * sum(1 for r in records if r['outcome'] == 'SUCCESS') / n
+        cr = 100.0 * sum(1 for r in records if r['outcome'] == 'COLLISION') / n
+        tr = 100.0 * sum(1 for r in records if r['outcome'] == 'TIMEOUT') / n
+        stag = sum(1 for r in records if r['stagnation'])
+        avg_time = float(np.mean([r['final_time'] for r in records]))
+
+        arm_succ = np.array([r['outcome'] == 'SUCCESS' for r in records])
+        b = int(np.sum((~b0_success) & arm_succ))
+        c = int(np.sum(b0_success & (~arm_succ)))
+        n_discordant = b + c
+        if n_discordant > 0:
+            p_val = float(binom_test(min(b, c), n_discordant, 0.5, alternative='two-sided'))
+            p_str = f"b={b}, c={c}, p={p_val:.4f}"
+        else:
+            p_val = 1.0
+            p_str = "identical"
+
+        print(f"{arm_name:<22} | {sr:6.1f}%  | {cr:6.1f}%  | {tr:6.1f}%  | {stag:4d}   | {avg_time:6.2f}s  | {p_str}")
+
+        summary[arm_name] = {
+            'success_rate': sr,
+            'collision_rate': cr,
+            'timeout_rate': tr,
+            'stagnations': stag,
+            'mean_time': avg_time,
+            'mcnemar_b': b,
+            'mcnemar_c': c,
+            'mcnemar_p': p_val
+        }
+
     out_file = RESULTS_DIR / 'option_critic_500cases_evaluation.json'
     with open(out_file, 'w') as f:
         json.dump({
             'meta': {
                 'start_case': start_case,
                 'num_cases': num_cases,
+                'num_workers': num_workers,
                 'device': device,
                 'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
             },
             'summary': summary,
-            'detailed_results': arm_results
+            'detailed_results': merged_results
         }, f, indent=2)
 
     print(f"\n[BENCHMARK] Results successfully saved to: {out_file}\n")
@@ -278,15 +383,53 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_case', type=int, default=90800)
     parser.add_argument('--num_cases', type=int, default=500)
+    parser.add_argument('--workers', type=int, default=5)
     parser.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu')
     parser.add_argument('--standard_oc', type=str, default='research/option_critic/checkpoints/standard_oc_trained.pth')
     parser.add_argument('--cf_oc', type=str, default='research/option_critic/checkpoints/cf_oc_trained.pth')
+    parser.add_argument('--chunk_mode', action='store_true')
+    parser.add_argument('--out_file', type=str, default=None)
     args = parser.parse_args()
 
-    run_benchmark(
-        start_case=args.start_case,
-        num_cases=args.num_cases,
-        device=args.device,
-        standard_oc_ckpt=args.standard_oc,
-        cf_oc_ckpt=args.cf_oc
-    )
+    if args.chunk_mode:
+        env, env_config = create_environment()
+        robot = Robot(env_config, 'robot')
+        env.set_robot(robot)
+
+        policies = {
+            'arm1_base_b0': load_b0_policy(device=args.device),
+            'arm2_heuristic_gate': load_heuristic_policy(device=args.device),
+        }
+        if Path(args.standard_oc).exists():
+            policies['arm3_standard_oc'] = load_oc_policy(args.standard_oc, is_cf_oc=False, device=args.device)
+        if Path(args.cf_oc).exists():
+            policies['arm4_cf_oc'] = load_oc_policy(args.cf_oc, is_cf_oc=True, device=args.device)
+
+        arm_results = {arm: [] for arm in policies}
+        for cid in range(args.start_case, args.start_case + args.num_cases):
+            for arm_name, pol in policies.items():
+                robot.set_policy(pol)
+                res = evaluate_single_episode(pol, env, cid)
+                arm_results[arm_name].append(res)
+
+        out_path = Path(args.out_file) if args.out_file else (RESULTS_DIR / f'chunk_{args.start_case}.json')
+        with open(out_path, 'w') as f:
+            json.dump(arm_results, f, indent=2)
+    else:
+        if args.workers > 1:
+            run_parallel_benchmark(
+                start_case=args.start_case,
+                num_cases=args.num_cases,
+                num_workers=args.workers,
+                device=args.device,
+                standard_oc_ckpt=args.standard_oc,
+                cf_oc_ckpt=args.cf_oc
+            )
+        else:
+            run_benchmark(
+                start_case=args.start_case,
+                num_cases=args.num_cases,
+                device=args.device,
+                standard_oc_ckpt=args.standard_oc,
+                cf_oc_ckpt=args.cf_oc
+            )
