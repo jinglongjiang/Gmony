@@ -38,3 +38,5 @@ benchmark_results/b0_counterfactual_part*.json
 benchmark_results/worker_*.log
 benchmark_results/p3_cagis_part*.json
 benchmark_results/p3_worker_*.log
+benchmark_results/stage4_part*.json
+benchmark_results/stage4_worker_*.log
