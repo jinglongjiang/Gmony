@@ -1,0 +1,137 @@
+{
+  "split_summary": {
+    "total_samples": 564,
+    "train_samples": 423,
+    "val_samples": 141
+  },
+  "leaderboard": [
+    {
+      "model": "Heuristic Rule Gate",
+      "threshold": 0.5,
+      "auc": 0.5978,
+      "precision": 0.2857,
+      "recall": 0.3636,
+      "f1": 0.32,
+      "tp_beneficial": 8,
+      "fp_neutral": 20,
+      "harm_triggers": 0,
+      "harm_total": 0,
+      "harm_rejection_rate": 0.0,
+      "net_gain": 8
+    },
+    {
+      "model": "Cost-Sensitive Logistic Regression",
+      "threshold": 0.4,
+      "auc": 0.707,
+      "precision": 0.25,
+      "recall": 0.7727,
+      "f1": 0.3778,
+      "tp_beneficial": 17,
+      "fp_neutral": 51,
+      "harm_triggers": 0,
+      "harm_total": 0,
+      "harm_rejection_rate": 0.0,
+      "net_gain": 17
+    },
+    {
+      "model": "Cost-Sensitive Random Forest",
+      "threshold": 0.4,
+      "auc": 0.7869,
+      "precision": 0.3077,
+      "recall": 0.7273,
+      "f1": 0.4324,
+      "tp_beneficial": 16,
+      "fp_neutral": 36,
+      "harm_triggers": 0,
+      "harm_total": 0,
+      "harm_rejection_rate": 0.0,
+      "net_gain": 16
+    },
+    {
+      "model": "Stage 3 Meta-MLP",
+      "threshold": 0.7,
+      "auc": 0.5611,
+      "precision": 0.2105,
+      "recall": 0.1818,
+      "f1": 0.1951,
+      "tp_beneficial": 4,
+      "fp_neutral": 15,
+      "harm_triggers": 0,
+      "harm_total": 0,
+      "harm_rejection_rate": 0.0,
+      "net_gain": 4
+    }
+  ],
+  "champion": {
+    "lr_model": {
+      "threshold": 0.4,
+      "metrics": {
+        "model": "Cost-Sensitive Logistic Regression",
+        "threshold": 0.4,
+        "auc": 0.707,
+        "precision": 0.25,
+        "recall": 0.7727,
+        "f1": 0.3778,
+        "tp_beneficial": 17,
+        "fp_neutral": 51,
+        "harm_triggers": 0,
+        "harm_total": 0,
+        "harm_rejection_rate": 0.0,
+        "net_gain": 17
+      }
+    },
+    "rf_model": {
+      "threshold": 0.4,
+      "metrics": {
+        "model": "Cost-Sensitive Random Forest",
+        "threshold": 0.4,
+        "auc": 0.7869,
+        "precision": 0.3077,
+        "recall": 0.7273,
+        "f1": 0.4324,
+        "tp_beneficial": 16,
+        "fp_neutral": 36,
+        "harm_triggers": 0,
+        "harm_total": 0,
+        "harm_rejection_rate": 0.0,
+        "net_gain": 16
+      }
+    },
+    "feature_keys": [
+      "dmin_curr",
+      "closing_speed",
+      "travel_4s",
+      "disp_4s",
+      "ratio_4s",
+      "reversals_4s",
+      "dist_to_goal",
+      "goal_heading_error",
+      "safe_actions_ratio",
+      "current_speed"
+    ],
+    "scaler_mean": [
+      0.33002836860487367,
+      0.3905460983534051,
+      1.4488226958764079,
+      0.8025366432929575,
+      2.378652479631681,
+      0.5650118203309693,
+      7.176832151328418,
+      0.12833096949195372,
+      0.49813475220268216,
+      0.5952151313965731
+    ],
+    "scaler_scale": [
+      0.23360111015499127,
+      0.5032615256244966,
+      1.1812512240799533,
+      0.862594755210058,
+      4.108502681424903,
+      1.0175320987390497,
+      1.3219867999595571,
+      1.5798928622820965,
+      0.4080634810246441,
+      0.2772185714843438
+    ]
+  }
+}

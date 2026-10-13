@@ -334,28 +334,23 @@ def main():
     print(f"\nCHAMPION MODEL SELECTED ON VALIDATION SET: {champion['model']}")
     print(f"Selection Rationale: Harm Triggers={champion['harm_triggers']} (Rejection={champion['harm_rejection_rate']}%), Net Gain={champion['net_gain']}, AUC={champion['auc']}")
 
-    # Save champion artifacts
+    # Save both candidate models and scaler for Stage 4 evaluation
+    joblib.dump(lr, MODELS_DIR / 'champion_gating_lr.joblib')
+    joblib.dump(rf, MODELS_DIR / 'champion_gating_rf.joblib')
+
     champion_metadata = {
-        'model_name': champion['model'],
-        'threshold': champion['threshold'],
+        'lr_model': {
+            'threshold': best_lr_th,
+            'metrics': res_lr
+        },
+        'rf_model': {
+            'threshold': best_rf_th,
+            'metrics': res_rf
+        },
         'feature_keys': FEATURE_KEYS,
         'scaler_mean': scaler.mean_.tolist(),
-        'scaler_scale': scaler.scale_.tolist(),
-        'metrics': champion
+        'scaler_scale': scaler.scale_.tolist()
     }
-
-    if champion['model'] == "Cost-Sensitive Random Forest":
-        joblib.dump(rf, MODELS_DIR / 'champion_gating_rf.joblib')
-        champion_metadata['model_type'] = 'random_forest'
-        champion_metadata['model_file'] = 'champion_gating_rf.joblib'
-    elif champion['model'] == "Cost-Sensitive Logistic Regression":
-        joblib.dump(lr, MODELS_DIR / 'champion_gating_lr.joblib')
-        champion_metadata['model_type'] = 'logistic_regression'
-        champion_metadata['model_file'] = 'champion_gating_lr.joblib'
-    else:
-        torch.save(mlp.state_dict(), MODELS_DIR / 'champion_gating_mlp.pth')
-        champion_metadata['model_type'] = 'mlp'
-        champion_metadata['model_file'] = 'champion_gating_mlp.pth'
 
     with open(MODELS_DIR / 'champion_metadata.json', 'w') as f:
         json.dump(champion_metadata, f, indent=2)
