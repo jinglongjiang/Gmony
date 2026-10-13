@@ -1,0 +1,1014 @@
+{
+  "timestamp": "2026-10-13 11:44:31",
+  "elapsed_sec": 118.9,
+  "overall_status": "PASS",
+  "gate1_checkpoints": {
+    "B0_single_stream": {
+      "checkpoint": "baseline_weights/gru-t24-seed443.pth",
+      "strict": true,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "status": "PASS"
+    },
+    "B1_dual_stream": {
+      "checkpoint": "checkpoints/b1_strat_mamba_trained.pth",
+      "strict": true,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "status": "PASS"
+    },
+    "B2_lics": {
+      "checkpoint": "checkpoints/b2_lics_trained.pth",
+      "strict": true,
+      "missing_keys": 0,
+      "unexpected_keys": 0,
+      "status": "PASS"
+    }
+  },
+  "gate2_features": {
+    "max_diff": 0.0,
+    "status": "PASS"
+  },
+  "gate3_seeding": {
+    "diff_test": 0.0,
+    "diff_train": 0.0,
+    "status": "PASS"
+  },
+  "gate4_replication": {
+    "total_clones": 81,
+    "passed_clones": 81,
+    "replication_rate": 100.0,
+    "status": "PASS",
+    "records": [
+      {
+        "case_id": 90000,
+        "orig_event": "reach_goal",
+        "orig_final_time": 24.25,
+        "orig_total_steps": 97,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90001,
+        "orig_event": "timeout",
+        "orig_final_time": 50.25,
+        "orig_total_steps": 201,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90002,
+        "orig_event": "reach_goal",
+        "orig_final_time": 23.5,
+        "orig_total_steps": 94,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90003,
+        "orig_event": "reach_goal",
+        "orig_final_time": 34.75,
+        "orig_total_steps": 139,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90004,
+        "orig_event": "reach_goal",
+        "orig_final_time": 15.25,
+        "orig_total_steps": 61,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90005,
+        "orig_event": "reach_goal",
+        "orig_final_time": 13.0,
+        "orig_total_steps": 52,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90006,
+        "orig_event": "reach_goal",
+        "orig_final_time": 15.0,
+        "orig_total_steps": 60,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90007,
+        "orig_event": "reach_goal",
+        "orig_final_time": 12.5,
+        "orig_total_steps": 50,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90008,
+        "orig_event": "reach_goal",
+        "orig_final_time": 33.25,
+        "orig_total_steps": 133,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90009,
+        "orig_event": "collision",
+        "orig_final_time": 2.5,
+        "orig_total_steps": 10,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90010,
+        "orig_event": "reach_goal",
+        "orig_final_time": 21.75,
+        "orig_total_steps": 87,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90011,
+        "orig_event": "reach_goal",
+        "orig_final_time": 10.75,
+        "orig_total_steps": 43,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90012,
+        "orig_event": "timeout",
+        "orig_final_time": 50.25,
+        "orig_total_steps": 201,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90013,
+        "orig_event": "reach_goal",
+        "orig_final_time": 17.0,
+        "orig_total_steps": 68,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90014,
+        "orig_event": "reach_goal",
+        "orig_final_time": 21.25,
+        "orig_total_steps": 85,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90015,
+        "orig_event": "reach_goal",
+        "orig_final_time": 13.0,
+        "orig_total_steps": 52,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90016,
+        "orig_event": "reach_goal",
+        "orig_final_time": 11.75,
+        "orig_total_steps": 47,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90017,
+        "orig_event": "reach_goal",
+        "orig_final_time": 16.0,
+        "orig_total_steps": 64,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90018,
+        "orig_event": "reach_goal",
+        "orig_final_time": 33.0,
+        "orig_total_steps": 132,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90019,
+        "orig_event": "collision",
+        "orig_final_time": 5.25,
+        "orig_total_steps": 21,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90020,
+        "orig_event": "timeout",
+        "orig_final_time": 50.25,
+        "orig_total_steps": 201,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90021,
+        "orig_event": "reach_goal",
+        "orig_final_time": 19.0,
+        "orig_total_steps": 76,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90022,
+        "orig_event": "reach_goal",
+        "orig_final_time": 15.0,
+        "orig_total_steps": 60,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90023,
+        "orig_event": "reach_goal",
+        "orig_final_time": 16.5,
+        "orig_total_steps": 66,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90024,
+        "orig_event": "reach_goal",
+        "orig_final_time": 15.25,
+        "orig_total_steps": 61,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90025,
+        "orig_event": "reach_goal",
+        "orig_final_time": 15.75,
+        "orig_total_steps": 63,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90026,
+        "orig_event": "reach_goal",
+        "orig_final_time": 27.75,
+        "orig_total_steps": 111,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90027,
+        "orig_event": "reach_goal",
+        "orig_final_time": 20.0,
+        "orig_total_steps": 80,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90028,
+        "orig_event": "reach_goal",
+        "orig_final_time": 31.0,
+        "orig_total_steps": 124,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      },
+      {
+        "case_id": 90029,
+        "orig_event": "reach_goal",
+        "orig_final_time": 18.25,
+        "orig_total_steps": 73,
+        "stages": [
+          {
+            "stage": "early",
+            "snap_step": 10,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "mid",
+            "snap_step": 30,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          },
+          {
+            "stage": "late",
+            "snap_step": 60,
+            "max_pos_diff": 0.0,
+            "max_act_diff": 0.0,
+            "time_diff": 0.0,
+            "event_match": true,
+            "perfect": true
+          }
+        ]
+      }
+    ]
+  }
+}

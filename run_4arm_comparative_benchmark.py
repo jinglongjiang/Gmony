@@ -36,7 +36,7 @@ import configparser
 import numpy as np
 import torch
 
-WORKSPACE = Path('/home/abc/workspace/autonomous_research_20261012')
+WORKSPACE = Path(__file__).resolve().parent
 KDARL_CLEAN = WORKSPACE / 'kdarl_clean'
 sys.path = [str(KDARL_CLEAN), str(WORKSPACE)] + [p for p in sys.path if p not in (str(WORKSPACE), str(KDARL_CLEAN), '')]
 
@@ -179,16 +179,14 @@ def evaluate_single_arm(arm_id: str, arm_name: str, start_case: int, num_cases: 
                 break
 
         final_dist = float(np.hypot(robot.px - robot.gx, robot.py - robot.gy))
-        last_event = last_info.get('event', 'nothing') if last_info else 'nothing'
-
-        # Strict event-driven classification based directly on environment truth
-        if last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
+        # Strict event-driven classification: Collision ALWAYS takes absolute priority
+        if last_event == 'collision':
+            outcome = 'COLLISION'
+        elif last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
             outcome = 'SUCCESS'
             results['times'].append(env.global_time)
             results['path_lengths'].append(path_length)
-        elif last_event == 'collision':
-            outcome = 'COLLISION'
-        elif last_event == 'timeout' or env.global_time >= env.time_limit - 1e-4:
+        elif last_event in ('timeout', 'time_out') or env.global_time >= env.time_limit - 1e-4:
             outcome = 'TIMEOUT'
         else:
             # Fallback: if episode stopped prematurely (<49.5s) without goal reached, it is collision

@@ -20,7 +20,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 
-WORKSPACE = Path('/home/abc/workspace/autonomous_research_20261012')
+WORKSPACE = Path(__file__).resolve().parent
 KDARL_CLEAN = WORKSPACE / 'kdarl_clean'
 sys.path = [str(KDARL_CLEAN), str(WORKSPACE)] + [p for p in sys.path if p not in (str(WORKSPACE), str(KDARL_CLEAN), '')]
 
@@ -125,8 +125,8 @@ def collect_training_rollouts(num_episodes=40, device='cuda'):
 
             # Build current observation window strictly matching get_current_hidden_state
             L = policy.seq_len
-            base_hist = list(policy._history) + [res['current_token']]
-            base_goal_hist = list(policy._goal_history) + [res['current_goal']]
+            base_hist = list(policy._history)
+            base_goal_hist = list(policy._goal_history)
             hist_arr = np.asarray(base_hist)
             goal_arr = np.asarray(base_goal_hist)
             if len(base_hist) >= L:

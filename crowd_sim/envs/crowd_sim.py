@@ -238,10 +238,12 @@ class CrowdSim(gym.Env):
             except Exception:
                 np.random.seed(seed)
 
+        if options and isinstance(options, dict) and 'phase' in options:
+            self.phase = options['phase']
         phase = getattr(self, 'phase', 'test')
-        test_case = None
+        case_id = None
         if options and isinstance(options, dict):
-            test_case = options.get('test_case', None)
+            case_id = options.get('test_case', options.get('train_case', options.get('case_id', options.get('case', None))))
 
         if self.robot is None:
             raise AttributeError('robot has to be set!')
@@ -263,8 +265,8 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             self.robot.set(0, -self.circle_radius, 0, self.circle_radius, 0, 0, np.pi / 2)
-            if test_case is not None:
-                self.case_counter[phase] = test_case
+            if case_id is not None:
+                self.case_counter[phase] = int(case_id)
 
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])

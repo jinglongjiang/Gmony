@@ -20,7 +20,7 @@ import configparser
 import numpy as np
 import torch
 
-WORKSPACE = Path('/home/abc/workspace/autonomous_research_20261012')
+WORKSPACE = Path(__file__).resolve().parent
 KDARL_CLEAN = WORKSPACE / 'kdarl_clean'
 sys.path = [str(KDARL_CLEAN), str(WORKSPACE)] + [p for p in sys.path if p not in (str(WORKSPACE), str(KDARL_CLEAN), '')]
 
@@ -368,11 +368,13 @@ def run_independent_validation(num_cases=100, start_case=90150, device='cuda'):
                 done = term or trunc
 
             last_event = last_info.get('event', 'nothing') if last_info else 'nothing'
-            if last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
+            if last_event == 'collision':
+                outcome = 'COLLISION'
+            elif last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
                 outcome = 'SUCCESS'
                 times.append(env.global_time)
-            elif last_event == 'collision':
-                outcome = 'COLLISION'
+            elif last_event in ('timeout', 'time_out') or env.global_time >= env.time_limit - 1e-4:
+                outcome = 'TIMEOUT'
             else:
                 outcome = 'TIMEOUT'
 
