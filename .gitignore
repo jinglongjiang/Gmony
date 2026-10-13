@@ -34,3 +34,5 @@ kdarl_clean/artifacts/
 *.swp
 *~
 .DS_Store
+benchmark_results/b0_counterfactual_part*.json
+benchmark_results/worker_*.log
