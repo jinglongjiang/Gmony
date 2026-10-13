@@ -51,7 +51,7 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 class BenchmarkB0Policy(MambaRLPolicy):
     """B0 Controller with configurable intervention mode: None, Fixed, Heuristic, or CAGIS."""
-    def __init__(self, mode='base', config=None, device='cpu', meta_checkpoint=None):
+    def __init__(self, mode='base', config=None, device='cpu'):
         super().__init__(config=config, device=device)
         self.mode = mode  # 'base', 'fixed', 'heuristic', 'cagis'
         self.committed_intent = None
@@ -66,14 +66,14 @@ class BenchmarkB0Policy(MambaRLPolicy):
         self.history_pos = []
         self.history_vel = []
 
-        if mode == 'cagis' and meta_checkpoint is not None:
-            ckpt = torch.load(meta_checkpoint, map_location=device)
-            self.meta_model = CAGISMetaMLP(in_features=10).to(device)
-            self.meta_model.load_state_dict(ckpt['model_state_dict'])
-            self.meta_model.eval()
-            self.scaler_mean = np.array(ckpt['scaler_mean'], dtype=np.float32)
-            self.scaler_scale = np.array(ckpt['scaler_scale'], dtype=np.float32)
-            self.cagis_threshold = float(ckpt.get('threshold', 0.5))
+    def init_meta_model(self, meta_checkpoint, device='cpu'):
+        ckpt = torch.load(meta_checkpoint, map_location=device)
+        self.meta_model = CAGISMetaMLP(in_features=10).to(device)
+        self.meta_model.load_state_dict(ckpt['model_state_dict'])
+        self.meta_model.eval()
+        self.scaler_mean = np.array(ckpt['scaler_mean'], dtype=np.float32)
+        self.scaler_scale = np.array(ckpt['scaler_scale'], dtype=np.float32)
+        self.cagis_threshold = float(ckpt.get('threshold', 0.5))
 
     def reset_episode_stats(self):
         super().reset_episode_stats()
@@ -209,8 +209,7 @@ class BenchmarkB0Policy(MambaRLPolicy):
 
 def load_benchmark_policy(mode='base', device='cpu'):
     cfg = get_base_config()
-    ckpt_meta = MODELS_DIR / 'cagis_meta_policy.pth'
-    policy = BenchmarkB0Policy(mode=mode, config=cfg, device=device, meta_checkpoint=ckpt_meta)
+    policy = BenchmarkB0Policy(mode=mode, config=cfg, device=device)
     
     ckpt_path = REPO_ROOT / 'baseline_weights/gru-t24-seed443.pth'
     ckpt = torch.load(ckpt_path, map_location=device)
@@ -225,6 +224,11 @@ def load_benchmark_policy(mode='base', device='cpu'):
     policy.test_risk_lambda = 0.8
     policy.test_action_smoothing = 0.3
     install_selection(policy, 'ttc5')
+
+    if mode == 'cagis':
+        ckpt_meta = MODELS_DIR / 'cagis_meta_policy.pth'
+        policy.init_meta_model(ckpt_meta, device=device)
+
     return policy
 
 def run_single_episode(policy, env, case_id):
