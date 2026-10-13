@@ -65,6 +65,7 @@ class BenchmarkB0Policy(MambaRLPolicy):
         # State tracking buffers
         self.history_pos = []
         self.history_vel = []
+        self.last_decision_features = None
 
     def init_meta_model(self, meta_checkpoint, device='cpu'):
         ckpt = torch.load(meta_checkpoint, map_location=device)
@@ -82,11 +83,11 @@ class BenchmarkB0Policy(MambaRLPolicy):
         self.intervention_count = 0
         self.history_pos.clear()
         self.history_vel.clear()
+        self.last_decision_features = None
 
     def extract_observable_features(self, state: JointState, res_peek):
         rob = state.self_state
         px, py = rob.px, rob.py
-        self.history_pos.append((px, py))
         
         if len(state.human_states):
             phys_clearances = [
@@ -142,6 +143,7 @@ class BenchmarkB0Policy(MambaRLPolicy):
 
     def score_sarl_candidates(self, state: JointState):
         base_res = super().score_sarl_candidates(state)
+        self._last_clearance = base_res['clearance']
         rob = state.self_state
 
         if len(state.human_states):
@@ -158,9 +160,12 @@ class BenchmarkB0Policy(MambaRLPolicy):
             self.dwell_steps_remaining = 0
             self.committed_intent = None
 
+        # Always compute and record decision features at the exact decision moment
+        features = self.extract_observable_features(state, base_res)
+        self.last_decision_features = features
+
         # Check for intervention activation if not currently dwelling
         if self.mode != 'base' and self.dwell_steps_remaining == 0:
-            features = self.extract_observable_features(state, base_res)
             best_cmd = base_res['commands'][base_res['scores'].argmax().item()]
             cand_intent = derive_macro_intent_from_action(rob, best_cmd)
 
@@ -214,6 +219,8 @@ class BenchmarkB0Policy(MambaRLPolicy):
         return base_res
 
     def predict(self, state):
+        rob = state.self_state
+        self.history_pos.append((rob.px, rob.py))
         act = super().predict(state)
         self.history_vel.append((act.vx, act.vy))
         return act

@@ -1,19 +1,8 @@
 #!/usr/bin/env python3
-"""Phase P2: Counterfactual Branching Experiments
-
-Fork identical simulation snapshots at representative operational states:
-1. Deadlock / Oscillatory Stagnation (travel > 1.0m, disp < 0.35m, ratio > 3.5, reversals >= 2)
-2. Dense Normal Progression (progress > 0.5m, disp > 0.8m, clearance > 0.40m)
-3. High Dynamic Risk / Imminent Closing (clearance < 0.35m, closing_speed > 0.4m/s)
-4. Active Yield / Legitimate Detour (speed < 0.15m/s, clearance < 0.50m)
-
-From the exact same state, branch into:
-- Branch A: Base Dual-Stream (No intent intervention, alpha=0)
-- Branch B: Controlled Fixed Intent Commitment (Dwell K=4, alpha=0.10 * gate)
-- Branch C: Learnable LICS Intent Commitment (Learned beta_psi, alpha=0.10 * gate)
-
-Evaluates 4s trajectory dynamics and full-episode outcomes to map exact causal intervention gains.
-Saves to benchmark_results/counterfactual_branching_results.json.
+"""[DEPRECATED - DO NOT USE FOR SCIENTIFIC EXPERIMENTS]
+NOTICE: This legacy dual-stream script contains the deprecated post-decision snapshot timing
+bug. It has been completely superseded by Phase P1 script: `run_b0_counterfactual_study.py`
+and the audited single-stream B0 framework. Kept only for historical archival reference.
 """
 
 import sys

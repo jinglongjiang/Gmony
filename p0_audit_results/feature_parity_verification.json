@@ -1,0 +1,230 @@
+[
+  {
+    "case_id": 90000,
+    "mode": "heuristic",
+    "steps_tested": 80,
+    "total_checks": 80,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90000,
+    "mode": "fixed",
+    "steps_tested": 26,
+    "total_checks": 26,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90000,
+    "mode": "cagis",
+    "steps_tested": 20,
+    "total_checks": 20,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90001,
+    "mode": "heuristic",
+    "steps_tested": 80,
+    "total_checks": 80,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90001,
+    "mode": "fixed",
+    "steps_tested": 60,
+    "total_checks": 60,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90001,
+    "mode": "cagis",
+    "steps_tested": 80,
+    "total_checks": 80,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90005,
+    "mode": "heuristic",
+    "steps_tested": 52,
+    "total_checks": 52,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90005,
+    "mode": "fixed",
+    "steps_tested": 61,
+    "total_checks": 61,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90005,
+    "mode": "cagis",
+    "steps_tested": 55,
+    "total_checks": 55,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90010,
+    "mode": "heuristic",
+    "steps_tested": 80,
+    "total_checks": 80,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90010,
+    "mode": "fixed",
+    "steps_tested": 66,
+    "total_checks": 66,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  },
+  {
+    "case_id": 90010,
+    "mode": "cagis",
+    "steps_tested": 69,
+    "total_checks": 69,
+    "max_errors": {
+      "dmin_curr": 0.0,
+      "closing_speed": 0.0,
+      "travel_4s": 0.0,
+      "disp_4s": 0.0,
+      "ratio_4s": 0.0,
+      "reversals_4s": 0.0,
+      "dist_to_goal": 0.0,
+      "goal_heading_error": 0.0,
+      "safe_actions_ratio": 0.0,
+      "current_speed": 0.0
+    },
+    "passed": true
+  }
+]
