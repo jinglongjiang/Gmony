@@ -190,12 +190,17 @@ def train_option_critic_rl(
                 loss_q = losses.compute_q_loss(out_curr['q_omega'], batch['option'], target_q)
                 loss_qu = losses.compute_q_u_loss(out_curr['q_u'], batch['option'], batch['action'], target_q)
 
-                # Advantage for policy gradient
+                # True intra-option action advantage: A(h, o, a) = Q_U(h, o, a) - Q_Omega(h, o)
                 B = batch_size
                 b_idx = torch.arange(B, device=device)
-                curr_q = out_curr['q_omega'][b_idx, batch['option']]
-                v_curr = torch.max(out_curr['q_omega'], dim=-1)[0]
-                advantage = (curr_q - v_curr).detach()
+                q_u_val = out_curr['q_u'][b_idx, batch['option'], batch['action']]
+                q_omega_val = out_curr['q_omega'][b_idx, batch['option']]
+                advantage = (q_u_val - q_omega_val).detach()
+                adv_std = advantage.std()
+                if adv_std > 1e-4:
+                    advantage = (advantage - advantage.mean()) / (adv_std + 1e-8)
+                else:
+                    advantage = advantage - advantage.mean()
 
                 loss_pi, entropy = losses.compute_policy_loss(
                     out_curr['policy_probs'], batch['option'], batch['action'], advantage

@@ -117,19 +117,56 @@ class OptionCriticPolicy(nn.Module):
             'durations': []
         }
 
-    def _state_to_tokens(self, state) -> np.ndarray:
-        """Convert environment state to 8x13 token format."""
-        if hasattr(state, 'to_array'):
-            state_34 = state.to_array()
-        elif isinstance(state, (list, tuple)):
-            if len(state) > 0 and hasattr(state[0], 'to_array'):
-                state_34 = np.concatenate([s.to_array() if hasattr(s, 'to_array') else np.array(s, dtype=np.float32) for s in state])
-            else:
-                state_34 = np.array(state, dtype=np.float32).flatten()
-        else:
-            state_34 = np.array(state, dtype=np.float32).flatten()
+    def compute_action_mask(self, state, min_clearance: float = 0.10, dt: float = 0.25) -> np.ndarray:
+        """Compute 80-dimensional safe action mask based on 1-step linear propagation."""
+        if not hasattr(state, 'self_state') or not hasattr(state, 'human_states') or len(state.human_states) == 0:
+            return np.ones(self.num_actions, dtype=np.float32)
 
-        state_34 = state_34.flatten()
+        rob = state.self_state
+        humans = state.human_states
+        if not hasattr(self, '_cmd_arr'):
+            self._cmd_arr = np.array([discrete_index_to_action(i) for i in range(self.num_actions)], dtype=np.float64)
+
+        nrp = np.array([rob.px, rob.py], dtype=np.float64)[None, :] + self._cmd_arr * dt
+        hp = np.array([[h.px + h.vx * dt, h.py + h.vy * dt] for h in humans], dtype=np.float64)
+        hr = np.array([h.radius for h in humans], dtype=np.float64)
+        D = np.hypot(nrp[:, None, 0] - hp[None, :, 0], nrp[:, None, 1] - hp[None, :, 1]) - rob.radius - hr[None, :]
+        dmins = D.min(axis=1)
+        mask = (dmins >= min_clearance).astype(np.float32)
+        if mask.sum() == 0:
+            mask[dmins.argmax()] = 1.0
+        return mask
+
+    def _state_to_tokens(self, state) -> np.ndarray:
+        """Convert environment state to 8x13 token format with TTC5 attention."""
+        if hasattr(state, 'self_state') and hasattr(state, 'human_states'):
+            rob = state.self_state
+            humans = state.human_states
+            if len(humans) > 5:
+                from run_selection_study_50cases import select_indices
+                sel_idx = select_indices(rob, humans, 'ttc5')
+                sel_humans = [humans[i] for i in sel_idx]
+            else:
+                sel_humans = humans
+
+            robot_arr = np.array([
+                rob.px, rob.py, rob.vx, rob.vy,
+                rob.radius, rob.gx, rob.gy,
+                rob.v_pref, rob.theta
+            ], dtype=np.float32)
+
+            human_arr = []
+            for h in sel_humans[:5]:
+                human_arr.extend([h.px, h.py, h.vx, h.vy, h.radius])
+            while len(human_arr) < 25:
+                human_arr.append(0.0)
+
+            state_34 = np.concatenate([robot_arr, np.array(human_arr[:25], dtype=np.float32)])
+        elif hasattr(state, 'to_array'):
+            state_34 = state.to_array()[:34]
+        else:
+            state_34 = np.array(state, dtype=np.float32).flatten()[:34]
+
         if state_34.size < 34:
             pad = np.zeros(34 - state_34.size, dtype=np.float32)
             state_34 = np.concatenate([state_34, pad])
@@ -188,9 +225,9 @@ class OptionCriticPolicy(nn.Module):
         token = self._state_to_tokens(state)
         hist_tensor = self._prepare_history_tensor(token)  # [1, 24, 8, 13]
 
-        mask_tensor = None
-        if action_mask is not None:
-            mask_tensor = torch.from_numpy(action_mask).float().to(self.device).unsqueeze(0)
+        if action_mask is None:
+            action_mask = self.compute_action_mask(state)
+        mask_tensor = torch.from_numpy(action_mask).float().to(self.device).unsqueeze(0)
 
         self.net.eval()
         with torch.no_grad():

@@ -132,13 +132,14 @@ class OptionCriticNetwork(nn.Module):
             )
 
             # CF-Conditioned Termination Fusion Head
-            # Takes representation h, base termination logit beta_raw, predicted advantage Delta, and predicted collision risk
-            # For each option o: [d_model + 1 + 1 + 1] -> 1
-            self.cf_beta_fusion = nn.Sequential(
-                nn.Linear(d_model + 3, 64),
-                nn.ReLU(),
-                nn.Linear(64, 1)
-            )
+            # Takes base termination logit beta_raw, predicted advantage Delta, and predicted collision risk
+            # For each option o: [3] -> 1
+            self.cf_beta_fusion = nn.Linear(3, 1)
+            with torch.no_grad():
+                self.cf_beta_fusion.weight[0, 0] = 1.0  # base termination
+                self.cf_beta_fusion.weight[0, 1] = 1.0  # counterfactual advantage
+                self.cf_beta_fusion.weight[0, 2] = 2.0  # collision risk
+                self.cf_beta_fusion.bias.zero_()
 
     def extract_latent(self, joint_tokens: torch.Tensor) -> torch.Tensor:
         """Extract temporal state representation h_t from input joint tokens.
@@ -222,13 +223,11 @@ class OptionCriticNetwork(nn.Module):
             cf_adv = self.cf_advantage_head(h)  # [B, num_options]
             coll_risk = torch.sigmoid(self.collision_risk_head(h))  # [B, num_options]
 
-            # Compute CF-calibrated beta for each option
-            # Expand h: [B, num_options, d_model]
-            h_expanded = h.unsqueeze(1).expand(-1, self.num_options, -1)
+            # Direct calibrated fusion: [B, num_options, 3] -> [B, num_options]
             beta_expanded = beta_raw.unsqueeze(-1)  # [B, num_options, 1]
             adv_expanded = cf_adv.unsqueeze(-1)  # [B, num_options, 1]
             risk_expanded = coll_risk.unsqueeze(-1)  # [B, num_options, 1]
-            fusion_in = torch.cat([h_expanded, beta_expanded, adv_expanded, risk_expanded], dim=-1)  # [B, num_options, d_model+3]
+            fusion_in = torch.cat([beta_expanded, adv_expanded, risk_expanded], dim=-1)  # [B, num_options, 3]
             
             beta_cf_logits = self.cf_beta_fusion(fusion_in).squeeze(-1)  # [B, num_options]
             beta_cf = torch.sigmoid(beta_cf_logits)
@@ -249,11 +248,10 @@ class OptionCriticNetwork(nn.Module):
         if self.is_cf_oc and use_cf:
             cf_adv = self.cf_advantage_head(h)
             coll_risk = torch.sigmoid(self.collision_risk_head(h))
-            h_expanded = h.unsqueeze(1).expand(-1, self.num_options, -1)
             beta_expanded = beta_raw.unsqueeze(-1)
             adv_expanded = cf_adv.unsqueeze(-1)
             risk_expanded = coll_risk.unsqueeze(-1)
-            fusion_in = torch.cat([h_expanded, beta_expanded, adv_expanded, risk_expanded], dim=-1)
+            fusion_in = torch.cat([beta_expanded, adv_expanded, risk_expanded], dim=-1)
             return torch.sigmoid(self.cf_beta_fusion(fusion_in).squeeze(-1))
         else:
             return torch.sigmoid(beta_raw)
