@@ -59,14 +59,13 @@ class OptionCriticPolicy(nn.Module):
         self.termination_threshold = termination_threshold
         self.use_sampling_termination = use_sampling_termination
 
-        # Config fallback
-        if config is not None:
-            if hasattr(config, 'getfloat'):
-                self.time_step = config.getfloat('env', 'time_step', fallback=0.25)
-            else:
-                self.time_step = 0.25
-        else:
-            self.time_step = 0.25
+        # Environment interface compatibility
+        self.multiagent_training = False
+        self.kinematics = 'holonomic'
+        self.trainable = True
+        self.phase = 'train'
+        self.gamma = 0.99
+        self.time_step = 0.25
 
         # Build network if not provided
         if network is not None:
@@ -151,6 +150,17 @@ class OptionCriticPolicy(nn.Module):
         hist_list = hist_list[-self.seq_len:]
         hist_np = np.array(hist_list, dtype=np.float32)
         return torch.from_numpy(hist_np).float().to(self.device).unsqueeze(0)
+
+    def get_current_history_array(self) -> np.ndarray:
+        """Returns numpy array of shape [seq_len, 8, 13] with left padding."""
+        hist_list = list(self._history)
+        if len(hist_list) == 0:
+            return np.zeros((self.seq_len, 8, 13), dtype=np.float32)
+        if len(hist_list) < self.seq_len:
+            pad_frame = hist_list[0]
+            pad_needed = self.seq_len - len(hist_list)
+            hist_list = [pad_frame.copy() for _ in range(pad_needed)] + hist_list
+        return np.array(hist_list[-self.seq_len:], dtype=np.float32)
 
     def select_option(
         self,

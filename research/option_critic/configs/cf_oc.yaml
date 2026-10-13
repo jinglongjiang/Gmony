@@ -1,0 +1,39 @@
+# Counterfactual Switching-Advantage Option-Critic (CF-OC) Configuration
+algorithm: "cf_oc"
+
+# Architecture
+network:
+  num_options: 4
+  num_actions: 80
+  d_model: 256
+  n_layers: 4
+  temporal_backbone: "gru"
+  seq_len: 24
+  is_cf_oc: true
+
+# Training Hyperparameters
+training:
+  episodes: 250
+  batch_size: 64
+  lr: 0.0001
+  gamma: 0.99
+  deliberation_cost: 0.05
+  cf_sample_prob: 0.20
+  entropy_coef: 0.01
+  termination_reg_coef: 0.01
+  cf_loss_coef: 0.5
+  risk_loss_coef: 0.5
+  buffer_capacity: 40000
+  update_freq: 2
+
+# Counterfactual Branching Specification
+branching:
+  k_steps: 16             # 4.0 seconds evaluation window
+  clearance_trigger: 0.80 # meters
+
+# Evaluation Protocol
+eval:
+  start_case: 90800
+  num_cases: 500
+  time_limit: 50.0
+  time_step: 0.25

@@ -148,7 +148,7 @@ def train_option_critic_rl(
             option_usage[option_idx] += 1
 
             # Extract history tokens before step
-            hist_before = np.array(list(policy._history)[-24:], dtype=np.float32)
+            hist_before = policy.get_current_history_array()
 
             # Step env
             obs, reward, term, trunc, info = env.step(action_xy)
@@ -158,7 +158,9 @@ def train_option_critic_rl(
             step += 1
 
             # Extract next state history tokens
-            hist_after = np.array(list(policy._history)[-24:], dtype=np.float32)
+            next_state = JointState(rob.get_full_state(), [h.get_observable_state() for h in env.humans])
+            next_token = policy._state_to_tokens(next_state)
+            hist_after = np.concatenate([hist_before[1:], next_token.reshape(1, 8, 13)], axis=0)
 
             # Store in replay buffer
             replay_buffer.add(
