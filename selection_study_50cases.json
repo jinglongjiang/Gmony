@@ -1,0 +1,1722 @@
+{
+  "ttc5": {
+    "summary": {
+      "sr": 78.0,
+      "cr": 4.0,
+      "tr": 18.0,
+      "time": 19.67948717948718
+    },
+    "cases": {
+      "90000": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 97,
+        "time": 24.25,
+        "init_dist": 8.0,
+        "final_dist": 0.235,
+        "net_progress": 7.765,
+        "path_length": 17.837
+      },
+      "90001": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 6.564,
+        "net_progress": 1.436,
+        "path_length": 27.749
+      },
+      "90002": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 94,
+        "time": 23.5,
+        "init_dist": 8.0,
+        "final_dist": 0.218,
+        "net_progress": 7.782,
+        "path_length": 16.719
+      },
+      "90003": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 139,
+        "time": 34.75,
+        "init_dist": 8.0,
+        "final_dist": 0.192,
+        "net_progress": 7.808,
+        "path_length": 23.545
+      },
+      "90004": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.226,
+        "net_progress": 7.774,
+        "path_length": 10.958
+      },
+      "90005": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 52,
+        "time": 13.0,
+        "init_dist": 8.0,
+        "final_dist": 0.244,
+        "net_progress": 7.756,
+        "path_length": 11.033
+      },
+      "90006": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "init_dist": 8.0,
+        "final_dist": 0.25,
+        "net_progress": 7.75,
+        "path_length": 13.134
+      },
+      "90007": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 50,
+        "time": 12.5,
+        "init_dist": 8.0,
+        "final_dist": 0.125,
+        "net_progress": 7.875,
+        "path_length": 10.169
+      },
+      "90008": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 133,
+        "time": 33.25,
+        "init_dist": 8.0,
+        "final_dist": 0.142,
+        "net_progress": 7.858,
+        "path_length": 21.703
+      },
+      "90009": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 10,
+        "time": 2.5,
+        "init_dist": 8.0,
+        "final_dist": 7.507,
+        "net_progress": 0.493,
+        "path_length": 0.93
+      },
+      "90010": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 87,
+        "time": 21.75,
+        "init_dist": 8.0,
+        "final_dist": 0.226,
+        "net_progress": 7.774,
+        "path_length": 17.767
+      },
+      "90011": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 43,
+        "time": 10.75,
+        "init_dist": 8.0,
+        "final_dist": 0.138,
+        "net_progress": 7.862,
+        "path_length": 9.796
+      },
+      "90012": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 7.058,
+        "net_progress": 0.942,
+        "path_length": 28.635
+      },
+      "90013": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 68,
+        "time": 17.0,
+        "init_dist": 8.0,
+        "final_dist": 0.229,
+        "net_progress": 7.771,
+        "path_length": 14.987
+      },
+      "90014": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 85,
+        "time": 21.25,
+        "init_dist": 8.0,
+        "final_dist": 0.288,
+        "net_progress": 7.712,
+        "path_length": 12.336
+      },
+      "90015": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 52,
+        "time": 13.0,
+        "init_dist": 8.0,
+        "final_dist": 0.238,
+        "net_progress": 7.762,
+        "path_length": 10.803
+      },
+      "90016": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 47,
+        "time": 11.75,
+        "init_dist": 8.0,
+        "final_dist": 0.2,
+        "net_progress": 7.8,
+        "path_length": 9.807
+      },
+      "90017": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.227,
+        "net_progress": 7.773,
+        "path_length": 12.288
+      },
+      "90018": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 132,
+        "time": 33.0,
+        "init_dist": 8.0,
+        "final_dist": 0.162,
+        "net_progress": 7.838,
+        "path_length": 27.862
+      },
+      "90019": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 21,
+        "time": 5.25,
+        "init_dist": 8.0,
+        "final_dist": 6.562,
+        "net_progress": 1.438,
+        "path_length": 3.864
+      },
+      "90020": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 5.877,
+        "net_progress": 2.123,
+        "path_length": 31.539
+      },
+      "90021": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 76,
+        "time": 19.0,
+        "init_dist": 8.0,
+        "final_dist": 0.196,
+        "net_progress": 7.804,
+        "path_length": 14.32
+      },
+      "90022": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "init_dist": 8.0,
+        "final_dist": 0.245,
+        "net_progress": 7.755,
+        "path_length": 11.527
+      },
+      "90023": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 66,
+        "time": 16.5,
+        "init_dist": 8.0,
+        "final_dist": 0.247,
+        "net_progress": 7.753,
+        "path_length": 12.11
+      },
+      "90024": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.24,
+        "net_progress": 7.76,
+        "path_length": 10.031
+      },
+      "90025": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "init_dist": 8.0,
+        "final_dist": 0.267,
+        "net_progress": 7.733,
+        "path_length": 12.015
+      },
+      "90026": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 111,
+        "time": 27.75,
+        "init_dist": 8.0,
+        "final_dist": 0.296,
+        "net_progress": 7.704,
+        "path_length": 21.356
+      },
+      "90027": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 80,
+        "time": 20.0,
+        "init_dist": 8.0,
+        "final_dist": 0.236,
+        "net_progress": 7.764,
+        "path_length": 14.616
+      },
+      "90028": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 124,
+        "time": 31.0,
+        "init_dist": 8.0,
+        "final_dist": 0.244,
+        "net_progress": 7.756,
+        "path_length": 17.471
+      },
+      "90029": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 73,
+        "time": 18.25,
+        "init_dist": 8.0,
+        "final_dist": 0.197,
+        "net_progress": 7.803,
+        "path_length": 12.6
+      },
+      "90030": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 5.312,
+        "net_progress": 2.688,
+        "path_length": 27.283
+      },
+      "90031": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 65,
+        "time": 16.25,
+        "init_dist": 8.0,
+        "final_dist": 0.238,
+        "net_progress": 7.762,
+        "path_length": 12.234
+      },
+      "90032": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 67,
+        "time": 16.75,
+        "init_dist": 8.0,
+        "final_dist": 0.199,
+        "net_progress": 7.801,
+        "path_length": 11.922
+      },
+      "90033": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 88,
+        "time": 22.0,
+        "init_dist": 8.0,
+        "final_dist": 0.24,
+        "net_progress": 7.76,
+        "path_length": 15.691
+      },
+      "90034": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 7.153,
+        "net_progress": 0.847,
+        "path_length": 25.28
+      },
+      "90035": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 83,
+        "time": 20.75,
+        "init_dist": 8.0,
+        "final_dist": 0.238,
+        "net_progress": 7.762,
+        "path_length": 16.613
+      },
+      "90036": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 6.924,
+        "net_progress": 1.076,
+        "path_length": 34.908
+      },
+      "90037": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 3.833,
+        "net_progress": 4.167,
+        "path_length": 19.069
+      },
+      "90038": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 53,
+        "time": 13.25,
+        "init_dist": 8.0,
+        "final_dist": 0.252,
+        "net_progress": 7.748,
+        "path_length": 10.001
+      },
+      "90039": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "init_dist": 8.0,
+        "final_dist": 0.281,
+        "net_progress": 7.719,
+        "path_length": 11.786
+      },
+      "90040": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 91,
+        "time": 22.75,
+        "init_dist": 8.0,
+        "final_dist": 0.24,
+        "net_progress": 7.76,
+        "path_length": 17.171
+      },
+      "90041": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 70,
+        "time": 17.5,
+        "init_dist": 8.0,
+        "final_dist": 0.184,
+        "net_progress": 7.816,
+        "path_length": 13.042
+      },
+      "90042": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "init_dist": 8.0,
+        "final_dist": 0.279,
+        "net_progress": 7.721,
+        "path_length": 12.597
+      },
+      "90043": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 28.089,
+        "net_progress": -20.089,
+        "path_length": 41.091
+      },
+      "90044": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.205,
+        "net_progress": 7.795,
+        "path_length": 10.889
+      },
+      "90045": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 79,
+        "time": 19.75,
+        "init_dist": 8.0,
+        "final_dist": 0.225,
+        "net_progress": 7.775,
+        "path_length": 12.61
+      },
+      "90046": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 3.716,
+        "net_progress": 4.284,
+        "path_length": 26.083
+      },
+      "90047": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 98,
+        "time": 24.5,
+        "init_dist": 8.0,
+        "final_dist": 0.23,
+        "net_progress": 7.77,
+        "path_length": 17.323
+      },
+      "90048": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "init_dist": 8.0,
+        "final_dist": 0.244,
+        "net_progress": 7.756,
+        "path_length": 11.757
+      },
+      "90049": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 149,
+        "time": 37.25,
+        "init_dist": 8.0,
+        "final_dist": 0.249,
+        "net_progress": 7.751,
+        "path_length": 33.437
+      }
+    },
+    "forensics": {
+      "90001": {
+        "final_d_goal": 6.564,
+        "last10s_path": 5.226,
+        "last10s_disp": 0.134,
+        "last10s_mean_speed": 0.538,
+        "oscillation_ratio": 39.0,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90012": {
+        "final_d_goal": 7.058,
+        "last10s_path": 6.048,
+        "last10s_disp": 0.301,
+        "last10s_mean_speed": 0.625,
+        "oscillation_ratio": 20.1,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90020": {
+        "final_d_goal": 5.877,
+        "last10s_path": 4.892,
+        "last10s_disp": 0.488,
+        "last10s_mean_speed": 0.497,
+        "oscillation_ratio": 10.0,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90030": {
+        "final_d_goal": 5.312,
+        "last10s_path": 4.541,
+        "last10s_disp": 0.189,
+        "last10s_mean_speed": 0.467,
+        "oscillation_ratio": 24.1,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90034": {
+        "final_d_goal": 7.153,
+        "last10s_path": 4.795,
+        "last10s_disp": 0.439,
+        "last10s_mean_speed": 0.485,
+        "oscillation_ratio": 10.9,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90036": {
+        "final_d_goal": 6.924,
+        "last10s_path": 5.038,
+        "last10s_disp": 0.944,
+        "last10s_mean_speed": 0.521,
+        "oscillation_ratio": 5.3,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90037": {
+        "final_d_goal": 3.833,
+        "last10s_path": 2.216,
+        "last10s_disp": 0.064,
+        "last10s_mean_speed": 0.225,
+        "oscillation_ratio": 34.9,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90043": {
+        "final_d_goal": 28.089,
+        "last10s_path": 9.68,
+        "last10s_disp": 9.618,
+        "last10s_mean_speed": 0.993,
+        "oscillation_ratio": 1.0,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90046": {
+        "final_d_goal": 3.716,
+        "last10s_path": 4.677,
+        "last10s_disp": 0.04,
+        "last10s_mean_speed": 0.478,
+        "oscillation_ratio": 116.0,
+        "category": "CENTER_OSCILLATION"
+      }
+    }
+  },
+  "first5": {
+    "summary": {
+      "sr": 60.0,
+      "cr": 30.0,
+      "tr": 10.0,
+      "time": 18.1
+    },
+    "cases": {
+      "90000": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 24,
+        "time": 6.0,
+        "init_dist": 8.0,
+        "final_dist": 4.956,
+        "net_progress": 3.044,
+        "path_length": 4.813
+      },
+      "90001": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 51,
+        "time": 12.75,
+        "init_dist": 8.0,
+        "final_dist": 0.172,
+        "net_progress": 7.828,
+        "path_length": 12.496
+      },
+      "90002": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 58,
+        "time": 14.5,
+        "init_dist": 8.0,
+        "final_dist": 0.234,
+        "net_progress": 7.766,
+        "path_length": 10.401
+      },
+      "90003": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 68,
+        "time": 17.0,
+        "init_dist": 8.0,
+        "final_dist": 0.155,
+        "net_progress": 7.845,
+        "path_length": 12.407
+      },
+      "90004": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "init_dist": 8.0,
+        "final_dist": 0.268,
+        "net_progress": 7.732,
+        "path_length": 11.441
+      },
+      "90005": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 55,
+        "time": 13.75,
+        "init_dist": 8.0,
+        "final_dist": 0.242,
+        "net_progress": 7.758,
+        "path_length": 11.337
+      },
+      "90006": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 47,
+        "time": 11.75,
+        "init_dist": 8.0,
+        "final_dist": 0.23,
+        "net_progress": 7.77,
+        "path_length": 9.796
+      },
+      "90007": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 15,
+        "time": 3.75,
+        "init_dist": 8.0,
+        "final_dist": 5.334,
+        "net_progress": 2.666,
+        "path_length": 3.142
+      },
+      "90008": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 0.24,
+        "net_progress": 7.76,
+        "path_length": 12.863
+      },
+      "90009": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 55,
+        "time": 13.75,
+        "init_dist": 8.0,
+        "final_dist": 0.238,
+        "net_progress": 7.762,
+        "path_length": 11.876
+      },
+      "90010": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 2,
+        "time": 0.5,
+        "init_dist": 8.0,
+        "final_dist": 8.105,
+        "net_progress": -0.105,
+        "path_length": 0.298
+      },
+      "90011": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 141,
+        "time": 35.25,
+        "init_dist": 8.0,
+        "final_dist": 0.242,
+        "net_progress": 7.758,
+        "path_length": 28.714
+      },
+      "90012": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 17,
+        "time": 4.25,
+        "init_dist": 8.0,
+        "final_dist": 6.109,
+        "net_progress": 1.891,
+        "path_length": 3.606
+      },
+      "90013": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 66,
+        "time": 16.5,
+        "init_dist": 8.0,
+        "final_dist": 0.25,
+        "net_progress": 7.75,
+        "path_length": 13.887
+      },
+      "90014": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 26,
+        "time": 6.5,
+        "init_dist": 8.0,
+        "final_dist": 4.29,
+        "net_progress": 3.71,
+        "path_length": 5.933
+      },
+      "90015": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 49,
+        "time": 12.25,
+        "init_dist": 8.0,
+        "final_dist": 0.208,
+        "net_progress": 7.792,
+        "path_length": 10.402
+      },
+      "90016": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 44,
+        "time": 11.0,
+        "init_dist": 8.0,
+        "final_dist": 0.144,
+        "net_progress": 7.856,
+        "path_length": 9.984
+      },
+      "90017": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 3.569,
+        "net_progress": 4.431,
+        "path_length": 31.641
+      },
+      "90018": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 68,
+        "time": 17.0,
+        "init_dist": 8.0,
+        "final_dist": 0.267,
+        "net_progress": 7.733,
+        "path_length": 14.559
+      },
+      "90019": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 20,
+        "time": 5.0,
+        "init_dist": 8.0,
+        "final_dist": 6.348,
+        "net_progress": 1.652,
+        "path_length": 3.31
+      },
+      "90020": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 19,
+        "time": 4.75,
+        "init_dist": 8.0,
+        "final_dist": 6.2,
+        "net_progress": 1.8,
+        "path_length": 2.843
+      },
+      "90021": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 51,
+        "time": 12.75,
+        "init_dist": 8.0,
+        "final_dist": 0.227,
+        "net_progress": 7.773,
+        "path_length": 10.702
+      },
+      "90022": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 80,
+        "time": 20.0,
+        "init_dist": 8.0,
+        "final_dist": 0.24,
+        "net_progress": 7.76,
+        "path_length": 14.006
+      },
+      "90023": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 71,
+        "time": 17.75,
+        "init_dist": 8.0,
+        "final_dist": 0.144,
+        "net_progress": 7.856,
+        "path_length": 13.968
+      },
+      "90024": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 2.827,
+        "net_progress": 5.173,
+        "path_length": 18.267
+      },
+      "90025": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 4.876,
+        "net_progress": 3.124,
+        "path_length": 4.599
+      },
+      "90026": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 116,
+        "time": 29.0,
+        "init_dist": 8.0,
+        "final_dist": 0.214,
+        "net_progress": 7.786,
+        "path_length": 18.441
+      },
+      "90027": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.239,
+        "net_progress": 7.761,
+        "path_length": 14.512
+      },
+      "90028": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 42,
+        "time": 10.5,
+        "init_dist": 8.0,
+        "final_dist": 0.154,
+        "net_progress": 7.846,
+        "path_length": 8.976
+      },
+      "90029": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 67,
+        "time": 16.75,
+        "init_dist": 8.0,
+        "final_dist": 0.189,
+        "net_progress": 7.811,
+        "path_length": 12.428
+      },
+      "90030": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 46,
+        "time": 11.5,
+        "init_dist": 8.0,
+        "final_dist": 0.236,
+        "net_progress": 7.764,
+        "path_length": 9.676
+      },
+      "90031": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 18,
+        "time": 4.5,
+        "init_dist": 8.0,
+        "final_dist": 4.666,
+        "net_progress": 3.334,
+        "path_length": 4.038
+      },
+      "90032": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 19,
+        "time": 4.75,
+        "init_dist": 8.0,
+        "final_dist": 5.774,
+        "net_progress": 2.226,
+        "path_length": 4.311
+      },
+      "90033": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "init_dist": 8.0,
+        "final_dist": 0.249,
+        "net_progress": 7.751,
+        "path_length": 11.84
+      },
+      "90034": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 194,
+        "time": 48.5,
+        "init_dist": 8.0,
+        "final_dist": 0.242,
+        "net_progress": 7.758,
+        "path_length": 28.09
+      },
+      "90035": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 19,
+        "time": 4.75,
+        "init_dist": 8.0,
+        "final_dist": 6.955,
+        "net_progress": 1.045,
+        "path_length": 2.471
+      },
+      "90036": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 23,
+        "time": 5.75,
+        "init_dist": 8.0,
+        "final_dist": 4.616,
+        "net_progress": 3.384,
+        "path_length": 5.054
+      },
+      "90037": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 18,
+        "time": 4.5,
+        "init_dist": 8.0,
+        "final_dist": 5.772,
+        "net_progress": 2.228,
+        "path_length": 2.944
+      },
+      "90038": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 69,
+        "time": 17.25,
+        "init_dist": 8.0,
+        "final_dist": 0.231,
+        "net_progress": 7.769,
+        "path_length": 14.899
+      },
+      "90039": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 38.666,
+        "net_progress": -30.666,
+        "path_length": 49.453
+      },
+      "90040": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 39,
+        "time": 9.75,
+        "init_dist": 8.0,
+        "final_dist": 5.663,
+        "net_progress": 2.337,
+        "path_length": 7.586
+      },
+      "90041": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 59,
+        "time": 14.75,
+        "init_dist": 8.0,
+        "final_dist": 0.188,
+        "net_progress": 7.812,
+        "path_length": 11.641
+      },
+      "90042": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.249,
+        "net_progress": 7.751,
+        "path_length": 12.992
+      },
+      "90043": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 196,
+        "time": 49.0,
+        "init_dist": 8.0,
+        "final_dist": 0.262,
+        "net_progress": 7.738,
+        "path_length": 26.628
+      },
+      "90044": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 36,
+        "time": 9.0,
+        "init_dist": 8.0,
+        "final_dist": 8.333,
+        "net_progress": -0.333,
+        "path_length": 7.728
+      },
+      "90045": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.163,
+        "net_progress": 7.837,
+        "path_length": 12.461
+      },
+      "90046": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 54,
+        "time": 13.5,
+        "init_dist": 8.0,
+        "final_dist": 0.276,
+        "net_progress": 7.724,
+        "path_length": 10.035
+      },
+      "90047": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 7.26,
+        "net_progress": 0.74,
+        "path_length": 14.681
+      },
+      "90048": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 58,
+        "time": 14.5,
+        "init_dist": 8.0,
+        "final_dist": 0.122,
+        "net_progress": 7.878,
+        "path_length": 11.656
+      },
+      "90049": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 5.649,
+        "net_progress": 2.351,
+        "path_length": 12.654
+      }
+    },
+    "forensics": {
+      "90017": {
+        "final_d_goal": 3.569,
+        "last10s_path": 5.28,
+        "last10s_disp": 0.135,
+        "last10s_mean_speed": 0.538,
+        "oscillation_ratio": 39.0,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90024": {
+        "final_d_goal": 2.827,
+        "last10s_path": 1.703,
+        "last10s_disp": 0.012,
+        "last10s_mean_speed": 0.174,
+        "oscillation_ratio": 139.5,
+        "category": "CENTER_OSCILLATION"
+      },
+      "90039": {
+        "final_d_goal": 38.666,
+        "last10s_path": 9.63,
+        "last10s_disp": 9.568,
+        "last10s_mean_speed": 0.988,
+        "oscillation_ratio": 1.0,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90047": {
+        "final_d_goal": 7.26,
+        "last10s_path": 0.681,
+        "last10s_disp": 0.018,
+        "last10s_mean_speed": 0.07,
+        "oscillation_ratio": 38.2,
+        "category": "TRUE_STANDSTILL"
+      },
+      "90049": {
+        "final_d_goal": 5.649,
+        "last10s_path": 2.185,
+        "last10s_disp": 0.074,
+        "last10s_mean_speed": 0.221,
+        "oscillation_ratio": 29.3,
+        "category": "CENTER_OSCILLATION"
+      }
+    }
+  },
+  "nearest5": {
+    "summary": {
+      "sr": 74.0,
+      "cr": 8.0,
+      "tr": 18.0,
+      "time": 16.027027027027028
+    },
+    "cases": {
+      "90000": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 0.631,
+        "net_progress": 7.369,
+        "path_length": 32.974
+      },
+      "90001": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 58,
+        "time": 14.5,
+        "init_dist": 8.0,
+        "final_dist": 0.124,
+        "net_progress": 7.876,
+        "path_length": 13.391
+      },
+      "90002": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 68,
+        "time": 17.0,
+        "init_dist": 8.0,
+        "final_dist": 0.211,
+        "net_progress": 7.789,
+        "path_length": 13.274
+      },
+      "90003": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 54,
+        "time": 13.5,
+        "init_dist": 8.0,
+        "final_dist": 0.203,
+        "net_progress": 7.797,
+        "path_length": 11.336
+      },
+      "90004": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 68,
+        "time": 17.0,
+        "init_dist": 8.0,
+        "final_dist": 0.159,
+        "net_progress": 7.841,
+        "path_length": 14.19
+      },
+      "90005": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 0.572,
+        "net_progress": 7.428,
+        "path_length": 36.305
+      },
+      "90006": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 58,
+        "time": 14.5,
+        "init_dist": 8.0,
+        "final_dist": 0.166,
+        "net_progress": 7.834,
+        "path_length": 11.769
+      },
+      "90007": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 46,
+        "time": 11.5,
+        "init_dist": 8.0,
+        "final_dist": 0.242,
+        "net_progress": 7.758,
+        "path_length": 9.406
+      },
+      "90008": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 0.127,
+        "net_progress": 7.873,
+        "path_length": 12.012
+      },
+      "90009": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 48,
+        "time": 12.0,
+        "init_dist": 8.0,
+        "final_dist": 0.137,
+        "net_progress": 7.863,
+        "path_length": 10.553
+      },
+      "90010": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 0.807,
+        "net_progress": 7.193,
+        "path_length": 33.136
+      },
+      "90011": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 54,
+        "time": 13.5,
+        "init_dist": 8.0,
+        "final_dist": 0.227,
+        "net_progress": 7.773,
+        "path_length": 11.293
+      },
+      "90012": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 18,
+        "time": 4.5,
+        "init_dist": 8.0,
+        "final_dist": 5.758,
+        "net_progress": 2.242,
+        "path_length": 3.427
+      },
+      "90013": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 46,
+        "time": 11.5,
+        "init_dist": 8.0,
+        "final_dist": 0.266,
+        "net_progress": 7.734,
+        "path_length": 10.316
+      },
+      "90014": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 83,
+        "time": 20.75,
+        "init_dist": 8.0,
+        "final_dist": 0.174,
+        "net_progress": 7.826,
+        "path_length": 15.396
+      },
+      "90015": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 50,
+        "time": 12.5,
+        "init_dist": 8.0,
+        "final_dist": 0.18,
+        "net_progress": 7.82,
+        "path_length": 10.002
+      },
+      "90016": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "init_dist": 8.0,
+        "final_dist": 0.249,
+        "net_progress": 7.751,
+        "path_length": 11.686
+      },
+      "90017": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 71,
+        "time": 17.75,
+        "init_dist": 8.0,
+        "final_dist": 0.243,
+        "net_progress": 7.757,
+        "path_length": 14.736
+      },
+      "90018": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 109,
+        "time": 27.25,
+        "init_dist": 8.0,
+        "final_dist": 0.2,
+        "net_progress": 7.8,
+        "path_length": 25.637
+      },
+      "90019": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 21,
+        "time": 5.25,
+        "init_dist": 8.0,
+        "final_dist": 6.539,
+        "net_progress": 1.461,
+        "path_length": 3.813
+      },
+      "90020": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 9.025,
+        "net_progress": -1.025,
+        "path_length": 42.142
+      },
+      "90021": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 83,
+        "time": 20.75,
+        "init_dist": 8.0,
+        "final_dist": 0.199,
+        "net_progress": 7.801,
+        "path_length": 15.757
+      },
+      "90022": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.229,
+        "net_progress": 7.771,
+        "path_length": 10.869
+      },
+      "90023": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.239,
+        "net_progress": 7.761,
+        "path_length": 12.576
+      },
+      "90024": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 0.629,
+        "net_progress": 7.371,
+        "path_length": 28.967
+      },
+      "90025": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "init_dist": 8.0,
+        "final_dist": 0.247,
+        "net_progress": 7.753,
+        "path_length": 12.835
+      },
+      "90026": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 7,
+        "time": 1.75,
+        "init_dist": 8.0,
+        "final_dist": 6.898,
+        "net_progress": 1.102,
+        "path_length": 1.568
+      },
+      "90027": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 80,
+        "time": 20.0,
+        "init_dist": 8.0,
+        "final_dist": 0.208,
+        "net_progress": 7.792,
+        "path_length": 14.708
+      },
+      "90028": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 74,
+        "time": 18.5,
+        "init_dist": 8.0,
+        "final_dist": 0.206,
+        "net_progress": 7.794,
+        "path_length": 13.422
+      },
+      "90029": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 59,
+        "time": 14.75,
+        "init_dist": 8.0,
+        "final_dist": 0.234,
+        "net_progress": 7.766,
+        "path_length": 11.304
+      },
+      "90030": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 129,
+        "time": 32.25,
+        "init_dist": 8.0,
+        "final_dist": 0.223,
+        "net_progress": 7.777,
+        "path_length": 24.409
+      },
+      "90031": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 48,
+        "time": 12.0,
+        "init_dist": 8.0,
+        "final_dist": 0.188,
+        "net_progress": 7.812,
+        "path_length": 10.176
+      },
+      "90032": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "init_dist": 8.0,
+        "final_dist": 0.085,
+        "net_progress": 7.915,
+        "path_length": 12.831
+      },
+      "90033": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 0.106,
+        "net_progress": 7.894,
+        "path_length": 10.012
+      },
+      "90034": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 1.22,
+        "net_progress": 6.78,
+        "path_length": 27.782
+      },
+      "90035": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.23,
+        "net_progress": 7.77,
+        "path_length": 12.917
+      },
+      "90036": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 14,
+        "time": 3.5,
+        "init_dist": 8.0,
+        "final_dist": 6.971,
+        "net_progress": 1.029,
+        "path_length": 2.141
+      },
+      "90037": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 3.537,
+        "net_progress": 4.463,
+        "path_length": 19.548
+      },
+      "90038": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 54,
+        "time": 13.5,
+        "init_dist": 8.0,
+        "final_dist": 0.18,
+        "net_progress": 7.82,
+        "path_length": 9.299
+      },
+      "90039": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 75,
+        "time": 18.75,
+        "init_dist": 8.0,
+        "final_dist": 0.241,
+        "net_progress": 7.759,
+        "path_length": 13.831
+      },
+      "90040": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 59,
+        "time": 14.75,
+        "init_dist": 8.0,
+        "final_dist": 0.249,
+        "net_progress": 7.751,
+        "path_length": 12.632
+      },
+      "90041": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "init_dist": 8.0,
+        "final_dist": 0.095,
+        "net_progress": 7.905,
+        "path_length": 12.331
+      },
+      "90042": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "init_dist": 8.0,
+        "final_dist": 0.181,
+        "net_progress": 7.819,
+        "path_length": 12.74
+      },
+      "90043": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 3.28,
+        "net_progress": 4.72,
+        "path_length": 34.792
+      },
+      "90044": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 48,
+        "time": 12.0,
+        "init_dist": 8.0,
+        "final_dist": 0.187,
+        "net_progress": 7.813,
+        "path_length": 10.516
+      },
+      "90045": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 0.204,
+        "net_progress": 7.796,
+        "path_length": 11.434
+      },
+      "90046": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 54,
+        "time": 13.5,
+        "init_dist": 8.0,
+        "final_dist": 0.22,
+        "net_progress": 7.78,
+        "path_length": 11.096
+      },
+      "90047": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "init_dist": 8.0,
+        "final_dist": 27.187,
+        "net_progress": -19.187,
+        "path_length": 46.935
+      },
+      "90048": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 0.229,
+        "net_progress": 7.771,
+        "path_length": 10.575
+      },
+      "90049": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 74,
+        "time": 18.5,
+        "init_dist": 8.0,
+        "final_dist": 0.185,
+        "net_progress": 7.815,
+        "path_length": 14.375
+      }
+    },
+    "forensics": {
+      "90000": {
+        "final_d_goal": 0.631,
+        "last10s_path": 6.175,
+        "last10s_disp": 0.264,
+        "last10s_mean_speed": 0.639,
+        "oscillation_ratio": 23.4,
+        "category": "GOAL_MOUTH_OSCILLATION"
+      },
+      "90005": {
+        "final_d_goal": 0.572,
+        "last10s_path": 5.449,
+        "last10s_disp": 0.088,
+        "last10s_mean_speed": 0.557,
+        "oscillation_ratio": 61.7,
+        "category": "GOAL_MOUTH_OSCILLATION"
+      },
+      "90010": {
+        "final_d_goal": 0.807,
+        "last10s_path": 5.671,
+        "last10s_disp": 0.194,
+        "last10s_mean_speed": 0.576,
+        "oscillation_ratio": 29.2,
+        "category": "GOAL_MOUTH_OSCILLATION"
+      },
+      "90020": {
+        "final_d_goal": 9.025,
+        "last10s_path": 8.704,
+        "last10s_disp": 1.659,
+        "last10s_mean_speed": 0.895,
+        "oscillation_ratio": 5.2,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90024": {
+        "final_d_goal": 0.629,
+        "last10s_path": 5.032,
+        "last10s_disp": 0.197,
+        "last10s_mean_speed": 0.518,
+        "oscillation_ratio": 25.6,
+        "category": "GOAL_MOUTH_OSCILLATION"
+      },
+      "90034": {
+        "final_d_goal": 1.22,
+        "last10s_path": 3.944,
+        "last10s_disp": 0.096,
+        "last10s_mean_speed": 0.404,
+        "oscillation_ratio": 41.1,
+        "category": "GOAL_MOUTH_OSCILLATION"
+      },
+      "90037": {
+        "final_d_goal": 3.537,
+        "last10s_path": 1.658,
+        "last10s_disp": 0.268,
+        "last10s_mean_speed": 0.168,
+        "oscillation_ratio": 6.2,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90043": {
+        "final_d_goal": 3.28,
+        "last10s_path": 6.921,
+        "last10s_disp": 1.438,
+        "last10s_mean_speed": 0.715,
+        "oscillation_ratio": 4.8,
+        "category": "DRIFT_OR_WANDER"
+      },
+      "90047": {
+        "final_d_goal": 27.187,
+        "last10s_path": 9.689,
+        "last10s_disp": 9.629,
+        "last10s_mean_speed": 0.994,
+        "oscillation_ratio": 1.0,
+        "category": "DRIFT_OR_WANDER"
+      }
+    }
+  }
+}

@@ -1,0 +1,918 @@
+{
+  "base": {
+    "sr": 68.0,
+    "cr": 10.0,
+    "tr": 22.0,
+    "mean_time": 18.683823529411764,
+    "cases": {
+      "90050": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 4.771,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90051": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 7,
+        "time": 1.75,
+        "final_dist": 8.186,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90052": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 83,
+        "time": 20.75,
+        "final_dist": 0.249,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90053": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 5.919,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90054": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.19,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90055": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 94,
+        "time": 23.5,
+        "final_dist": 0.24,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90056": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "final_dist": 0.246,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90057": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 77,
+        "time": 19.25,
+        "final_dist": 0.249,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90058": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 73,
+        "time": 18.25,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90059": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.2,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90060": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.839,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90061": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "final_dist": 0.15,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90062": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 65,
+        "time": 16.25,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90063": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 77,
+        "time": 19.25,
+        "final_dist": 0.228,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90064": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 79,
+        "time": 19.75,
+        "final_dist": 0.246,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90065": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 2.803,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90066": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 2.335,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90067": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 140,
+        "time": 35.0,
+        "final_dist": 0.249,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90068": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.198,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90069": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 3.163,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90070": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 16,
+        "time": 4.0,
+        "final_dist": 6.672,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90071": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 79,
+        "time": 19.75,
+        "final_dist": 0.102,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90072": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.74,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90073": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 47,
+        "time": 11.75,
+        "final_dist": 0.282,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90074": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "final_dist": 0.247,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90075": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 175,
+        "time": 43.75,
+        "final_dist": 0.26,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90076": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 133,
+        "time": 33.25,
+        "final_dist": 0.192,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90077": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.24,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90078": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.395,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90079": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "final_dist": 0.233,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90080": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 73,
+        "time": 18.25,
+        "final_dist": 0.203,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90081": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 132,
+        "time": 33.0,
+        "final_dist": 0.226,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90082": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 10,
+        "time": 2.5,
+        "final_dist": 7.48,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90083": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 49,
+        "time": 12.25,
+        "final_dist": 0.228,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90084": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "final_dist": 0.233,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90085": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 16,
+        "time": 4.0,
+        "final_dist": 6.841,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90086": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 17,
+        "time": 4.25,
+        "final_dist": 7.616,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90087": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 7.897,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90088": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.238,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90089": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 6.624,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90090": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.242,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90091": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 55,
+        "time": 13.75,
+        "final_dist": 0.183,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90092": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 51,
+        "time": 12.75,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90093": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "final_dist": 0.202,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90094": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.224,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90095": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 75,
+        "time": 18.75,
+        "final_dist": 0.23,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90096": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.105,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90097": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 66,
+        "time": 16.5,
+        "final_dist": 0.241,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90098": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 4.801,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90099": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 71,
+        "time": 17.75,
+        "final_dist": 0.155,
+        "triggers": 0,
+        "aborts": 0
+      }
+    }
+  },
+  "et_acr": {
+    "sr": 70.0,
+    "cr": 10.0,
+    "tr": 20.0,
+    "mean_time": 19.07857142857143,
+    "cases": {
+      "90050": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 4.08,
+        "triggers": 3,
+        "aborts": 0
+      },
+      "90051": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 7,
+        "time": 1.75,
+        "final_dist": 8.186,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90052": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 83,
+        "time": 20.75,
+        "final_dist": 0.249,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90053": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 5.61,
+        "triggers": 3,
+        "aborts": 0
+      },
+      "90054": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.19,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90055": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 94,
+        "time": 23.5,
+        "final_dist": 0.231,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90056": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 64,
+        "time": 16.0,
+        "final_dist": 0.246,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90057": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 77,
+        "time": 19.25,
+        "final_dist": 0.249,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90058": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 73,
+        "time": 18.25,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90059": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.2,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90060": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.489,
+        "triggers": 2,
+        "aborts": 0
+      },
+      "90061": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "final_dist": 0.116,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90062": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 65,
+        "time": 16.25,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90063": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 77,
+        "time": 19.25,
+        "final_dist": 0.228,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90064": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 79,
+        "time": 19.75,
+        "final_dist": 0.246,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90065": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 2.725,
+        "triggers": 7,
+        "aborts": 0
+      },
+      "90066": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 2.63,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90067": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 175,
+        "time": 43.75,
+        "final_dist": 0.247,
+        "triggers": 3,
+        "aborts": 0
+      },
+      "90068": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.198,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90069": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 3.163,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90070": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 16,
+        "time": 4.0,
+        "final_dist": 6.672,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90071": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 79,
+        "time": 19.75,
+        "final_dist": 0.102,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90072": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.584,
+        "triggers": 4,
+        "aborts": 0
+      },
+      "90073": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 47,
+        "time": 11.75,
+        "final_dist": 0.282,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90074": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 63,
+        "time": 15.75,
+        "final_dist": 0.247,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90075": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 173,
+        "time": 43.25,
+        "final_dist": 0.205,
+        "triggers": 4,
+        "aborts": 1
+      },
+      "90076": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 133,
+        "time": 33.25,
+        "final_dist": 0.192,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90077": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.24,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90078": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 1.475,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90079": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 61,
+        "time": 15.25,
+        "final_dist": 0.233,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90080": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 73,
+        "time": 18.25,
+        "final_dist": 0.246,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90081": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 132,
+        "time": 33.0,
+        "final_dist": 0.226,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90082": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 10,
+        "time": 2.5,
+        "final_dist": 7.48,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90083": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 49,
+        "time": 12.25,
+        "final_dist": 0.228,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90084": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "final_dist": 0.233,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90085": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 16,
+        "time": 4.0,
+        "final_dist": 6.841,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90086": {
+        "outcome": "COLLISION",
+        "event": "collision",
+        "steps": 17,
+        "time": 4.25,
+        "final_dist": 7.616,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90087": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 7.129,
+        "triggers": 7,
+        "aborts": 0
+      },
+      "90088": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.238,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90089": {
+        "outcome": "TIMEOUT",
+        "event": "timeout",
+        "steps": 201,
+        "time": 50.25,
+        "final_dist": 8.229,
+        "triggers": 6,
+        "aborts": 0
+      },
+      "90090": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.242,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90091": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 55,
+        "time": 13.75,
+        "final_dist": 0.183,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90092": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 51,
+        "time": 12.75,
+        "final_dist": 0.232,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90093": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 62,
+        "time": 15.5,
+        "final_dist": 0.202,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90094": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 57,
+        "time": 14.25,
+        "final_dist": 0.224,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90095": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 75,
+        "time": 18.75,
+        "final_dist": 0.23,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90096": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 60,
+        "time": 15.0,
+        "final_dist": 0.105,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90097": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 66,
+        "time": 16.5,
+        "final_dist": 0.241,
+        "triggers": 0,
+        "aborts": 0
+      },
+      "90098": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 98,
+        "time": 24.5,
+        "final_dist": 0.197,
+        "triggers": 1,
+        "aborts": 0
+      },
+      "90099": {
+        "outcome": "SUCCESS",
+        "event": "reach_goal",
+        "steps": 71,
+        "time": 17.75,
+        "final_dist": 0.155,
+        "triggers": 0,
+        "aborts": 0
+      }
+    }
+  }
+}

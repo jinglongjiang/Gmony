@@ -1,0 +1,4052 @@
+{
+  "Base_DualStream_B1": {
+    "sr": 76.0,
+    "cr": 4.0,
+    "tr": 20.0,
+    "sor": 11.0,
+    "mean_time": 18.61,
+    "elapsed_sec": 159.6,
+    "cases": [
+      {
+        "case_id": 90150,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.076
+      },
+      {
+        "case_id": 90151,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.134
+      },
+      {
+        "case_id": 90152,
+        "outcome": "SUCCESS",
+        "time": 26.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.047
+      },
+      {
+        "case_id": 90153,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90154,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.19
+      },
+      {
+        "case_id": 90155,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.085
+      },
+      {
+        "case_id": 90156,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.166
+      },
+      {
+        "case_id": 90157,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.178
+      },
+      {
+        "case_id": 90158,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.119
+      },
+      {
+        "case_id": 90159,
+        "outcome": "SUCCESS",
+        "time": 22.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.208
+      },
+      {
+        "case_id": 90160,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.195
+      },
+      {
+        "case_id": 90161,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.136
+      },
+      {
+        "case_id": 90162,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90163,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.075
+      },
+      {
+        "case_id": 90164,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.129
+      },
+      {
+        "case_id": 90165,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.081
+      },
+      {
+        "case_id": 90166,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.025
+      },
+      {
+        "case_id": 90167,
+        "outcome": "SUCCESS",
+        "time": 25.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.057
+      },
+      {
+        "case_id": 90168,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.131
+      },
+      {
+        "case_id": 90169,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.127
+      },
+      {
+        "case_id": 90170,
+        "outcome": "SUCCESS",
+        "time": 34.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90171,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.087
+      },
+      {
+        "case_id": 90172,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.21
+      },
+      {
+        "case_id": 90173,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90174,
+        "outcome": "SUCCESS",
+        "time": 11.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90175,
+        "outcome": "SUCCESS",
+        "time": 44.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.091
+      },
+      {
+        "case_id": 90176,
+        "outcome": "SUCCESS",
+        "time": 40.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90177,
+        "outcome": "SUCCESS",
+        "time": 25.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.126
+      },
+      {
+        "case_id": 90178,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.209
+      },
+      {
+        "case_id": 90179,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90180,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90181,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90182,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90183,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90184,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.109
+      },
+      {
+        "case_id": 90185,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.061
+      },
+      {
+        "case_id": 90186,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90187,
+        "outcome": "COLLISION",
+        "time": 5.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.08
+      },
+      {
+        "case_id": 90188,
+        "outcome": "SUCCESS",
+        "time": 25.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.171
+      },
+      {
+        "case_id": 90189,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.169
+      },
+      {
+        "case_id": 90190,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.206
+      },
+      {
+        "case_id": 90191,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.172
+      },
+      {
+        "case_id": 90192,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.115
+      },
+      {
+        "case_id": 90193,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.197
+      },
+      {
+        "case_id": 90194,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90195,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90196,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.101
+      },
+      {
+        "case_id": 90197,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.186
+      },
+      {
+        "case_id": 90198,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90199,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.193
+      },
+      {
+        "case_id": 90200,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90201,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90202,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90203,
+        "outcome": "SUCCESS",
+        "time": 32.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90204,
+        "outcome": "COLLISION",
+        "time": 6.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.036
+      },
+      {
+        "case_id": 90205,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.167
+      },
+      {
+        "case_id": 90206,
+        "outcome": "SUCCESS",
+        "time": 21.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90207,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.198
+      },
+      {
+        "case_id": 90208,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.207
+      },
+      {
+        "case_id": 90209,
+        "outcome": "SUCCESS",
+        "time": 13.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.156
+      },
+      {
+        "case_id": 90210,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.078
+      },
+      {
+        "case_id": 90211,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.164
+      },
+      {
+        "case_id": 90212,
+        "outcome": "COLLISION",
+        "time": 2.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.038
+      },
+      {
+        "case_id": 90213,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.218
+      },
+      {
+        "case_id": 90214,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90215,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.098
+      },
+      {
+        "case_id": 90216,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.015
+      },
+      {
+        "case_id": 90217,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.175
+      },
+      {
+        "case_id": 90218,
+        "outcome": "SUCCESS",
+        "time": 11.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90219,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90220,
+        "outcome": "SUCCESS",
+        "time": 25.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90221,
+        "outcome": "SUCCESS",
+        "time": 35.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.214
+      },
+      {
+        "case_id": 90222,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.152
+      },
+      {
+        "case_id": 90223,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.215
+      },
+      {
+        "case_id": 90224,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.213
+      },
+      {
+        "case_id": 90225,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90226,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.108
+      },
+      {
+        "case_id": 90227,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.187
+      },
+      {
+        "case_id": 90228,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.014
+      },
+      {
+        "case_id": 90229,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90230,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90231,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.122
+      },
+      {
+        "case_id": 90232,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.13
+      },
+      {
+        "case_id": 90233,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90234,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90235,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90236,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90237,
+        "outcome": "SUCCESS",
+        "time": 20.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.104
+      },
+      {
+        "case_id": 90238,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.086
+      },
+      {
+        "case_id": 90239,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90240,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.209
+      },
+      {
+        "case_id": 90241,
+        "outcome": "COLLISION",
+        "time": 2.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": -0.002
+      },
+      {
+        "case_id": 90242,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.12
+      },
+      {
+        "case_id": 90243,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.192
+      },
+      {
+        "case_id": 90244,
+        "outcome": "SUCCESS",
+        "time": 11.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90245,
+        "outcome": "SUCCESS",
+        "time": 24.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.118
+      },
+      {
+        "case_id": 90246,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.095
+      },
+      {
+        "case_id": 90247,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.151
+      },
+      {
+        "case_id": 90248,
+        "outcome": "SUCCESS",
+        "time": 26.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.109
+      },
+      {
+        "case_id": 90249,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.193
+      }
+    ]
+  },
+  "Fixed_Dwell4_B3": {
+    "sr": 71.0,
+    "cr": 13.0,
+    "tr": 16.0,
+    "sor": 13.0,
+    "mean_time": 16.24,
+    "elapsed_sec": 139.3,
+    "cases": [
+      {
+        "case_id": 90150,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.155
+      },
+      {
+        "case_id": 90151,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.043
+      },
+      {
+        "case_id": 90152,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.033
+      },
+      {
+        "case_id": 90153,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.188
+      },
+      {
+        "case_id": 90154,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90155,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.019
+      },
+      {
+        "case_id": 90156,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.062
+      },
+      {
+        "case_id": 90157,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.035
+      },
+      {
+        "case_id": 90158,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.153
+      },
+      {
+        "case_id": 90159,
+        "outcome": "SUCCESS",
+        "time": 24.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.035
+      },
+      {
+        "case_id": 90160,
+        "outcome": "SUCCESS",
+        "time": 23.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.14
+      },
+      {
+        "case_id": 90161,
+        "outcome": "SUCCESS",
+        "time": 13.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.149
+      },
+      {
+        "case_id": 90162,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90163,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.125
+      },
+      {
+        "case_id": 90164,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.092
+      },
+      {
+        "case_id": 90165,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.138
+      },
+      {
+        "case_id": 90166,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.103
+      },
+      {
+        "case_id": 90167,
+        "outcome": "SUCCESS",
+        "time": 19.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.185
+      },
+      {
+        "case_id": 90168,
+        "outcome": "COLLISION",
+        "time": 4.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.006
+      },
+      {
+        "case_id": 90169,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.168
+      },
+      {
+        "case_id": 90170,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.117
+      },
+      {
+        "case_id": 90171,
+        "outcome": "SUCCESS",
+        "time": 22.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.054
+      },
+      {
+        "case_id": 90172,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.093
+      },
+      {
+        "case_id": 90173,
+        "outcome": "SUCCESS",
+        "time": 12.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.17
+      },
+      {
+        "case_id": 90174,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.196
+      },
+      {
+        "case_id": 90175,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90176,
+        "outcome": "SUCCESS",
+        "time": 11.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.159
+      },
+      {
+        "case_id": 90177,
+        "outcome": "COLLISION",
+        "time": 3.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.062
+      },
+      {
+        "case_id": 90178,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.14
+      },
+      {
+        "case_id": 90179,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.179
+      },
+      {
+        "case_id": 90180,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.102
+      },
+      {
+        "case_id": 90181,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.176
+      },
+      {
+        "case_id": 90182,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.089
+      },
+      {
+        "case_id": 90183,
+        "outcome": "SUCCESS",
+        "time": 24.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.153
+      },
+      {
+        "case_id": 90184,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.144
+      },
+      {
+        "case_id": 90185,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.113
+      },
+      {
+        "case_id": 90186,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90187,
+        "outcome": "COLLISION",
+        "time": 2.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90188,
+        "outcome": "SUCCESS",
+        "time": 24.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.123
+      },
+      {
+        "case_id": 90189,
+        "outcome": "COLLISION",
+        "time": 6.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.003
+      },
+      {
+        "case_id": 90190,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.196
+      },
+      {
+        "case_id": 90191,
+        "outcome": "SUCCESS",
+        "time": 11.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90192,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.176
+      },
+      {
+        "case_id": 90193,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90194,
+        "outcome": "SUCCESS",
+        "time": 21.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90195,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.099
+      },
+      {
+        "case_id": 90196,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.117
+      },
+      {
+        "case_id": 90197,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.029
+      },
+      {
+        "case_id": 90198,
+        "outcome": "SUCCESS",
+        "time": 13.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.146
+      },
+      {
+        "case_id": 90199,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.152
+      },
+      {
+        "case_id": 90200,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.033
+      },
+      {
+        "case_id": 90201,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.126
+      },
+      {
+        "case_id": 90202,
+        "outcome": "COLLISION",
+        "time": 3.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.049
+      },
+      {
+        "case_id": 90203,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.195
+      },
+      {
+        "case_id": 90204,
+        "outcome": "COLLISION",
+        "time": 5.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.157
+      },
+      {
+        "case_id": 90205,
+        "outcome": "COLLISION",
+        "time": 5.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.023
+      },
+      {
+        "case_id": 90206,
+        "outcome": "SUCCESS",
+        "time": 22.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90207,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.067
+      },
+      {
+        "case_id": 90208,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90209,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90210,
+        "outcome": "COLLISION",
+        "time": 5.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.029
+      },
+      {
+        "case_id": 90211,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.027
+      },
+      {
+        "case_id": 90212,
+        "outcome": "SUCCESS",
+        "time": 11.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.183
+      },
+      {
+        "case_id": 90213,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.072
+      },
+      {
+        "case_id": 90214,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.08
+      },
+      {
+        "case_id": 90215,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.142
+      },
+      {
+        "case_id": 90216,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.03
+      },
+      {
+        "case_id": 90217,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.016
+      },
+      {
+        "case_id": 90218,
+        "outcome": "COLLISION",
+        "time": 5.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.016
+      },
+      {
+        "case_id": 90219,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90220,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.127
+      },
+      {
+        "case_id": 90221,
+        "outcome": "SUCCESS",
+        "time": 24.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.043
+      },
+      {
+        "case_id": 90222,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90223,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.15
+      },
+      {
+        "case_id": 90224,
+        "outcome": "SUCCESS",
+        "time": 11.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.214
+      },
+      {
+        "case_id": 90225,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.184
+      },
+      {
+        "case_id": 90226,
+        "outcome": "SUCCESS",
+        "time": 21.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.171
+      },
+      {
+        "case_id": 90227,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90228,
+        "outcome": "SUCCESS",
+        "time": 11.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.111
+      },
+      {
+        "case_id": 90229,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.198
+      },
+      {
+        "case_id": 90230,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90231,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.188
+      },
+      {
+        "case_id": 90232,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.212
+      },
+      {
+        "case_id": 90233,
+        "outcome": "COLLISION",
+        "time": 4.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.046
+      },
+      {
+        "case_id": 90234,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.084
+      },
+      {
+        "case_id": 90235,
+        "outcome": "COLLISION",
+        "time": 4.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.018
+      },
+      {
+        "case_id": 90236,
+        "outcome": "COLLISION",
+        "time": 5.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.064
+      },
+      {
+        "case_id": 90237,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.193
+      },
+      {
+        "case_id": 90238,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.116
+      },
+      {
+        "case_id": 90239,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90240,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.002
+      },
+      {
+        "case_id": 90241,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.186
+      },
+      {
+        "case_id": 90242,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.083
+      },
+      {
+        "case_id": 90243,
+        "outcome": "SUCCESS",
+        "time": 11.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.21
+      },
+      {
+        "case_id": 90244,
+        "outcome": "COLLISION",
+        "time": 4.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90245,
+        "outcome": "SUCCESS",
+        "time": 24.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90246,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.076
+      },
+      {
+        "case_id": 90247,
+        "outcome": "SUCCESS",
+        "time": 13.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.142
+      },
+      {
+        "case_id": 90248,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.156
+      },
+      {
+        "case_id": 90249,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.035
+      }
+    ]
+  },
+  "Unconditional_LICS_B2": {
+    "sr": 77.0,
+    "cr": 13.0,
+    "tr": 10.0,
+    "sor": 8.0,
+    "mean_time": 17.55,
+    "elapsed_sec": 181.7,
+    "cases": [
+      {
+        "case_id": 90150,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.048
+      },
+      {
+        "case_id": 90151,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.043
+      },
+      {
+        "case_id": 90152,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.009
+      },
+      {
+        "case_id": 90153,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.147
+      },
+      {
+        "case_id": 90154,
+        "outcome": "SUCCESS",
+        "time": 24.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.129
+      },
+      {
+        "case_id": 90155,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.169
+      },
+      {
+        "case_id": 90156,
+        "outcome": "SUCCESS",
+        "time": 22.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.052
+      },
+      {
+        "case_id": 90157,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.054
+      },
+      {
+        "case_id": 90158,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.169
+      },
+      {
+        "case_id": 90159,
+        "outcome": "SUCCESS",
+        "time": 35.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.111
+      },
+      {
+        "case_id": 90160,
+        "outcome": "COLLISION",
+        "time": 5.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.016
+      },
+      {
+        "case_id": 90161,
+        "outcome": "COLLISION",
+        "time": 6.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.013
+      },
+      {
+        "case_id": 90162,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90163,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.081
+      },
+      {
+        "case_id": 90164,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.092
+      },
+      {
+        "case_id": 90165,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.152
+      },
+      {
+        "case_id": 90166,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.148
+      },
+      {
+        "case_id": 90167,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.096
+      },
+      {
+        "case_id": 90168,
+        "outcome": "COLLISION",
+        "time": 4.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.007
+      },
+      {
+        "case_id": 90169,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.143
+      },
+      {
+        "case_id": 90170,
+        "outcome": "SUCCESS",
+        "time": 22.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.175
+      },
+      {
+        "case_id": 90171,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.132
+      },
+      {
+        "case_id": 90172,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.097
+      },
+      {
+        "case_id": 90173,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.099
+      },
+      {
+        "case_id": 90174,
+        "outcome": "SUCCESS",
+        "time": 22.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.122
+      },
+      {
+        "case_id": 90175,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.163
+      },
+      {
+        "case_id": 90176,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.079
+      },
+      {
+        "case_id": 90177,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90178,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90179,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.184
+      },
+      {
+        "case_id": 90180,
+        "outcome": "SUCCESS",
+        "time": 13.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90181,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.176
+      },
+      {
+        "case_id": 90182,
+        "outcome": "COLLISION",
+        "time": 6.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.018
+      },
+      {
+        "case_id": 90183,
+        "outcome": "SUCCESS",
+        "time": 27.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.136
+      },
+      {
+        "case_id": 90184,
+        "outcome": "COLLISION",
+        "time": 3.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.04
+      },
+      {
+        "case_id": 90185,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.062
+      },
+      {
+        "case_id": 90186,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.075
+      },
+      {
+        "case_id": 90187,
+        "outcome": "COLLISION",
+        "time": 2.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.048
+      },
+      {
+        "case_id": 90188,
+        "outcome": "SUCCESS",
+        "time": 21.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.024
+      },
+      {
+        "case_id": 90189,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.195
+      },
+      {
+        "case_id": 90190,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.084
+      },
+      {
+        "case_id": 90191,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90192,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90193,
+        "outcome": "SUCCESS",
+        "time": 18.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90194,
+        "outcome": "SUCCESS",
+        "time": 29.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90195,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.098
+      },
+      {
+        "case_id": 90196,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.086
+      },
+      {
+        "case_id": 90197,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.053
+      },
+      {
+        "case_id": 90198,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90199,
+        "outcome": "SUCCESS",
+        "time": 11.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.144
+      },
+      {
+        "case_id": 90200,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90201,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.145
+      },
+      {
+        "case_id": 90202,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.148
+      },
+      {
+        "case_id": 90203,
+        "outcome": "SUCCESS",
+        "time": 10.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.123
+      },
+      {
+        "case_id": 90204,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.184
+      },
+      {
+        "case_id": 90205,
+        "outcome": "SUCCESS",
+        "time": 11.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90206,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90207,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.163
+      },
+      {
+        "case_id": 90208,
+        "outcome": "SUCCESS",
+        "time": 22.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.198
+      },
+      {
+        "case_id": 90209,
+        "outcome": "SUCCESS",
+        "time": 22.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.13
+      },
+      {
+        "case_id": 90210,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90211,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90212,
+        "outcome": "SUCCESS",
+        "time": 12.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.167
+      },
+      {
+        "case_id": 90213,
+        "outcome": "COLLISION",
+        "time": 2.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90214,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.018
+      },
+      {
+        "case_id": 90215,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90216,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.09
+      },
+      {
+        "case_id": 90217,
+        "outcome": "COLLISION",
+        "time": 3.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.031
+      },
+      {
+        "case_id": 90218,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.162
+      },
+      {
+        "case_id": 90219,
+        "outcome": "COLLISION",
+        "time": 3.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": -0.013
+      },
+      {
+        "case_id": 90220,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.185
+      },
+      {
+        "case_id": 90221,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.17
+      },
+      {
+        "case_id": 90222,
+        "outcome": "SUCCESS",
+        "time": 18.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.105
+      },
+      {
+        "case_id": 90223,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.038
+      },
+      {
+        "case_id": 90224,
+        "outcome": "COLLISION",
+        "time": 3.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90225,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.206
+      },
+      {
+        "case_id": 90226,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.153
+      },
+      {
+        "case_id": 90227,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.198
+      },
+      {
+        "case_id": 90228,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.075
+      },
+      {
+        "case_id": 90229,
+        "outcome": "SUCCESS",
+        "time": 22.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.197
+      },
+      {
+        "case_id": 90230,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.205
+      },
+      {
+        "case_id": 90231,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.196
+      },
+      {
+        "case_id": 90232,
+        "outcome": "SUCCESS",
+        "time": 25.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.126
+      },
+      {
+        "case_id": 90233,
+        "outcome": "COLLISION",
+        "time": 5.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": -0.009
+      },
+      {
+        "case_id": 90234,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.005
+      },
+      {
+        "case_id": 90235,
+        "outcome": "SUCCESS",
+        "time": 24.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.162
+      },
+      {
+        "case_id": 90236,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.065
+      },
+      {
+        "case_id": 90237,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.109
+      },
+      {
+        "case_id": 90238,
+        "outcome": "COLLISION",
+        "time": 3.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.006
+      },
+      {
+        "case_id": 90239,
+        "outcome": "SUCCESS",
+        "time": 13.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90240,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.039
+      },
+      {
+        "case_id": 90241,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.009
+      },
+      {
+        "case_id": 90242,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.088
+      },
+      {
+        "case_id": 90243,
+        "outcome": "SUCCESS",
+        "time": 11.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.21
+      },
+      {
+        "case_id": 90244,
+        "outcome": "COLLISION",
+        "time": 4.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90245,
+        "outcome": "SUCCESS",
+        "time": 22.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90246,
+        "outcome": "SUCCESS",
+        "time": 18.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90247,
+        "outcome": "SUCCESS",
+        "time": 13.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.08
+      },
+      {
+        "case_id": 90248,
+        "outcome": "SUCCESS",
+        "time": 23.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90249,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.035
+      }
+    ]
+  },
+  "BoundaryGated_LICS": {
+    "sr": 79.0,
+    "cr": 4.0,
+    "tr": 17.0,
+    "sor": 11.0,
+    "mean_time": 19.05,
+    "elapsed_sec": 167.0,
+    "cases": [
+      {
+        "case_id": 90150,
+        "outcome": "SUCCESS",
+        "time": 20.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.076
+      },
+      {
+        "case_id": 90151,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.134
+      },
+      {
+        "case_id": 90152,
+        "outcome": "SUCCESS",
+        "time": 26.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.047
+      },
+      {
+        "case_id": 90153,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90154,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.19
+      },
+      {
+        "case_id": 90155,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.085
+      },
+      {
+        "case_id": 90156,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.166
+      },
+      {
+        "case_id": 90157,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.178
+      },
+      {
+        "case_id": 90158,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.119
+      },
+      {
+        "case_id": 90159,
+        "outcome": "SUCCESS",
+        "time": 24.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90160,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90161,
+        "outcome": "SUCCESS",
+        "time": 33.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.136
+      },
+      {
+        "case_id": 90162,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90163,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.075
+      },
+      {
+        "case_id": 90164,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.129
+      },
+      {
+        "case_id": 90165,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.081
+      },
+      {
+        "case_id": 90166,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.025
+      },
+      {
+        "case_id": 90167,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.057
+      },
+      {
+        "case_id": 90168,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.131
+      },
+      {
+        "case_id": 90169,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.127
+      },
+      {
+        "case_id": 90170,
+        "outcome": "SUCCESS",
+        "time": 45.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90171,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.087
+      },
+      {
+        "case_id": 90172,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.21
+      },
+      {
+        "case_id": 90173,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90174,
+        "outcome": "SUCCESS",
+        "time": 11.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90175,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.091
+      },
+      {
+        "case_id": 90176,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90177,
+        "outcome": "SUCCESS",
+        "time": 26.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.126
+      },
+      {
+        "case_id": 90178,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.209
+      },
+      {
+        "case_id": 90179,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90180,
+        "outcome": "SUCCESS",
+        "time": 21.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90181,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90182,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90183,
+        "outcome": "SUCCESS",
+        "time": 30.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90184,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.109
+      },
+      {
+        "case_id": 90185,
+        "outcome": "SUCCESS",
+        "time": 13.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.061
+      },
+      {
+        "case_id": 90186,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90187,
+        "outcome": "COLLISION",
+        "time": 5.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.08
+      },
+      {
+        "case_id": 90188,
+        "outcome": "SUCCESS",
+        "time": 33.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.142
+      },
+      {
+        "case_id": 90189,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.169
+      },
+      {
+        "case_id": 90190,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.206
+      },
+      {
+        "case_id": 90191,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.172
+      },
+      {
+        "case_id": 90192,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.115
+      },
+      {
+        "case_id": 90193,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.197
+      },
+      {
+        "case_id": 90194,
+        "outcome": "SUCCESS",
+        "time": 31.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.137
+      },
+      {
+        "case_id": 90195,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90196,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.101
+      },
+      {
+        "case_id": 90197,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.186
+      },
+      {
+        "case_id": 90198,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90199,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.193
+      },
+      {
+        "case_id": 90200,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90201,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90202,
+        "outcome": "SUCCESS",
+        "time": 23.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90203,
+        "outcome": "SUCCESS",
+        "time": 32.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90204,
+        "outcome": "COLLISION",
+        "time": 6.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.036
+      },
+      {
+        "case_id": 90205,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.167
+      },
+      {
+        "case_id": 90206,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.194
+      },
+      {
+        "case_id": 90207,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.162
+      },
+      {
+        "case_id": 90208,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90209,
+        "outcome": "SUCCESS",
+        "time": 13.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.156
+      },
+      {
+        "case_id": 90210,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.078
+      },
+      {
+        "case_id": 90211,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.164
+      },
+      {
+        "case_id": 90212,
+        "outcome": "COLLISION",
+        "time": 2.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.038
+      },
+      {
+        "case_id": 90213,
+        "outcome": "SUCCESS",
+        "time": 12.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.218
+      },
+      {
+        "case_id": 90214,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90215,
+        "outcome": "SUCCESS",
+        "time": 24.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.098
+      },
+      {
+        "case_id": 90216,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.015
+      },
+      {
+        "case_id": 90217,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.175
+      },
+      {
+        "case_id": 90218,
+        "outcome": "SUCCESS",
+        "time": 11.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90219,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90220,
+        "outcome": "SUCCESS",
+        "time": 25.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90221,
+        "outcome": "SUCCESS",
+        "time": 33.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90222,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.152
+      },
+      {
+        "case_id": 90223,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.215
+      },
+      {
+        "case_id": 90224,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90225,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90226,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.108
+      },
+      {
+        "case_id": 90227,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.187
+      },
+      {
+        "case_id": 90228,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.014
+      },
+      {
+        "case_id": 90229,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90230,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90231,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.122
+      },
+      {
+        "case_id": 90232,
+        "outcome": "SUCCESS",
+        "time": 23.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.13
+      },
+      {
+        "case_id": 90233,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90234,
+        "outcome": "SUCCESS",
+        "time": 40.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90235,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90236,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90237,
+        "outcome": "SUCCESS",
+        "time": 20.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.104
+      },
+      {
+        "case_id": 90238,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.086
+      },
+      {
+        "case_id": 90239,
+        "outcome": "SUCCESS",
+        "time": 20.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90240,
+        "outcome": "SUCCESS",
+        "time": 14.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.209
+      },
+      {
+        "case_id": 90241,
+        "outcome": "COLLISION",
+        "time": 2.0,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": -0.002
+      },
+      {
+        "case_id": 90242,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.12
+      },
+      {
+        "case_id": 90243,
+        "outcome": "SUCCESS",
+        "time": 20.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.192
+      },
+      {
+        "case_id": 90244,
+        "outcome": "SUCCESS",
+        "time": 11.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90245,
+        "outcome": "SUCCESS",
+        "time": 24.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.118
+      },
+      {
+        "case_id": 90246,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.095
+      },
+      {
+        "case_id": 90247,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.151
+      },
+      {
+        "case_id": 90248,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.045
+      },
+      {
+        "case_id": 90249,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.043
+      }
+    ]
+  },
+  "BoundaryGated_FixedDwell": {
+    "sr": 77.0,
+    "cr": 3.0,
+    "tr": 20.0,
+    "sor": 10.0,
+    "mean_time": 20.05,
+    "elapsed_sec": 177.2,
+    "cases": [
+      {
+        "case_id": 90150,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.049
+      },
+      {
+        "case_id": 90151,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.178
+      },
+      {
+        "case_id": 90152,
+        "outcome": "SUCCESS",
+        "time": 22.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.035
+      },
+      {
+        "case_id": 90153,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90154,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90155,
+        "outcome": "SUCCESS",
+        "time": 37.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.091
+      },
+      {
+        "case_id": 90156,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90157,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.167
+      },
+      {
+        "case_id": 90158,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90159,
+        "outcome": "SUCCESS",
+        "time": 23.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90160,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90161,
+        "outcome": "SUCCESS",
+        "time": 23.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.117
+      },
+      {
+        "case_id": 90162,
+        "outcome": "SUCCESS",
+        "time": 15.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.212
+      },
+      {
+        "case_id": 90163,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90164,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90165,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.107
+      },
+      {
+        "case_id": 90166,
+        "outcome": "SUCCESS",
+        "time": 18.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.087
+      },
+      {
+        "case_id": 90167,
+        "outcome": "SUCCESS",
+        "time": 19.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.199
+      },
+      {
+        "case_id": 90168,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90169,
+        "outcome": "SUCCESS",
+        "time": 32.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.213
+      },
+      {
+        "case_id": 90170,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.148
+      },
+      {
+        "case_id": 90171,
+        "outcome": "SUCCESS",
+        "time": 35.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.152
+      },
+      {
+        "case_id": 90172,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.207
+      },
+      {
+        "case_id": 90173,
+        "outcome": "SUCCESS",
+        "time": 24.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.19
+      },
+      {
+        "case_id": 90174,
+        "outcome": "COLLISION",
+        "time": 8.25,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.001
+      },
+      {
+        "case_id": 90175,
+        "outcome": "SUCCESS",
+        "time": 19.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.094
+      },
+      {
+        "case_id": 90176,
+        "outcome": "SUCCESS",
+        "time": 12.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.037
+      },
+      {
+        "case_id": 90177,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.012
+      },
+      {
+        "case_id": 90178,
+        "outcome": "SUCCESS",
+        "time": 22.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90179,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90180,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.173
+      },
+      {
+        "case_id": 90181,
+        "outcome": "SUCCESS",
+        "time": 20.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90182,
+        "outcome": "SUCCESS",
+        "time": 18.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.13
+      },
+      {
+        "case_id": 90183,
+        "outcome": "SUCCESS",
+        "time": 47.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.153
+      },
+      {
+        "case_id": 90184,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.154
+      },
+      {
+        "case_id": 90185,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.204
+      },
+      {
+        "case_id": 90186,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90187,
+        "outcome": "SUCCESS",
+        "time": 14.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.222
+      },
+      {
+        "case_id": 90188,
+        "outcome": "SUCCESS",
+        "time": 28.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.134
+      },
+      {
+        "case_id": 90189,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.126
+      },
+      {
+        "case_id": 90190,
+        "outcome": "COLLISION",
+        "time": 3.5,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.092
+      },
+      {
+        "case_id": 90191,
+        "outcome": "SUCCESS",
+        "time": 23.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90192,
+        "outcome": "SUCCESS",
+        "time": 12.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.184
+      },
+      {
+        "case_id": 90193,
+        "outcome": "SUCCESS",
+        "time": 15.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.096
+      },
+      {
+        "case_id": 90194,
+        "outcome": "SUCCESS",
+        "time": 19.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.164
+      },
+      {
+        "case_id": 90195,
+        "outcome": "SUCCESS",
+        "time": 20.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.189
+      },
+      {
+        "case_id": 90196,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.203
+      },
+      {
+        "case_id": 90197,
+        "outcome": "SUCCESS",
+        "time": 23.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90198,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.146
+      },
+      {
+        "case_id": 90199,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.17
+      },
+      {
+        "case_id": 90200,
+        "outcome": "SUCCESS",
+        "time": 15.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90201,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.188
+      },
+      {
+        "case_id": 90202,
+        "outcome": "SUCCESS",
+        "time": 31.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.195
+      },
+      {
+        "case_id": 90203,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.201
+      },
+      {
+        "case_id": 90204,
+        "outcome": "SUCCESS",
+        "time": 20.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.183
+      },
+      {
+        "case_id": 90205,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.043
+      },
+      {
+        "case_id": 90206,
+        "outcome": "SUCCESS",
+        "time": 22.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90207,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90208,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90209,
+        "outcome": "SUCCESS",
+        "time": 26.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90210,
+        "outcome": "SUCCESS",
+        "time": 38.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90211,
+        "outcome": "SUCCESS",
+        "time": 18.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.174
+      },
+      {
+        "case_id": 90212,
+        "outcome": "SUCCESS",
+        "time": 18.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.102
+      },
+      {
+        "case_id": 90213,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.02
+      },
+      {
+        "case_id": 90214,
+        "outcome": "COLLISION",
+        "time": 7.75,
+        "last_event": "collision",
+        "stagnation": false,
+        "min_dist": 0.036
+      },
+      {
+        "case_id": 90215,
+        "outcome": "SUCCESS",
+        "time": 43.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.124
+      },
+      {
+        "case_id": 90216,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90217,
+        "outcome": "SUCCESS",
+        "time": 17.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90218,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.196
+      },
+      {
+        "case_id": 90219,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90220,
+        "outcome": "SUCCESS",
+        "time": 20.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.213
+      },
+      {
+        "case_id": 90221,
+        "outcome": "SUCCESS",
+        "time": 39.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.177
+      },
+      {
+        "case_id": 90222,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.143
+      },
+      {
+        "case_id": 90223,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.197
+      },
+      {
+        "case_id": 90224,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.121
+      },
+      {
+        "case_id": 90225,
+        "outcome": "SUCCESS",
+        "time": 16.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.173
+      },
+      {
+        "case_id": 90226,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.182
+      },
+      {
+        "case_id": 90227,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.15
+      },
+      {
+        "case_id": 90228,
+        "outcome": "SUCCESS",
+        "time": 13.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.083
+      },
+      {
+        "case_id": 90229,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.099
+      },
+      {
+        "case_id": 90230,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.134
+      },
+      {
+        "case_id": 90231,
+        "outcome": "SUCCESS",
+        "time": 17.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.162
+      },
+      {
+        "case_id": 90232,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.206
+      },
+      {
+        "case_id": 90233,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.151
+      },
+      {
+        "case_id": 90234,
+        "outcome": "SUCCESS",
+        "time": 17.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.164
+      },
+      {
+        "case_id": 90235,
+        "outcome": "SUCCESS",
+        "time": 21.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90236,
+        "outcome": "SUCCESS",
+        "time": 16.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.082
+      },
+      {
+        "case_id": 90237,
+        "outcome": "SUCCESS",
+        "time": 21.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.163
+      },
+      {
+        "case_id": 90238,
+        "outcome": "SUCCESS",
+        "time": 16.75,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.116
+      },
+      {
+        "case_id": 90239,
+        "outcome": "SUCCESS",
+        "time": 14.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90240,
+        "outcome": "SUCCESS",
+        "time": 17.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.117
+      },
+      {
+        "case_id": 90241,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.093
+      },
+      {
+        "case_id": 90242,
+        "outcome": "SUCCESS",
+        "time": 14.0,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.093
+      },
+      {
+        "case_id": 90243,
+        "outcome": "SUCCESS",
+        "time": 16.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.2
+      },
+      {
+        "case_id": 90244,
+        "outcome": "SUCCESS",
+        "time": 28.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.129
+      },
+      {
+        "case_id": 90245,
+        "outcome": "SUCCESS",
+        "time": 18.5,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90246,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": false,
+        "min_dist": 0.181
+      },
+      {
+        "case_id": 90247,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.202
+      },
+      {
+        "case_id": 90248,
+        "outcome": "SUCCESS",
+        "time": 15.25,
+        "last_event": "reach_goal",
+        "stagnation": false,
+        "min_dist": 0.206
+      },
+      {
+        "case_id": 90249,
+        "outcome": "TIMEOUT",
+        "time": 50.25,
+        "last_event": "timeout",
+        "stagnation": true,
+        "min_dist": 0.204
+      }
+    ]
+  }
+}

@@ -1,0 +1,1666 @@
+[
+  {
+    "state_id": "State_1",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90001,
+    "step": 20,
+    "dmin_curr": 0.25,
+    "closing_speed": 0.799,
+    "ratio_4s": 2.7,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 25.75,
+      "steps": 84,
+      "short_term_4s": {
+        "prog_4s": -0.415,
+        "travel_4s": 2.445,
+        "disp_4s": 1.364,
+        "ratio_4s": 1.8,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 24.75,
+      "steps": 80,
+      "short_term_4s": {
+        "prog_4s": -0.088,
+        "travel_4s": 2.822,
+        "disp_4s": 1.263,
+        "ratio_4s": 2.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 21.0,
+      "steps": 65,
+      "short_term_4s": {
+        "prog_4s": 0.996,
+        "travel_4s": 3.531,
+        "disp_4s": 2.714,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_2",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 24,
+    "dmin_curr": 0.458,
+    "closing_speed": -0.537,
+    "ratio_4s": 1.9,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.5,
+      "steps": 83,
+      "short_term_4s": {
+        "prog_4s": 0.177,
+        "travel_4s": 2.016,
+        "disp_4s": 0.555,
+        "ratio_4s": 3.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 36.25,
+      "steps": 122,
+      "short_term_4s": {
+        "prog_4s": 0.62,
+        "travel_4s": 2.764,
+        "disp_4s": 1.091,
+        "ratio_4s": 2.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 22.0,
+      "steps": 65,
+      "short_term_4s": {
+        "prog_4s": 2.792,
+        "travel_4s": 3.688,
+        "disp_4s": 3.292,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_3",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 25,
+    "dmin_curr": 0.626,
+    "closing_speed": -0.76,
+    "ratio_4s": 1.7,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 32.5,
+      "steps": 106,
+      "short_term_4s": {
+        "prog_4s": 0.206,
+        "travel_4s": 1.917,
+        "disp_4s": 0.445,
+        "ratio_4s": 4.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 23.75,
+      "steps": 71,
+      "short_term_4s": {
+        "prog_4s": 0.477,
+        "travel_4s": 2.57,
+        "disp_4s": 0.874,
+        "ratio_4s": 2.9,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.75,
+      "steps": 59,
+      "short_term_4s": {
+        "prog_4s": 2.259,
+        "travel_4s": 3.909,
+        "disp_4s": 3.844,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_4",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 26,
+    "dmin_curr": 0.784,
+    "closing_speed": -0.698,
+    "ratio_4s": 1.7,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.25,
+      "steps": 80,
+      "short_term_4s": {
+        "prog_4s": 0.112,
+        "travel_4s": 1.464,
+        "disp_4s": 0.265,
+        "ratio_4s": 5.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 18.75,
+      "steps": 50,
+      "short_term_4s": {
+        "prog_4s": 2.335,
+        "travel_4s": 3.328,
+        "disp_4s": 2.61,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.25,
+      "steps": 56,
+      "short_term_4s": {
+        "prog_4s": 2.422,
+        "travel_4s": 3.915,
+        "disp_4s": 3.855,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_5",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 27,
+    "dmin_curr": 0.988,
+    "closing_speed": -0.878,
+    "ratio_4s": 1.8,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 25.25,
+      "steps": 75,
+      "short_term_4s": {
+        "prog_4s": -0.09,
+        "travel_4s": 1.961,
+        "disp_4s": 0.137,
+        "ratio_4s": 14.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.75,
+      "steps": 57,
+      "short_term_4s": {
+        "prog_4s": 2.377,
+        "travel_4s": 3.503,
+        "disp_4s": 2.782,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.25,
+      "steps": 55,
+      "short_term_4s": {
+        "prog_4s": 2.412,
+        "travel_4s": 3.907,
+        "disp_4s": 3.841,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_6",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 28,
+    "dmin_curr": 1.043,
+    "closing_speed": -0.125,
+    "ratio_4s": 1.8,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 27.0,
+      "steps": 81,
+      "short_term_4s": {
+        "prog_4s": 0.043,
+        "travel_4s": 1.392,
+        "disp_4s": 0.183,
+        "ratio_4s": 7.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 174,
+      "short_term_4s": {
+        "prog_4s": 0.602,
+        "travel_4s": 3.143,
+        "disp_4s": 0.789,
+        "ratio_4s": 4.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 21.0,
+      "steps": 57,
+      "short_term_4s": {
+        "prog_4s": 2.455,
+        "travel_4s": 3.889,
+        "disp_4s": 3.838,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": -1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 1.0
+  },
+  {
+    "state_id": "State_7",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 29,
+    "dmin_curr": 1.065,
+    "closing_speed": -0.092,
+    "ratio_4s": 1.6,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 31.0,
+      "steps": 96,
+      "short_term_4s": {
+        "prog_4s": 0.615,
+        "travel_4s": 1.463,
+        "disp_4s": 0.645,
+        "ratio_4s": 2.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 21.0,
+      "steps": 56,
+      "short_term_4s": {
+        "prog_4s": 1.864,
+        "travel_4s": 3.249,
+        "disp_4s": 2.464,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.25,
+      "steps": 53,
+      "short_term_4s": {
+        "prog_4s": 2.511,
+        "travel_4s": 3.874,
+        "disp_4s": 3.825,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_8",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 30,
+    "dmin_curr": 1.074,
+    "closing_speed": -0.052,
+    "ratio_4s": 1.6,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 29.5,
+      "steps": 89,
+      "short_term_4s": {
+        "prog_4s": 0.258,
+        "travel_4s": 1.48,
+        "disp_4s": 0.323,
+        "ratio_4s": 4.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 25.25,
+      "steps": 72,
+      "short_term_4s": {
+        "prog_4s": 0.812,
+        "travel_4s": 2.534,
+        "disp_4s": 0.855,
+        "ratio_4s": 3.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 172,
+      "short_term_4s": {
+        "prog_4s": 2.543,
+        "travel_4s": 3.865,
+        "disp_4s": 3.839,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": -1.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_9",
+    "archetype": "Archetype_2_SmoothProg",
+    "source_case": 90001,
+    "step": 31,
+    "dmin_curr": 1.043,
+    "closing_speed": 0.115,
+    "ratio_4s": 1.3,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.0,
+      "steps": 74,
+      "short_term_4s": {
+        "prog_4s": 1.092,
+        "travel_4s": 2.021,
+        "disp_4s": 1.187,
+        "ratio_4s": 1.7,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 32.25,
+      "steps": 99,
+      "short_term_4s": {
+        "prog_4s": 1.843,
+        "travel_4s": 2.665,
+        "disp_4s": 1.849,
+        "ratio_4s": 1.4,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.5,
+      "steps": 76,
+      "short_term_4s": {
+        "prog_4s": 2.56,
+        "travel_4s": 3.88,
+        "disp_4s": 3.85,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_10",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90001,
+    "step": 41,
+    "dmin_curr": 0.907,
+    "closing_speed": 0.139,
+    "ratio_4s": 24.7,
+    "reversals_4s": 1,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 27.5,
+      "steps": 70,
+      "short_term_4s": {
+        "prog_4s": 0.896,
+        "travel_4s": 2.287,
+        "disp_4s": 0.943,
+        "ratio_4s": 2.4,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 161,
+      "short_term_4s": {
+        "prog_4s": 0.235,
+        "travel_4s": 3.143,
+        "disp_4s": 1.704,
+        "ratio_4s": 1.8,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 161,
+      "short_term_4s": {
+        "prog_4s": 2.194,
+        "travel_4s": 3.693,
+        "disp_4s": 3.508,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": -1.0,
+    "gain_lics_vs_base": -1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_11",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90001,
+    "step": 42,
+    "dmin_curr": 0.945,
+    "closing_speed": -0.153,
+    "ratio_4s": 13.2,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 29.25,
+      "steps": 76,
+      "short_term_4s": {
+        "prog_4s": 1.858,
+        "travel_4s": 2.895,
+        "disp_4s": 1.94,
+        "ratio_4s": 1.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 34.0,
+      "steps": 95,
+      "short_term_4s": {
+        "prog_4s": 2.67,
+        "travel_4s": 3.645,
+        "disp_4s": 2.775,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 24.0,
+      "steps": 55,
+      "short_term_4s": {
+        "prog_4s": 2.488,
+        "travel_4s": 3.783,
+        "disp_4s": 3.604,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_12",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90001,
+    "step": 43,
+    "dmin_curr": 0.879,
+    "closing_speed": 0.535,
+    "ratio_4s": 5.1,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 30.0,
+      "steps": 78,
+      "short_term_4s": {
+        "prog_4s": 1.037,
+        "travel_4s": 2.799,
+        "disp_4s": 1.236,
+        "ratio_4s": 2.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 159,
+      "short_term_4s": {
+        "prog_4s": 2.361,
+        "travel_4s": 3.664,
+        "disp_4s": 2.42,
+        "ratio_4s": 1.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 23.25,
+      "steps": 51,
+      "short_term_4s": {
+        "prog_4s": 2.299,
+        "travel_4s": 3.889,
+        "disp_4s": 3.853,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": -1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 1.0
+  },
+  {
+    "state_id": "State_13",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90046,
+    "step": 4,
+    "dmin_curr": 0.278,
+    "closing_speed": 0.732,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 14.0,
+      "steps": 53,
+      "short_term_4s": {
+        "prog_4s": 0.424,
+        "travel_4s": 1.511,
+        "disp_4s": 0.468,
+        "ratio_4s": 3.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.5,
+      "steps": 51,
+      "short_term_4s": {
+        "prog_4s": 1.769,
+        "travel_4s": 2.844,
+        "disp_4s": 2.19,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 15.25,
+      "steps": 58,
+      "short_term_4s": {
+        "prog_4s": 0.381,
+        "travel_4s": 2.14,
+        "disp_4s": 0.779,
+        "ratio_4s": 2.7,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_14",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90046,
+    "step": 8,
+    "dmin_curr": 0.216,
+    "closing_speed": 0.528,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.5,
+      "steps": 47,
+      "short_term_4s": {
+        "prog_4s": 1.101,
+        "travel_4s": 1.809,
+        "disp_4s": 1.121,
+        "ratio_4s": 1.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 14.25,
+      "steps": 50,
+      "short_term_4s": {
+        "prog_4s": 0.6,
+        "travel_4s": 3.319,
+        "disp_4s": 0.829,
+        "ratio_4s": 4.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 14.5,
+      "steps": 51,
+      "short_term_4s": {
+        "prog_4s": 0.9,
+        "travel_4s": 2.095,
+        "disp_4s": 1.181,
+        "ratio_4s": 1.8,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_15",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90046,
+    "step": 15,
+    "dmin_curr": 0.237,
+    "closing_speed": 0.322,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.5,
+      "steps": 40,
+      "short_term_4s": {
+        "prog_4s": 2.108,
+        "travel_4s": 2.428,
+        "disp_4s": 2.123,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.75,
+      "steps": 41,
+      "short_term_4s": {
+        "prog_4s": 1.945,
+        "travel_4s": 2.7,
+        "disp_4s": 2.306,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 15.0,
+      "steps": 46,
+      "short_term_4s": {
+        "prog_4s": 2.212,
+        "travel_4s": 2.753,
+        "disp_4s": 2.383,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_16",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90046,
+    "step": 17,
+    "dmin_curr": 0.204,
+    "closing_speed": -0.101,
+    "ratio_4s": 2.0,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.75,
+      "steps": 39,
+      "short_term_4s": {
+        "prog_4s": 2.133,
+        "travel_4s": 2.376,
+        "disp_4s": 2.138,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.75,
+      "steps": 39,
+      "short_term_4s": {
+        "prog_4s": 2.305,
+        "travel_4s": 3.072,
+        "disp_4s": 2.488,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 14.25,
+      "steps": 41,
+      "short_term_4s": {
+        "prog_4s": 2.182,
+        "travel_4s": 3.008,
+        "disp_4s": 2.305,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_17",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90046,
+    "step": 18,
+    "dmin_curr": 0.207,
+    "closing_speed": -0.018,
+    "ratio_4s": 2.1,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.5,
+      "steps": 37,
+      "short_term_4s": {
+        "prog_4s": 2.472,
+        "travel_4s": 2.662,
+        "disp_4s": 2.481,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.5,
+      "steps": 37,
+      "short_term_4s": {
+        "prog_4s": 2.483,
+        "travel_4s": 3.291,
+        "disp_4s": 2.594,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 15.25,
+      "steps": 44,
+      "short_term_4s": {
+        "prog_4s": 2.477,
+        "travel_4s": 3.306,
+        "disp_4s": 2.697,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_18",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90046,
+    "step": 42,
+    "dmin_curr": 0.267,
+    "closing_speed": 0.775,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.75,
+      "steps": 14,
+      "short_term_4s": {
+        "prog_4s": 2.782,
+        "travel_4s": 3.272,
+        "disp_4s": 2.89,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 14.0,
+      "steps": 15,
+      "short_term_4s": {
+        "prog_4s": 2.71,
+        "travel_4s": 3.676,
+        "disp_4s": 3.13,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 13.75,
+      "steps": 14,
+      "short_term_4s": {
+        "prog_4s": 2.697,
+        "travel_4s": 3.105,
+        "disp_4s": 2.867,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_19",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90000,
+    "step": 28,
+    "dmin_curr": 0.415,
+    "closing_speed": -0.778,
+    "ratio_4s": 1.4,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 36.5,
+      "steps": 119,
+      "short_term_4s": {
+        "prog_4s": 1.834,
+        "travel_4s": 2.752,
+        "disp_4s": 1.846,
+        "ratio_4s": 1.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 17.25,
+      "steps": 42,
+      "short_term_4s": {
+        "prog_4s": 2.298,
+        "travel_4s": 3.339,
+        "disp_4s": 2.538,
+        "ratio_4s": 1.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 16.75,
+      "steps": 40,
+      "short_term_4s": {
+        "prog_4s": 2.894,
+        "travel_4s": 3.845,
+        "disp_4s": 3.738,
+        "ratio_4s": 1.0,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 0.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_20",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90000,
+    "step": 52,
+    "dmin_curr": 0.368,
+    "closing_speed": 0.514,
+    "ratio_4s": 1.8,
+    "reversals_4s": 4,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 150,
+      "short_term_4s": {
+        "prog_4s": 0.609,
+        "travel_4s": 2.098,
+        "disp_4s": 0.885,
+        "ratio_4s": 2.4,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.0,
+      "steps": 29,
+      "short_term_4s": {
+        "prog_4s": 2.654,
+        "travel_4s": 3.734,
+        "disp_4s": 3.407,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 25.75,
+      "steps": 52,
+      "short_term_4s": {
+        "prog_4s": 0.493,
+        "travel_4s": 2.219,
+        "disp_4s": 1.913,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_21",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90000,
+    "step": 54,
+    "dmin_curr": 0.288,
+    "closing_speed": 0.239,
+    "ratio_4s": 2.3,
+    "reversals_4s": 4,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 148,
+      "short_term_4s": {
+        "prog_4s": 0.771,
+        "travel_4s": 2.291,
+        "disp_4s": 0.99,
+        "ratio_4s": 2.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.25,
+      "steps": 28,
+      "short_term_4s": {
+        "prog_4s": 2.618,
+        "travel_4s": 3.784,
+        "disp_4s": 3.517,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 48.5,
+      "steps": 141,
+      "short_term_4s": {
+        "prog_4s": 0.271,
+        "travel_4s": 2.138,
+        "disp_4s": 0.334,
+        "ratio_4s": 6.4,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_22",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90000,
+    "step": 58,
+    "dmin_curr": 0.243,
+    "closing_speed": 0.138,
+    "ratio_4s": 5.4,
+    "reversals_4s": 5,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 144,
+      "short_term_4s": {
+        "prog_4s": 0.593,
+        "travel_4s": 2.278,
+        "disp_4s": 1.01,
+        "ratio_4s": 2.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 21.75,
+      "steps": 30,
+      "short_term_4s": {
+        "prog_4s": 2.048,
+        "travel_4s": 3.359,
+        "disp_4s": 2.795,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 144,
+      "short_term_4s": {
+        "prog_4s": 0.296,
+        "travel_4s": 2.225,
+        "disp_4s": 0.404,
+        "ratio_4s": 5.5,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_23",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90000,
+    "step": 59,
+    "dmin_curr": 0.249,
+    "closing_speed": -0.079,
+    "ratio_4s": 8.3,
+    "reversals_4s": 5,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 143,
+      "short_term_4s": {
+        "prog_4s": 0.63,
+        "travel_4s": 2.245,
+        "disp_4s": 0.796,
+        "ratio_4s": 2.8,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.5,
+      "steps": 24,
+      "short_term_4s": {
+        "prog_4s": 2.776,
+        "travel_4s": 3.936,
+        "disp_4s": 3.565,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 143,
+      "short_term_4s": {
+        "prog_4s": 0.485,
+        "travel_4s": 2.124,
+        "disp_4s": 0.601,
+        "ratio_4s": 3.5,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_24",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90000,
+    "step": 60,
+    "dmin_curr": 0.339,
+    "closing_speed": -0.409,
+    "ratio_4s": 6.5,
+    "reversals_4s": 5,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 142,
+      "short_term_4s": {
+        "prog_4s": 0.538,
+        "travel_4s": 1.987,
+        "disp_4s": 0.709,
+        "ratio_4s": 2.8,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 21.5,
+      "steps": 27,
+      "short_term_4s": {
+        "prog_4s": 2.641,
+        "travel_4s": 3.582,
+        "disp_4s": 3.288,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 142,
+      "short_term_4s": {
+        "prog_4s": 0.456,
+        "travel_4s": 2.151,
+        "disp_4s": 0.555,
+        "ratio_4s": 3.9,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_25",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90000,
+    "step": 61,
+    "dmin_curr": 0.211,
+    "closing_speed": 0.514,
+    "ratio_4s": 3.6,
+    "reversals_4s": 4,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 141,
+      "short_term_4s": {
+        "prog_4s": 0.452,
+        "travel_4s": 2.369,
+        "disp_4s": 0.812,
+        "ratio_4s": 2.9,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 22.25,
+      "steps": 29,
+      "short_term_4s": {
+        "prog_4s": 2.199,
+        "travel_4s": 3.495,
+        "disp_4s": 3.047,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 141,
+      "short_term_4s": {
+        "prog_4s": 0.038,
+        "travel_4s": 2.108,
+        "disp_4s": 0.085,
+        "ratio_4s": 24.7,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_26",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90000,
+    "step": 62,
+    "dmin_curr": 0.2,
+    "closing_speed": 0.027,
+    "ratio_4s": 4.4,
+    "reversals_4s": 5,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 140,
+      "short_term_4s": {
+        "prog_4s": 0.403,
+        "travel_4s": 1.963,
+        "disp_4s": 0.662,
+        "ratio_4s": 3.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 23.5,
+      "steps": 33,
+      "short_term_4s": {
+        "prog_4s": 1.216,
+        "travel_4s": 2.928,
+        "disp_4s": 2.004,
+        "ratio_4s": 1.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 140,
+      "short_term_4s": {
+        "prog_4s": 0.402,
+        "travel_4s": 2.167,
+        "disp_4s": 0.565,
+        "ratio_4s": 3.8,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_27",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90000,
+    "step": 70,
+    "dmin_curr": 0.241,
+    "closing_speed": 0.671,
+    "ratio_4s": 2.3,
+    "reversals_4s": 4,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 132,
+      "short_term_4s": {
+        "prog_4s": 0.106,
+        "travel_4s": 2.163,
+        "disp_4s": 0.408,
+        "ratio_4s": 5.3,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 24.25,
+      "steps": 28,
+      "short_term_4s": {
+        "prog_4s": 2.078,
+        "travel_4s": 3.297,
+        "disp_4s": 2.844,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 132,
+      "short_term_4s": {
+        "prog_4s": 0.212,
+        "travel_4s": 2.161,
+        "disp_4s": 0.764,
+        "ratio_4s": 2.8,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 0.0,
+    "advantage_lics_over_fixed": -1.0
+  },
+  {
+    "state_id": "State_28",
+    "archetype": "Archetype_1_Deadlock",
+    "source_case": 90000,
+    "step": 84,
+    "dmin_curr": 0.204,
+    "closing_speed": 0.043,
+    "ratio_4s": 6.0,
+    "reversals_4s": 12,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 118,
+      "short_term_4s": {
+        "prog_4s": -0.027,
+        "travel_4s": 2.167,
+        "disp_4s": 0.029,
+        "ratio_4s": 74.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.5,
+      "steps": 23,
+      "short_term_4s": {
+        "prog_4s": 2.804,
+        "travel_4s": 3.782,
+        "disp_4s": 3.484,
+        "ratio_4s": 1.1,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 42.5,
+      "steps": 87,
+      "short_term_4s": {
+        "prog_4s": -0.034,
+        "travel_4s": 2.0,
+        "disp_4s": 0.386,
+        "ratio_4s": 5.2,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_29",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90005,
+    "step": 9,
+    "dmin_curr": 0.312,
+    "closing_speed": -0.141,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 193,
+      "short_term_4s": {
+        "prog_4s": 1.089,
+        "travel_4s": 2.79,
+        "disp_4s": 1.447,
+        "ratio_4s": 1.9,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 26.5,
+      "steps": 98,
+      "short_term_4s": {
+        "prog_4s": 1.309,
+        "travel_4s": 2.919,
+        "disp_4s": 1.493,
+        "ratio_4s": 2.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 23.75,
+      "steps": 87,
+      "short_term_4s": {
+        "prog_4s": 2.178,
+        "travel_4s": 3.807,
+        "disp_4s": 3.219,
+        "ratio_4s": 1.2,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_30",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90005,
+    "step": 11,
+    "dmin_curr": 0.204,
+    "closing_speed": 1.401,
+    "ratio_4s": 1.0,
+    "reversals_4s": 0,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 191,
+      "short_term_4s": {
+        "prog_4s": 1.373,
+        "travel_4s": 2.982,
+        "disp_4s": 1.781,
+        "ratio_4s": 1.7,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 19.0,
+      "steps": 66,
+      "short_term_4s": {
+        "prog_4s": 1.47,
+        "travel_4s": 3.215,
+        "disp_4s": 2.013,
+        "ratio_4s": 1.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 20.5,
+      "steps": 72,
+      "short_term_4s": {
+        "prog_4s": 1.623,
+        "travel_4s": 3.248,
+        "disp_4s": 2.085,
+        "ratio_4s": 1.6,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_31",
+    "archetype": "Archetype_4_ActiveYield",
+    "source_case": 90005,
+    "step": 32,
+    "dmin_curr": 0.443,
+    "closing_speed": 0.846,
+    "ratio_4s": 1.2,
+    "reversals_4s": 2,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 170,
+      "short_term_4s": {
+        "prog_4s": 1.002,
+        "travel_4s": 2.043,
+        "disp_4s": 1.307,
+        "ratio_4s": 1.6,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 18.5,
+      "steps": 43,
+      "short_term_4s": {
+        "prog_4s": 1.573,
+        "travel_4s": 2.955,
+        "disp_4s": 1.964,
+        "ratio_4s": 1.5,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 24.0,
+      "steps": 65,
+      "short_term_4s": {
+        "prog_4s": 1.652,
+        "travel_4s": 2.956,
+        "disp_4s": 1.825,
+        "ratio_4s": 1.6,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  },
+  {
+    "state_id": "State_32",
+    "archetype": "Archetype_3_HighRisk",
+    "source_case": 90005,
+    "step": 52,
+    "dmin_curr": 0.201,
+    "closing_speed": 0.663,
+    "ratio_4s": 1.6,
+    "reversals_4s": 3,
+    "branch_A_base": {
+      "outcome": "TIMEOUT",
+      "event": "timeout",
+      "final_time": 50.25,
+      "steps": 150,
+      "short_term_4s": {
+        "prog_4s": -0.756,
+        "travel_4s": 1.92,
+        "disp_4s": 0.98,
+        "ratio_4s": 2.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_B_fixed": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 27.5,
+      "steps": 59,
+      "short_term_4s": {
+        "prog_4s": -0.569,
+        "travel_4s": 1.841,
+        "disp_4s": 0.911,
+        "ratio_4s": 2.0,
+        "collision_in_4s": false
+      }
+    },
+    "branch_C_lics": {
+      "outcome": "SUCCESS",
+      "event": "reach_goal",
+      "final_time": 45.0,
+      "steps": 129,
+      "short_term_4s": {
+        "prog_4s": -0.556,
+        "travel_4s": 1.889,
+        "disp_4s": 0.917,
+        "ratio_4s": 2.1,
+        "collision_in_4s": false
+      }
+    },
+    "gain_fixed_vs_base": 1.0,
+    "gain_lics_vs_base": 1.0,
+    "advantage_lics_over_fixed": 0.0
+  }
+]

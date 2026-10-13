@@ -1,0 +1,86 @@
+{
+  "90000": {
+    "init_dist": 8.0,
+    "final_d_goal": 0.732,
+    "net_progress": 7.268,
+    "last_10s_d_goal_start": 0.685,
+    "last_10s_d_goal_end": 0.732,
+    "last_10s_net_displacement": 0.066,
+    "last_10s_path_length": 6.002,
+    "last_10s_mean_speed": 0.612,
+    "last_10s_min_clearance": 0.53,
+    "diagnosis": "DEADLOCK_OSCILLATION (Moving but trapped in place: path=6.00m, disp=0.07m, ratio=90.8)"
+  },
+  "90010": {
+    "init_dist": 8.0,
+    "final_d_goal": 0.951,
+    "net_progress": 7.049,
+    "last_10s_d_goal_start": 0.779,
+    "last_10s_d_goal_end": 0.951,
+    "last_10s_net_displacement": 0.178,
+    "last_10s_path_length": 5.521,
+    "last_10s_mean_speed": 0.564,
+    "last_10s_min_clearance": 0.726,
+    "diagnosis": "DEADLOCK_OSCILLATION (Moving but trapped in place: path=5.52m, disp=0.18m, ratio=30.9)"
+  },
+  "90024": {
+    "init_dist": 8.0,
+    "final_d_goal": 0.588,
+    "net_progress": 7.412,
+    "last_10s_d_goal_start": 0.64,
+    "last_10s_d_goal_end": 0.588,
+    "last_10s_net_displacement": 0.123,
+    "last_10s_path_length": 5.05,
+    "last_10s_mean_speed": 0.516,
+    "last_10s_min_clearance": 0.58,
+    "diagnosis": "DEADLOCK_OSCILLATION (Moving but trapped in place: path=5.05m, disp=0.12m, ratio=40.9)"
+  },
+  "90034": {
+    "init_dist": 8.0,
+    "final_d_goal": 1.188,
+    "net_progress": 6.812,
+    "last_10s_d_goal_start": 1.284,
+    "last_10s_d_goal_end": 1.188,
+    "last_10s_net_displacement": 0.096,
+    "last_10s_path_length": 3.744,
+    "last_10s_mean_speed": 0.384,
+    "last_10s_min_clearance": 0.204,
+    "diagnosis": "DEADLOCK_OSCILLATION (Moving but trapped in place: path=3.74m, disp=0.10m, ratio=39.0)"
+  },
+  "90037": {
+    "init_dist": 8.0,
+    "final_d_goal": 4.409,
+    "net_progress": 3.591,
+    "last_10s_d_goal_start": 4.399,
+    "last_10s_d_goal_end": 4.409,
+    "last_10s_net_displacement": 0.028,
+    "last_10s_path_length": 2.328,
+    "last_10s_mean_speed": 0.243,
+    "last_10s_min_clearance": 0.352,
+    "diagnosis": "DEADLOCK_OSCILLATION (Moving but trapped in place: path=2.33m, disp=0.03m, ratio=82.7)"
+  },
+  "90043": {
+    "init_dist": 8.0,
+    "final_d_goal": 3.798,
+    "net_progress": 4.202,
+    "last_10s_d_goal_start": 3.285,
+    "last_10s_d_goal_end": 3.798,
+    "last_10s_net_displacement": 1.875,
+    "last_10s_path_length": 6.666,
+    "last_10s_mean_speed": 0.69,
+    "last_10s_min_clearance": 0.234,
+    "diagnosis": "HUMAN_BLOCKADE (Pushed away or pinned by close humans: min_dmin=0.23m)"
+  },
+  "90047": {
+    "init_dist": 8.0,
+    "final_d_goal": 26.905,
+    "net_progress": -18.905,
+    "last_10s_d_goal_start": 17.344,
+    "last_10s_d_goal_end": 26.905,
+    "last_10s_net_displacement": 9.715,
+    "last_10s_path_length": 9.736,
+    "last_10s_mean_speed": 0.999,
+    "last_10s_min_clearance": 16.665,
+    "diagnosis": "SLOW_PROGRESS (Progressing steadily but ran out of time: d_goal=26.91m)"
+  }
+}

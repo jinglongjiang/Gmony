@@ -1,0 +1,1550 @@
+{
+  "arm1_50s_filter": {
+    "arm_name": "Arm 1: Official 50s (200 steps), Safety Filter ON",
+    "time_limit_sec": 50,
+    "use_safety_filter": true,
+    "success": 0,
+    "collision": 0,
+    "timeout": 50,
+    "robot_a_frozen_timeouts": 50,
+    "robot_b_late_timeouts": 0,
+    "mean_nav_time_success": null,
+    "cases": {
+      "90000": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.715,
+        "net_progress": -41.715,
+        "path_length": 45.746,
+        "type": "FROZEN_A"
+      },
+      "90001": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 44.499,
+        "net_progress": -36.499,
+        "path_length": 47.29,
+        "type": "FROZEN_A"
+      },
+      "90002": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 47.993,
+        "net_progress": -39.993,
+        "path_length": 49.504,
+        "type": "FROZEN_A"
+      },
+      "90003": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.702,
+        "net_progress": -42.702,
+        "path_length": 49.596,
+        "type": "FROZEN_A"
+      },
+      "90004": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.724,
+        "net_progress": -43.724,
+        "path_length": 49.71,
+        "type": "FROZEN_A"
+      },
+      "90005": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 36.063,
+        "net_progress": -28.063,
+        "path_length": 37.737,
+        "type": "FROZEN_A"
+      },
+      "90006": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 46.867,
+        "net_progress": -38.867,
+        "path_length": 49.241,
+        "type": "FROZEN_A"
+      },
+      "90007": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.042,
+        "net_progress": -42.042,
+        "path_length": 49.291,
+        "type": "FROZEN_A"
+      },
+      "90008": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.098,
+        "net_progress": -41.098,
+        "path_length": 49.446,
+        "type": "FROZEN_A"
+      },
+      "90009": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.672,
+        "net_progress": -40.672,
+        "path_length": 48.04,
+        "type": "FROZEN_A"
+      },
+      "90010": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.385,
+        "net_progress": -40.385,
+        "path_length": 48.485,
+        "type": "FROZEN_A"
+      },
+      "90011": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.661,
+        "net_progress": -43.661,
+        "path_length": 49.772,
+        "type": "FROZEN_A"
+      },
+      "90012": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 52.806,
+        "net_progress": -44.806,
+        "path_length": 48.625,
+        "type": "FROZEN_A"
+      },
+      "90013": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.998,
+        "net_progress": -41.998,
+        "path_length": 49.385,
+        "type": "FROZEN_A"
+      },
+      "90014": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.781,
+        "net_progress": -43.781,
+        "path_length": 49.824,
+        "type": "FROZEN_A"
+      },
+      "90015": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.739,
+        "net_progress": -42.739,
+        "path_length": 49.716,
+        "type": "FROZEN_A"
+      },
+      "90016": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.696,
+        "net_progress": -42.696,
+        "path_length": 47.979,
+        "type": "FROZEN_A"
+      },
+      "90017": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.528,
+        "net_progress": -43.528,
+        "path_length": 49.742,
+        "type": "FROZEN_A"
+      },
+      "90018": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.412,
+        "net_progress": -42.412,
+        "path_length": 49.435,
+        "type": "FROZEN_A"
+      },
+      "90019": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.492,
+        "net_progress": -43.492,
+        "path_length": 49.722,
+        "type": "FROZEN_A"
+      },
+      "90020": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.089,
+        "net_progress": -43.089,
+        "path_length": 49.691,
+        "type": "FROZEN_A"
+      },
+      "90021": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.963,
+        "net_progress": -42.963,
+        "path_length": 49.667,
+        "type": "FROZEN_A"
+      },
+      "90022": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.097,
+        "net_progress": -42.097,
+        "path_length": 46.634,
+        "type": "FROZEN_A"
+      },
+      "90023": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.545,
+        "net_progress": -43.545,
+        "path_length": 49.697,
+        "type": "FROZEN_A"
+      },
+      "90024": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.391,
+        "net_progress": -41.391,
+        "path_length": 49.46,
+        "type": "FROZEN_A"
+      },
+      "90025": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.46,
+        "net_progress": -40.46,
+        "path_length": 48.856,
+        "type": "FROZEN_A"
+      },
+      "90026": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.848,
+        "net_progress": -41.848,
+        "path_length": 49.529,
+        "type": "FROZEN_A"
+      },
+      "90027": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 47.53,
+        "net_progress": -39.53,
+        "path_length": 49.416,
+        "type": "FROZEN_A"
+      },
+      "90028": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.609,
+        "net_progress": -42.609,
+        "path_length": 49.648,
+        "type": "FROZEN_A"
+      },
+      "90029": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.567,
+        "net_progress": -42.567,
+        "path_length": 49.689,
+        "type": "FROZEN_A"
+      },
+      "90030": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.496,
+        "net_progress": -43.496,
+        "path_length": 49.658,
+        "type": "FROZEN_A"
+      },
+      "90031": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 43.886,
+        "net_progress": -35.886,
+        "path_length": 47.652,
+        "type": "FROZEN_A"
+      },
+      "90032": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.385,
+        "net_progress": -42.385,
+        "path_length": 49.35,
+        "type": "FROZEN_A"
+      },
+      "90033": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.908,
+        "net_progress": -42.908,
+        "path_length": 49.613,
+        "type": "FROZEN_A"
+      },
+      "90034": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.745,
+        "net_progress": -42.745,
+        "path_length": 49.748,
+        "type": "FROZEN_A"
+      },
+      "90035": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.335,
+        "net_progress": -43.335,
+        "path_length": 49.738,
+        "type": "FROZEN_A"
+      },
+      "90036": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.376,
+        "net_progress": -43.376,
+        "path_length": 49.765,
+        "type": "FROZEN_A"
+      },
+      "90037": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.101,
+        "net_progress": -43.101,
+        "path_length": 49.732,
+        "type": "FROZEN_A"
+      },
+      "90038": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.258,
+        "net_progress": -42.258,
+        "path_length": 49.473,
+        "type": "FROZEN_A"
+      },
+      "90039": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.128,
+        "net_progress": -43.128,
+        "path_length": 49.701,
+        "type": "FROZEN_A"
+      },
+      "90040": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.383,
+        "net_progress": -43.383,
+        "path_length": 49.759,
+        "type": "FROZEN_A"
+      },
+      "90041": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 47.867,
+        "net_progress": -39.867,
+        "path_length": 48.901,
+        "type": "FROZEN_A"
+      },
+      "90042": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.709,
+        "net_progress": -42.709,
+        "path_length": 49.604,
+        "type": "FROZEN_A"
+      },
+      "90043": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.235,
+        "net_progress": -41.235,
+        "path_length": 49.425,
+        "type": "FROZEN_A"
+      },
+      "90044": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.377,
+        "net_progress": -42.377,
+        "path_length": 49.663,
+        "type": "FROZEN_A"
+      },
+      "90045": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.717,
+        "net_progress": -42.717,
+        "path_length": 49.532,
+        "type": "FROZEN_A"
+      },
+      "90046": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.157,
+        "net_progress": -43.157,
+        "path_length": 49.634,
+        "type": "FROZEN_A"
+      },
+      "90047": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 46.92,
+        "net_progress": -38.92,
+        "path_length": 48.884,
+        "type": "FROZEN_A"
+      },
+      "90048": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.774,
+        "net_progress": -41.774,
+        "path_length": 49.385,
+        "type": "FROZEN_A"
+      },
+      "90049": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.25,
+        "net_progress": -42.25,
+        "path_length": 49.717,
+        "type": "FROZEN_A"
+      }
+    },
+    "sr": 0.0,
+    "cr": 0.0,
+    "tr": 100.0
+  },
+  "arm2_25s_filter": {
+    "arm_name": "Arm 2: Cutoff 25s (100 steps), Safety Filter ON",
+    "time_limit_sec": 25,
+    "use_safety_filter": true,
+    "success": 6,
+    "collision": 16,
+    "timeout": 28,
+    "robot_a_frozen_timeouts": 6,
+    "robot_b_late_timeouts": 22,
+    "mean_nav_time_success": 16.083333333333332,
+    "cases": {
+      "90000": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 2.797,
+        "net_progress": 5.203,
+        "path_length": 21.202,
+        "type": "LATE_B"
+      },
+      "90001": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 0.737,
+        "net_progress": 7.263,
+        "path_length": 22.88,
+        "type": "LATE_B"
+      },
+      "90002": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 5.181,
+        "net_progress": 2.819,
+        "path_length": 22.357,
+        "type": "LATE_B"
+      },
+      "90003": {
+        "outcome": "COLLISION",
+        "steps": 14,
+        "time": 3.5,
+        "init_dist": 8.0,
+        "final_dist": 5.838,
+        "net_progress": 2.162,
+        "path_length": 2.991,
+        "type": "COLLISION"
+      },
+      "90004": {
+        "outcome": "TIMEOUT",
+        "steps": 20,
+        "time": 5.0,
+        "init_dist": 8.0,
+        "final_dist": 7.308,
+        "net_progress": 0.692,
+        "path_length": 4.675,
+        "type": "FROZEN_A"
+      },
+      "90005": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 3.99,
+        "net_progress": 4.01,
+        "path_length": 16.983,
+        "type": "LATE_B"
+      },
+      "90006": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.343,
+        "net_progress": 3.657,
+        "path_length": 20.045,
+        "type": "LATE_B"
+      },
+      "90007": {
+        "outcome": "COLLISION",
+        "steps": 21,
+        "time": 5.25,
+        "init_dist": 8.0,
+        "final_dist": 4.87,
+        "net_progress": 3.13,
+        "path_length": 4.403,
+        "type": "COLLISION"
+      },
+      "90008": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 5.405,
+        "net_progress": 2.595,
+        "path_length": 23.121,
+        "type": "LATE_B"
+      },
+      "90009": {
+        "outcome": "COLLISION",
+        "steps": 18,
+        "time": 4.5,
+        "init_dist": 8.0,
+        "final_dist": 4.928,
+        "net_progress": 3.072,
+        "path_length": 3.792,
+        "type": "COLLISION"
+      },
+      "90010": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.334,
+        "net_progress": 3.666,
+        "path_length": 23.008,
+        "type": "LATE_B"
+      },
+      "90011": {
+        "outcome": "SUCCESS",
+        "steps": 59,
+        "time": 14.75,
+        "init_dist": 8.0,
+        "final_dist": 0.274,
+        "net_progress": 7.726,
+        "path_length": 11.664,
+        "type": "SUCCESS"
+      },
+      "90012": {
+        "outcome": "COLLISION",
+        "steps": 18,
+        "time": 4.5,
+        "init_dist": 8.0,
+        "final_dist": 5.752,
+        "net_progress": 2.248,
+        "path_length": 3.993,
+        "type": "COLLISION"
+      },
+      "90013": {
+        "outcome": "COLLISION",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 7.352,
+        "net_progress": 0.648,
+        "path_length": 4.729,
+        "type": "COLLISION"
+      },
+      "90014": {
+        "outcome": "SUCCESS",
+        "steps": 69,
+        "time": 17.25,
+        "init_dist": 8.0,
+        "final_dist": 0.282,
+        "net_progress": 7.718,
+        "path_length": 15.479,
+        "type": "SUCCESS"
+      },
+      "90015": {
+        "outcome": "SUCCESS",
+        "steps": 63,
+        "time": 15.75,
+        "init_dist": 8.0,
+        "final_dist": 0.285,
+        "net_progress": 7.715,
+        "path_length": 13.16,
+        "type": "SUCCESS"
+      },
+      "90016": {
+        "outcome": "SUCCESS",
+        "steps": 73,
+        "time": 18.25,
+        "init_dist": 8.0,
+        "final_dist": 0.295,
+        "net_progress": 7.705,
+        "path_length": 15.937,
+        "type": "SUCCESS"
+      },
+      "90017": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 5.816,
+        "net_progress": 2.184,
+        "path_length": 20.634,
+        "type": "LATE_B"
+      },
+      "90018": {
+        "outcome": "COLLISION",
+        "steps": 34,
+        "time": 8.5,
+        "init_dist": 8.0,
+        "final_dist": 8.312,
+        "net_progress": -0.312,
+        "path_length": 7.107,
+        "type": "COLLISION"
+      },
+      "90019": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.627,
+        "net_progress": 6.373,
+        "path_length": 21.984,
+        "type": "LATE_B"
+      },
+      "90020": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.144,
+        "net_progress": 3.856,
+        "path_length": 20.655,
+        "type": "LATE_B"
+      },
+      "90021": {
+        "outcome": "COLLISION",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 4.474,
+        "net_progress": 3.526,
+        "path_length": 4.836,
+        "type": "COLLISION"
+      },
+      "90022": {
+        "outcome": "COLLISION",
+        "steps": 20,
+        "time": 5.0,
+        "init_dist": 8.0,
+        "final_dist": 5.147,
+        "net_progress": 2.853,
+        "path_length": 4.448,
+        "type": "COLLISION"
+      },
+      "90023": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 6.547,
+        "net_progress": 1.453,
+        "path_length": 16.711,
+        "type": "FROZEN_A"
+      },
+      "90024": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.228,
+        "net_progress": 3.772,
+        "path_length": 16.174,
+        "type": "LATE_B"
+      },
+      "90025": {
+        "outcome": "COLLISION",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 4.879,
+        "net_progress": 3.121,
+        "path_length": 4.812,
+        "type": "COLLISION"
+      },
+      "90026": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 8.03,
+        "net_progress": -0.03,
+        "path_length": 13.447,
+        "type": "FROZEN_A"
+      },
+      "90027": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 6.232,
+        "net_progress": 1.768,
+        "path_length": 13.654,
+        "type": "FROZEN_A"
+      },
+      "90028": {
+        "outcome": "SUCCESS",
+        "steps": 51,
+        "time": 12.75,
+        "init_dist": 8.0,
+        "final_dist": 0.285,
+        "net_progress": 7.715,
+        "path_length": 11.298,
+        "type": "SUCCESS"
+      },
+      "90029": {
+        "outcome": "COLLISION",
+        "steps": 14,
+        "time": 3.5,
+        "init_dist": 8.0,
+        "final_dist": 5.701,
+        "net_progress": 2.299,
+        "path_length": 3.286,
+        "type": "COLLISION"
+      },
+      "90030": {
+        "outcome": "COLLISION",
+        "steps": 5,
+        "time": 1.25,
+        "init_dist": 8.0,
+        "final_dist": 7.902,
+        "net_progress": 0.098,
+        "path_length": 1.053,
+        "type": "COLLISION"
+      },
+      "90031": {
+        "outcome": "COLLISION",
+        "steps": 17,
+        "time": 4.25,
+        "init_dist": 8.0,
+        "final_dist": 4.638,
+        "net_progress": 3.362,
+        "path_length": 4.088,
+        "type": "COLLISION"
+      },
+      "90032": {
+        "outcome": "TIMEOUT",
+        "steps": 19,
+        "time": 4.75,
+        "init_dist": 8.0,
+        "final_dist": 5.768,
+        "net_progress": 2.232,
+        "path_length": 4.491,
+        "type": "LATE_B"
+      },
+      "90033": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.35,
+        "net_progress": 6.65,
+        "path_length": 13.42,
+        "type": "LATE_B"
+      },
+      "90034": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.947,
+        "net_progress": 6.053,
+        "path_length": 20.792,
+        "type": "LATE_B"
+      },
+      "90035": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.695,
+        "net_progress": 6.305,
+        "path_length": 22.929,
+        "type": "LATE_B"
+      },
+      "90036": {
+        "outcome": "COLLISION",
+        "steps": 14,
+        "time": 3.5,
+        "init_dist": 8.0,
+        "final_dist": 6.961,
+        "net_progress": 1.039,
+        "path_length": 2.489,
+        "type": "COLLISION"
+      },
+      "90037": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 9.149,
+        "net_progress": -1.149,
+        "path_length": 19.153,
+        "type": "FROZEN_A"
+      },
+      "90038": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.439,
+        "net_progress": 6.561,
+        "path_length": 21.841,
+        "type": "LATE_B"
+      },
+      "90039": {
+        "outcome": "COLLISION",
+        "steps": 56,
+        "time": 14.0,
+        "init_dist": 8.0,
+        "final_dist": 5.833,
+        "net_progress": 2.167,
+        "path_length": 11.028,
+        "type": "COLLISION"
+      },
+      "90040": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 2.444,
+        "net_progress": 5.556,
+        "path_length": 22.197,
+        "type": "LATE_B"
+      },
+      "90041": {
+        "outcome": "COLLISION",
+        "steps": 16,
+        "time": 4.0,
+        "init_dist": 8.0,
+        "final_dist": 7.102,
+        "net_progress": 0.898,
+        "path_length": 3.266,
+        "type": "COLLISION"
+      },
+      "90042": {
+        "outcome": "SUCCESS",
+        "steps": 71,
+        "time": 17.75,
+        "init_dist": 8.0,
+        "final_dist": 0.282,
+        "net_progress": 7.718,
+        "path_length": 15.664,
+        "type": "SUCCESS"
+      },
+      "90043": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.664,
+        "net_progress": 3.336,
+        "path_length": 22.968,
+        "type": "LATE_B"
+      },
+      "90044": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 1.136,
+        "net_progress": 6.864,
+        "path_length": 22.009,
+        "type": "LATE_B"
+      },
+      "90045": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 2.597,
+        "net_progress": 5.403,
+        "path_length": 19.508,
+        "type": "LATE_B"
+      },
+      "90046": {
+        "outcome": "COLLISION",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 4.143,
+        "net_progress": 3.857,
+        "path_length": 4.88,
+        "type": "COLLISION"
+      },
+      "90047": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 7.281,
+        "net_progress": 0.719,
+        "path_length": 18.902,
+        "type": "FROZEN_A"
+      },
+      "90048": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 3.894,
+        "net_progress": 4.106,
+        "path_length": 17.11,
+        "type": "LATE_B"
+      },
+      "90049": {
+        "outcome": "TIMEOUT",
+        "steps": 100,
+        "time": 25.0,
+        "init_dist": 8.0,
+        "final_dist": 4.659,
+        "net_progress": 3.341,
+        "path_length": 22.217,
+        "type": "LATE_B"
+      }
+    },
+    "sr": 12.0,
+    "cr": 32.0,
+    "tr": 56.0
+  },
+  "arm3_50s_nofilter": {
+    "arm_name": "Arm 3: Official 50s (200 steps), Safety Filter OFF",
+    "time_limit_sec": 50,
+    "use_safety_filter": false,
+    "success": 0,
+    "collision": 1,
+    "timeout": 49,
+    "robot_a_frozen_timeouts": 45,
+    "robot_b_late_timeouts": 4,
+    "mean_nav_time_success": null,
+    "cases": {
+      "90000": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 9.911,
+        "net_progress": -1.911,
+        "path_length": 9.53,
+        "type": "FROZEN_A"
+      },
+      "90001": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 49.417,
+        "net_progress": -41.417,
+        "path_length": 49.583,
+        "type": "FROZEN_A"
+      },
+      "90002": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 47.117,
+        "net_progress": -39.117,
+        "path_length": 48.63,
+        "type": "FROZEN_A"
+      },
+      "90003": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 33.682,
+        "net_progress": -25.682,
+        "path_length": 38.784,
+        "type": "FROZEN_A"
+      },
+      "90004": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 40.234,
+        "net_progress": -32.234,
+        "path_length": 46.466,
+        "type": "FROZEN_A"
+      },
+      "90005": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 26.854,
+        "net_progress": -18.854,
+        "path_length": 29.987,
+        "type": "FROZEN_A"
+      },
+      "90006": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.883,
+        "net_progress": -42.883,
+        "path_length": 49.407,
+        "type": "FROZEN_A"
+      },
+      "90007": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 7.342,
+        "net_progress": 0.658,
+        "path_length": 11.209,
+        "type": "FROZEN_A"
+      },
+      "90008": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.386,
+        "net_progress": -43.386,
+        "path_length": 49.928,
+        "type": "FROZEN_A"
+      },
+      "90009": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 46.964,
+        "net_progress": -38.964,
+        "path_length": 49.511,
+        "type": "FROZEN_A"
+      },
+      "90010": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 3.541,
+        "net_progress": 4.459,
+        "path_length": 17.334,
+        "type": "LATE_B"
+      },
+      "90011": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.508,
+        "net_progress": -43.508,
+        "path_length": 48.807,
+        "type": "FROZEN_A"
+      },
+      "90012": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.712,
+        "net_progress": -43.712,
+        "path_length": 49.548,
+        "type": "FROZEN_A"
+      },
+      "90013": {
+        "outcome": "COLLISION",
+        "steps": 22,
+        "time": 5.5,
+        "init_dist": 8.0,
+        "final_dist": 7.345,
+        "net_progress": 0.655,
+        "path_length": 3.475,
+        "type": "COLLISION"
+      },
+      "90014": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 22.486,
+        "net_progress": -14.486,
+        "path_length": 21.76,
+        "type": "FROZEN_A"
+      },
+      "90015": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.455,
+        "net_progress": -42.455,
+        "path_length": 48.982,
+        "type": "FROZEN_A"
+      },
+      "90016": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.396,
+        "net_progress": -43.396,
+        "path_length": 49.639,
+        "type": "FROZEN_A"
+      },
+      "90017": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 7.438,
+        "net_progress": 0.562,
+        "path_length": 6.657,
+        "type": "FROZEN_A"
+      },
+      "90018": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 35.405,
+        "net_progress": -27.405,
+        "path_length": 39.246,
+        "type": "FROZEN_A"
+      },
+      "90019": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 47.99,
+        "net_progress": -39.99,
+        "path_length": 49.009,
+        "type": "FROZEN_A"
+      },
+      "90020": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 8.93,
+        "net_progress": -0.93,
+        "path_length": 8.721,
+        "type": "FROZEN_A"
+      },
+      "90021": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 46.307,
+        "net_progress": -38.307,
+        "path_length": 47.25,
+        "type": "FROZEN_A"
+      },
+      "90022": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 10.438,
+        "net_progress": -2.438,
+        "path_length": 8.346,
+        "type": "FROZEN_A"
+      },
+      "90023": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.489,
+        "net_progress": -40.489,
+        "path_length": 49.178,
+        "type": "FROZEN_A"
+      },
+      "90024": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.454,
+        "net_progress": -42.454,
+        "path_length": 49.235,
+        "type": "FROZEN_A"
+      },
+      "90025": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.57,
+        "net_progress": -42.57,
+        "path_length": 49.583,
+        "type": "FROZEN_A"
+      },
+      "90026": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 22.753,
+        "net_progress": -14.753,
+        "path_length": 30.763,
+        "type": "FROZEN_A"
+      },
+      "90027": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 9.234,
+        "net_progress": -1.234,
+        "path_length": 7.677,
+        "type": "FROZEN_A"
+      },
+      "90028": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 8.144,
+        "net_progress": -0.144,
+        "path_length": 10.234,
+        "type": "FROZEN_A"
+      },
+      "90029": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 45.983,
+        "net_progress": -37.983,
+        "path_length": 46.086,
+        "type": "FROZEN_A"
+      },
+      "90030": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 39.039,
+        "net_progress": -31.039,
+        "path_length": 44.887,
+        "type": "FROZEN_A"
+      },
+      "90031": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 4.073,
+        "net_progress": 3.927,
+        "path_length": 14.615,
+        "type": "LATE_B"
+      },
+      "90032": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 6.321,
+        "net_progress": 1.679,
+        "path_length": 16.045,
+        "type": "FROZEN_A"
+      },
+      "90033": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.691,
+        "net_progress": -43.691,
+        "path_length": 49.857,
+        "type": "FROZEN_A"
+      },
+      "90034": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.533,
+        "net_progress": -40.533,
+        "path_length": 48.751,
+        "type": "FROZEN_A"
+      },
+      "90035": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 6.5,
+        "net_progress": 1.5,
+        "path_length": 16.314,
+        "type": "FROZEN_A"
+      },
+      "90036": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 52.027,
+        "net_progress": -44.027,
+        "path_length": 49.857,
+        "type": "FROZEN_A"
+      },
+      "90037": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 5.55,
+        "net_progress": 2.45,
+        "path_length": 14.37,
+        "type": "LATE_B"
+      },
+      "90038": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 18.4,
+        "net_progress": -10.4,
+        "path_length": 17.57,
+        "type": "FROZEN_A"
+      },
+      "90039": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 51.39,
+        "net_progress": -43.39,
+        "path_length": 49.782,
+        "type": "FROZEN_A"
+      },
+      "90040": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 5.661,
+        "net_progress": 2.339,
+        "path_length": 16.231,
+        "type": "LATE_B"
+      },
+      "90041": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 11.517,
+        "net_progress": -3.517,
+        "path_length": 14.921,
+        "type": "FROZEN_A"
+      },
+      "90042": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.583,
+        "net_progress": -40.583,
+        "path_length": 49.287,
+        "type": "FROZEN_A"
+      },
+      "90043": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 41.076,
+        "net_progress": -33.076,
+        "path_length": 40.437,
+        "type": "FROZEN_A"
+      },
+      "90044": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 36.309,
+        "net_progress": -28.309,
+        "path_length": 44.097,
+        "type": "FROZEN_A"
+      },
+      "90045": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 50.223,
+        "net_progress": -42.223,
+        "path_length": 48.907,
+        "type": "FROZEN_A"
+      },
+      "90046": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 48.228,
+        "net_progress": -40.228,
+        "path_length": 49.511,
+        "type": "FROZEN_A"
+      },
+      "90047": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 8.074,
+        "net_progress": -0.074,
+        "path_length": 12.327,
+        "type": "FROZEN_A"
+      },
+      "90048": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 10.278,
+        "net_progress": -2.278,
+        "path_length": 10.831,
+        "type": "FROZEN_A"
+      },
+      "90049": {
+        "outcome": "TIMEOUT",
+        "steps": 200,
+        "time": 50.0,
+        "init_dist": 8.0,
+        "final_dist": 11.062,
+        "net_progress": -3.062,
+        "path_length": 14.421,
+        "type": "FROZEN_A"
+      }
+    },
+    "sr": 0.0,
+    "cr": 2.0,
+    "tr": 98.0
+  }
+}
