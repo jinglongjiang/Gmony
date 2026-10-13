@@ -7,7 +7,7 @@ import configparser
 import numpy as np
 import torch
 
-WORKSPACE = Path('/home/abc/workspace/autonomous_research_20261012')
+WORKSPACE = Path(__file__).resolve().parent
 sys.path.insert(0, str(WORKSPACE))
 
 from crowd_nav.policy.mamba_rl import MambaRLPolicy

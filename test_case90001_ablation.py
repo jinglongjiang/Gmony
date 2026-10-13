@@ -7,7 +7,7 @@ import configparser
 import numpy as np
 import torch
 
-WORKSPACE = Path('/home/abc/workspace/autonomous_research_20261012')
+WORKSPACE = Path(__file__).resolve().parent
 KDARL_CLEAN = WORKSPACE / 'kdarl_clean'
 sys.path = [str(KDARL_CLEAN), str(WORKSPACE)] + [p for p in sys.path if p not in (str(WORKSPACE), str(KDARL_CLEAN), '')]
 
