@@ -1,0 +1,88 @@
+{
+  "dataset": "Stage1_Circle_500cases",
+  "n_cases": 500,
+  "decision": "NOT REPLICATED",
+  "primary_comparison": {
+    "comparison": "Arm 4 (Learned LR Gated) vs Arm 1 (Base B0)",
+    "delta_sr_pp": -0.2,
+    "mcnemar_p_value": 1.0,
+    "base_won_b": 12,
+    "candidate_won_c": 11,
+    "delta_cr_pp": 0.6,
+    "cr_diff_95ci_low_pp": -0.58,
+    "cr_diff_95ci_up_pp": 1.78,
+    "cr_bound_pass": true
+  },
+  "secondary_comparisons": {
+    "heuristic_vs_base": {
+      "delta_sr_pp": 0.4,
+      "p_value": 0.80362,
+      "b": 7,
+      "c": 9
+    },
+    "rf_vs_base": {
+      "delta_sr_pp": 0.2,
+      "p_value": 1.0,
+      "b": 10,
+      "c": 11
+    }
+  },
+  "arms_summary": {
+    "arm1_base": {
+      "label": "Pure B0 Baseline",
+      "n_cases": 500,
+      "success_count": 473,
+      "collision_count": 12,
+      "timeout_count": 15,
+      "stagnation_count": 1,
+      "sr": 94.6,
+      "cr": 2.4,
+      "tr": 3.0,
+      "sor": 0.2,
+      "avg_time": 16.9,
+      "avg_interv": 0.0
+    },
+    "arm2_heuristic": {
+      "label": "Heuristic Gated (K=4)",
+      "n_cases": 500,
+      "success_count": 475,
+      "collision_count": 14,
+      "timeout_count": 11,
+      "stagnation_count": 1,
+      "sr": 95.0,
+      "cr": 2.8,
+      "tr": 2.2,
+      "sor": 0.2,
+      "avg_time": 16.93,
+      "avg_interv": 2.51
+    },
+    "arm3_learned_rf": {
+      "label": "Champion Learned RF (K=4)",
+      "n_cases": 500,
+      "success_count": 474,
+      "collision_count": 13,
+      "timeout_count": 13,
+      "stagnation_count": 0,
+      "sr": 94.8,
+      "cr": 2.6,
+      "tr": 2.6,
+      "sor": 0.0,
+      "avg_time": 16.81,
+      "avg_interv": 2.88
+    },
+    "arm4_learned_lr": {
+      "label": "Champion Learned LR (K=4)",
+      "n_cases": 500,
+      "success_count": 472,
+      "collision_count": 15,
+      "timeout_count": 13,
+      "stagnation_count": 0,
+      "sr": 94.4,
+      "cr": 3.0,
+      "tr": 2.6,
+      "sor": 0.0,
+      "avg_time": 16.95,
+      "avg_interv": 4.11
+    }
+  }
+}

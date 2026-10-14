@@ -7,6 +7,8 @@ REPLICATED
 - **报告生成脚本**：`/home/abc/workspace/autonomous_research_20261012/replication/generate_stage1_report.py`
 - **方形评测原始数据**：`/home/abc/workspace/autonomous_research_20261012/replication/stage1_square_1000cases.json`
 - **方形统计数据文件**：`/home/abc/workspace/autonomous_research_20261012/replication/stage1_square_stats.json`
+- **圆形评测原始数据**：`/home/abc/workspace/autonomous_research_20261012/replication/stage1_circle_500cases.json`
+- **圆形统计数据文件**：`/home/abc/workspace/autonomous_research_20261012/replication/stage1_circle_stats.json`
 - **冻结配置与哈希列表**：`/home/abc/workspace/autonomous_research_20261012/replication/FROZEN.json`
 - **前置预登记判据文件**：`/home/abc/workspace/autonomous_research_20261012/replication/PREREG.md`
 - **底层模型与门控冻结状态**：已验证通过（回归闸门 40/40 逐回合一致）
@@ -32,6 +34,17 @@ REPLICATED
 ### 伴随汇报臂结果（不参与判定）
 - **人工门控 对 基线 B0**：ΔSR = +4.30 个百分点（82.5% 对 78.2%），双侧 p = 0.00010（基线胜 38 例，人工门控胜 81 例）
 - **随机森林门控 对 基线 B0**：ΔSR = +5.00 个百分点（83.2% 对 78.2%），双侧 p = 0.00001（基线胜 39 例，RF门控胜 89 例）
+
+## 三、伴随测试块结果：20人圆形交叉（Case 97000–97499，N=500，仅报告）
+
+| 评测臂 / 方法 | 样本数 | 成功率 (%) | 碰撞率 (%) | 超时率 (%) | 停滞率 (%) | 平均耗时 (s) | 干预频次 (次/回合) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Pure B0 Baseline | 500 | 94.6% (473/500) | 2.4% (12/500) | 3.0% (15/500) | 0.2% (1/500) | 16.90s | 0.00 |
+| Heuristic Gated (K=4) | 500 | 95.0% (475/500) | 2.8% (14/500) | 2.2% (11/500) | 0.2% (1/500) | 16.93s | 2.51 |
+| Champion Learned RF (K=4) | 500 | 94.8% (474/500) | 2.6% (13/500) | 2.6% (13/500) | 0.0% (0/500) | 16.81s | 2.88 |
+| Champion Learned LR (K=4) | 500 | 94.4% (472/500) | 3.0% (15/500) | 2.6% (13/500) | 0.0% (0/500) | 16.95s | 4.11 |
+
+- **圆形下 LR 对 基线 B0**：ΔSR = -0.20 个百分点，双侧 p = 1.00000，ΔCR = +0.60 个百分点（95% CI: [-0.58, +1.78] 个百分点）
 
 ## 四、阶段判定与下一步执行约束
 - **阶段 1 结论状态**：**REPLICATED**
