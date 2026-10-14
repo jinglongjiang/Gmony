@@ -1,0 +1,88 @@
+{
+  "dataset": "Stage1_Square_1000cases",
+  "n_cases": 1000,
+  "decision": "REPLICATED",
+  "primary_comparison": {
+    "comparison": "Arm 4 (Learned LR Gated) vs Arm 1 (Base B0)",
+    "delta_sr_pp": 4.8,
+    "mcnemar_p_value": 1e-05,
+    "base_won_b": 33,
+    "candidate_won_c": 81,
+    "delta_cr_pp": 0.2,
+    "cr_diff_95ci_low_pp": -0.42,
+    "cr_diff_95ci_up_pp": 0.82,
+    "cr_bound_pass": true
+  },
+  "secondary_comparisons": {
+    "heuristic_vs_base": {
+      "delta_sr_pp": 4.3,
+      "p_value": 0.0001,
+      "b": 38,
+      "c": 81
+    },
+    "rf_vs_base": {
+      "delta_sr_pp": 5.0,
+      "p_value": 1e-05,
+      "b": 39,
+      "c": 89
+    }
+  },
+  "arms_summary": {
+    "arm1_base": {
+      "label": "Pure B0 Baseline",
+      "n_cases": 1000,
+      "success_count": 782,
+      "collision_count": 65,
+      "timeout_count": 153,
+      "stagnation_count": 100,
+      "sr": 78.2,
+      "cr": 6.5,
+      "tr": 15.3,
+      "sor": 10.0,
+      "avg_time": 18.93,
+      "avg_interv": 0.0
+    },
+    "arm2_heuristic": {
+      "label": "Heuristic Gated (K=4)",
+      "n_cases": 1000,
+      "success_count": 825,
+      "collision_count": 69,
+      "timeout_count": 106,
+      "stagnation_count": 76,
+      "sr": 82.5,
+      "cr": 6.9,
+      "tr": 10.6,
+      "sor": 7.6,
+      "avg_time": 18.2,
+      "avg_interv": 4.85
+    },
+    "arm3_learned_rf": {
+      "label": "Champion Learned RF (K=4)",
+      "n_cases": 1000,
+      "success_count": 832,
+      "collision_count": 68,
+      "timeout_count": 100,
+      "stagnation_count": 60,
+      "sr": 83.2,
+      "cr": 6.8,
+      "tr": 10.0,
+      "sor": 6.0,
+      "avg_time": 17.8,
+      "avg_interv": 6.43
+    },
+    "arm4_learned_lr": {
+      "label": "Champion Learned LR (K=4)",
+      "n_cases": 1000,
+      "success_count": 830,
+      "collision_count": 67,
+      "timeout_count": 103,
+      "stagnation_count": 66,
+      "sr": 83.0,
+      "cr": 6.7,
+      "tr": 10.3,
+      "sor": 6.6,
+      "avg_time": 17.89,
+      "avg_interv": 8.51
+    }
+  }
+}
