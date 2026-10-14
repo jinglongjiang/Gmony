@@ -53,26 +53,54 @@
 - 保持 `Stage4ControllerPolicy` 整体架构不变（母体价值前瞻原样保留，通过对候选打分加偏置起作用，门控触发与意图推导不变）。
 - 将“固定承诺 4 步”换为轻量级终止头（Termination Head），在每个承诺步实时评估当前状态特征与交互风险，输出继续维持还是放弃重选的二元决策。
 
-### 2. 监督信号与反事实克隆验证
+### 2. 对照实验臂设计
+1. **主实验臂（Learned Termination）**：学习型终止头，由反事实分叉标签监督训练。
+2. **基准比较臂（LR Gated K=4）**：阶段 1 的逻辑回归门控（固定承诺 4 步）。
+3. **新增对照臂（CUSUM Termination，累积和终止）**：
+   - **机制设计**：不进行网络训练。在承诺存续期间的每一个决策步，计算“放弃并重选”相对于“继续维持当前承诺”的候选打分优势：
+     $$D_t = J_{\text{abandon}} - J_{\text{continue}} = \max_a \text{Score}_{\text{base}}(a) - \left( \text{Score}_{\text{base}}(a_{\text{committed}}) + \alpha \cdot \text{compat}(a_{\text{committed}}, \text{intent}) \right)$$
+   - **累积递推方程**：采用带泄漏的单侧累积和（Leaky CUSUM）递推累计：
+     $$e_t = \text{clip}\left( \lambda \cdot e_{t-1} + (D_t - \Delta_{\text{floor}}) \cdot \Delta t, \; 0, \; e_{\max} \right)$$
+     当累积量 $e_t \ge E_{\text{th}}$ 时，立即终止当前承诺，交由底层母体重新选择动作。
+   - **参数选择规范**：参数三元组（泄漏系数 $\lambda$、判定门限 $E_{\text{th}}$、优势下限 $\Delta_{\text{floor}}$）严格只在 Case 99000–99399 的验证集部分（30% 案例，约 120 例）上进行有限网格搜索，选出一组最优参数；选定结果写入配置文件并提交 Git，然后再读取测试块。
+   - **文献出处与简化说明**：
+     - 出处：参照 COMPASS（Jungmo Kang, Preprints.org 2026, `doi:10.20944/preprints202610.0120.v1`）中的单侧累积量切换准则；
+     - 简化：COMPASS 在连续轨迹层维护双人拓扑类别向量与几何进度硬化门限（$E_0(1+k_\rho \rho^p)$），本对照臂简化为对密集人群离散候选动作的打分优势进行累积，并使用常数门限 $E_{\text{th}}$ 与固定泄漏 $\lambda$。
+4. **必带对照臂（Shuffled Labels Control）**：使用完全相同架构、特征与超参数，但在打乱标签（Shuffled Labels）下训练的伪终止头，结果与主读数并排列出。
+
+### 3. 监督信号与反事实克隆验证
 - 标签采集：在相同快照状态 $s_t$ 下，分叉两条续行分支：
   - 分支 A（Continue）：继续维持当前承诺意图；
   - 分支 B（Abandon）：放弃当前意图，交由底层母体重新选择动作/意图。
 - 监督标签为两分支的未来累计回报差 $\Delta G = G_{\text{abandon}} - G_{\text{continue}}$。
 - **克隆前置验证**：在启动分支前，验证无干预重放轨迹与原始环境轨迹逐步完全一致（100% Parity）。
 
-### 3. 数据划分与候选配置
+### 4. 数据划分与候选配置
 - 采样数据严格限制在 Case 99000 – 99399（400 例），按 Case ID 划分训练集（70%）与验证集（30%）。
 - 候选模型配置事先列出（不超过 4 个候选），在验证集上依据验证损失与准确率选出唯一冠军配置，提交选定记录后再读取测试集。
 - **回归闸门**：当终止头强制设为“第 4 步终止”时，其行为与结局必须与原逻辑回归门控（K=4）完全一致。
 
-### 4. 测试块与判定判据
+### 5. 测试块与双主比较判定判据
 - **测试块**：Case 98000 – 98999（共 1000 例，Square Crossing，20 行人），只读取评估一次。
-- **主比较对象**：可学习终止模型 vs 原逻辑回归门控（K=4）。
-- **必须对照组**：使用相同架构但标签被打乱（Shuffled Labels）训练的终止头。
+- **双主比较（Dual Primary Comparisons）**：
+  必须同时通过以下两个比较，显著性水平各取 $\alpha = 0.025$（双侧精确 McNemar 检验）：
+  1. **比较 1：可学习终止 对 逻辑回归门控（K=4）**
+     - 成功率差：$\Delta\text{SR}_1 = \text{SR}_{\text{learned}} - \text{SR}_{\text{LR}}$
+     - 双侧精确检验 $p_1$
+  2. **比较 2：可学习终止 对 累积和终止（CUSUM）**
+     - 成功率差：$\Delta\text{SR}_2 = \text{SR}_{\text{learned}} - \text{SR}_{\text{CUSUM}}$
+     - 双侧精确检验 $p_2$
 - **判定规则**：
-  - **`SUPPORTED`**：$\Delta\text{SR} > 0$ 且双侧 $p < 0.05$。
-  - **`NOT SUPPORTED`**：$\Delta\text{SR} < +1.0\%$。
-  - **`INCONCLUSIVE`**：其余情况。
+  - **`SUPPORTED`**：
+    两个比较均满足成功率差大于 0 且统计显著：
+    $$(\Delta\text{SR}_1 > 0 \land p_1 < 0.025) \quad \land \quad (\Delta\text{SR}_2 > 0 \land p_2 < 0.025)$$
+  - **`NOT SUPPORTED`**：
+    任一比较的成功率差点估计小于 +1.0 个百分点：
+    $$(\Delta\text{SR}_1 < +1.0\%) \quad \lor \quad (\Delta\text{SR}_2 < +1.0\%)$$
+  - **`INCONCLUSIVE`**：
+    其余所有情况（例如两个差均 $\ge +1.0\%$ 但未能均达到 $p < 0.025$）。
+- **同步汇报指标**：
+  同时报告对基线 B0 的差、碰撞率、超时率以及承诺持续步数（Dwell Steps）的经验分布。
 
 ---
 
