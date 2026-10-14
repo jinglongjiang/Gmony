@@ -1,0 +1,60 @@
+{
+  "description": "Frozen configuration, model SHA256 hashes, thresholds, and policy parameters for Stage 1 replication",
+  "created_at": "2026-10-14T12:08:00+09:00",
+  "files_sha256": {
+    "baseline_weights/gru-t24-seed443.pth": "212bf66c5d90a3930ef69e027de848da18e32663bbbe78483f51821d7de6713c",
+    "trained_models/champion_gating_rf.joblib": "31ae93cd06449d16d1febbbeaef891db2740f49d2ee0bdb13bafb7937cc95420",
+    "trained_models/champion_gating_lr.joblib": "1129857d47f4468802916a384d0c4e0663a7807a7039c08a01603ca0cd36cefe",
+    "trained_models/champion_metadata.json": "ab5e18c66de1757389203c9a3d5fc8902bdc9138e6da68acd8a39210857ef495",
+    "run_stage4_500cases_evaluation.py": "090cca525eae435f67da078b8f9556ddd024918ad5d54fcd3b0e5e6b7e77c36d",
+    "run_p3_cagis_benchmark.py": "a776222e3e0d52a609746843483a7c48f6b2aae962241fa92b1bf98a79e2507e",
+    "analyze_feature_predictability_p2.py": "a863f55b7fbf05c3553d5adcac0f27323ed45fb9adef4de0951f083ae475100f",
+    "run_b0_counterfactual_study.py": "adea4311fb1e1ff385699d6b01957edd374ba4f313abcee5fcae8576ea621236",
+    "run_selection_study_50cases.py": "65481ea14f2b51af3add56b90fa0eda5da4ca2c8bf4f58aefcbb6d26df39a0cd"
+  },
+  "arms": {
+    "arm1_base": {
+      "name": "Base Single-Stream GRU (B0)",
+      "mode": "base",
+      "weights": "baseline_weights/gru-t24-seed443.pth",
+      "intervention": "none"
+    },
+    "arm2_heuristic": {
+      "name": "Heuristic Gated",
+      "mode": "heuristic",
+      "K": 4,
+      "gate_rule": "ratio_4s >= 1.8 and dmin_curr >= 0.25 and closing_speed <= 0.3 and safe_actions_ratio >= 0.5"
+    },
+    "arm3_learned_rf": {
+      "name": "Champion Learned Gate - Random Forest",
+      "mode": "learned_rf",
+      "K": 4,
+      "weights": "trained_models/champion_gating_rf.joblib",
+      "threshold": 0.4,
+      "symptom_trigger": "ratio_4s >= 1.8 or reversals_4s >= 2"
+    },
+    "arm4_learned_lr": {
+      "name": "Champion Learned Gate - Logistic Regression",
+      "mode": "learned_lr",
+      "K": 4,
+      "weights": "trained_models/champion_gating_lr.joblib",
+      "threshold": 0.4,
+      "symptom_trigger": "ratio_4s >= 1.8 or reversals_4s >= 2"
+    }
+  },
+  "shared_parameters": {
+    "K_dwell_steps": 4,
+    "alpha": 0.10,
+    "clearance_ramp_low": 0.22,
+    "clearance_ramp_high": 0.37,
+    "emergency_clearance_abort": 0.22,
+    "time_step": 0.25,
+    "time_limit": 50.0,
+    "history_window_W": 16,
+    "action_candidates": 80,
+    "test_min_clearance": 0.2,
+    "test_risk_lambda": 0.8,
+    "test_action_smoothing": 0.3,
+    "selection": "ttc5"
+  }
+}
