@@ -29,7 +29,8 @@ FORBIDDEN_RANGES = [
     (92000, 92499),
     (90000, 90299),
     (93000, 93199),
-    (95000, 96499)
+    (95000, 96499),
+    (98000, 98999)
 ]
 
 def assert_case_guard(start_case, num_cases):
