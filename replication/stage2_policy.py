@@ -2,6 +2,8 @@ import os
 import sys
 import json
 import math
+import copy
+from collections import deque
 from pathlib import Path
 import numpy as np
 import torch
@@ -59,6 +61,46 @@ class Stage2TerminationPolicy(Stage4ControllerPolicy):
         self.cusum_accumulator = 0.0
         self.dwell_history.clear()
         self.last_term_features = None
+
+    def capture_internal_state(self):
+        """Captures complete execution state of the policy before a decision step."""
+        return {
+            '_history': [t.copy() for t in self._history],
+            '_last_action': copy.deepcopy(self._last_action),
+            '_selected_action_index': getattr(self, '_selected_action_index', None),
+            '_last_grid_index': getattr(self, '_last_grid_index', None),
+            'history_pos': list(self.history_pos),
+            'history_vel': list(self.history_vel),
+            'last_decision_features': copy.deepcopy(self.last_decision_features),
+            'committed_intent': self.committed_intent,
+            'dwell_steps_held': int(self.dwell_steps_held),
+            'dwell_steps_remaining': int(self.dwell_steps_remaining),
+            'intervention_count': int(self.intervention_count),
+            'cusum_accumulator': float(self.cusum_accumulator),
+            'dwell_history': list(self.dwell_history),
+            'last_term_features': copy.deepcopy(self.last_term_features),
+            'selection_indices': list(self.selection_indices) if getattr(self, 'selection_indices', None) is not None else None,
+        }
+
+    def restore_internal_state(self, state_dict):
+        """Restores complete execution state of the policy."""
+        self._history = deque([t.copy() for t in state_dict['_history']], maxlen=self.seq_len)
+        self._last_action = copy.deepcopy(state_dict['_last_action'])
+        if state_dict.get('_selected_action_index') is not None:
+            self._selected_action_index = state_dict['_selected_action_index']
+        if state_dict.get('_last_grid_index') is not None:
+            self._last_grid_index = state_dict['_last_grid_index']
+        self.history_pos = list(state_dict['history_pos'])
+        self.history_vel = list(state_dict['history_vel'])
+        self.last_decision_features = copy.deepcopy(state_dict['last_decision_features'])
+        self.committed_intent = state_dict['committed_intent']
+        self.dwell_steps_held = int(state_dict['dwell_steps_held'])
+        self.dwell_steps_remaining = int(state_dict['dwell_steps_remaining'])
+        self.intervention_count = int(state_dict['intervention_count'])
+        self.cusum_accumulator = float(state_dict['cusum_accumulator'])
+        self.dwell_history = list(state_dict['dwell_history'])
+        self.last_term_features = copy.deepcopy(state_dict['last_term_features'])
+        self.selection_indices = list(state_dict['selection_indices']) if state_dict.get('selection_indices') is not None else None
 
     def extract_termination_features(self, state: JointState, base_res, current_physical_clearance):
         base_feat = self.extract_observable_features(state, base_res)
