@@ -28,6 +28,10 @@
 7. [`71e2f85`](https://github.com/jinglongjiang/Gmony/commit/71e2f85) - `stage2: fix NameError by restoring log_f file opening before subprocess launch`
 8. [`ee8aadb`](https://github.com/jinglongjiang/Gmony/commit/ee8aadb) - `stage2: verify smoke test on cases 99000-99001 (per-case flush log, incremental save, single-thread 98% CPU verified)`
 9. [`ed2ea55`](https://github.com/jinglongjiang/Gmony/commit/ed2ea55) - `stage2: allow up to 6 workers for stage2 collection`
+10. [`025f971`](https://github.com/jinglongjiang/Gmony/commit/025f971) - `stage2: create STATUS_WHILE_AWAY.md for autonomous monitoring`
+11. [`f9e8fa7`](https://github.com/jinglongjiang/Gmony/commit/f9e8fa7) - `stage2: record 15-minute collection milestone in STATUS_WHILE_AWAY.md`
+12. [`f9dc6cc`](https://github.com/jinglongjiang/Gmony/commit/f9dc6cc) - `stage2: record 30-minute monitoring row in STATUS_WHILE_AWAY.md`
+13. [`b1af868`](https://github.com/jinglongjiang/Gmony/commit/b1af868) - `stage2: record 60-minute monitoring row (44/400 cases, 1175 samples, case 99010 passed)`
 
 ---
 
@@ -35,7 +39,7 @@
 
 - **测试案例范围**：Case 99000 – 99019（共 20 例）
 - **判定阈值**：容差 $10^{-9}$，动作序列与折现回报必须逐步完全相等
-- **当前进度**：已完成 9 / 20 个案例，已通过分支步：117 / 117 步
+- **当前进度**：已完成 10 / 20 个案例，已通过分支步：155 / 155 步（注：闸门运行耗时超 90 分钟，依协议继续在后台全速运行，不中断）
 
 ### 实时案例比对数据表
 
@@ -96,3 +100,4 @@
 | 16:55:34 | 15m | 23 / 400 | 453 | 39.1s/Case (综合墙上耗时) | 约 3.8～4.1 小时 (实测吞吐 1.53 Case/min) | 6 个进程全部已打印 2～7 个 Case 进度，0 报错，逐 Case 存盘正常 |
 | 17:10:45 | 30m | 29 / 400 | 559 | 62.1s/Case (综合墙上耗时) | 约 6.4 小时 (实测累计吞吐 0.967 Case/min) | 6 个进程健康运行（CPU 85%–88%），0 报错，磁盘剩余 47GB |
 | 17:42:01 | 60m | 44 / 400 | 1175 | 83.9s/Case (综合墙上耗时) | 约 8.3 小时 (实测累计吞吐 0.715 Case/min) | 6 个进程健康运行（CPU 85%–88%），0 报错，磁盘剩余 47GB |
+| 18:13:00 | 92m | 64 / 400 | 1962 | 86.7s/Case (综合墙上耗时) | 约 8.1 小时 (实测累计吞吐 0.692 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
