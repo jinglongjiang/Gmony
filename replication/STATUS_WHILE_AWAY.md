@@ -39,6 +39,8 @@
 18. [`e714719`](https://github.com/jinglongjiang/Gmony/commit/e714719) - `stage2: record 210-minute monitoring row (211/400 cases, 5332 samples, 52.8% done)`
 19. [`c399a6c`](https://github.com/jinglongjiang/Gmony/commit/c399a6c) - `stage2: record 240-minute monitoring row (245/400 cases, 5959 samples, 61.3% done)`
 20. [`ac457c8`](https://github.com/jinglongjiang/Gmony/commit/ac457c8) - `stage2: record 270-minute monitoring row (279/400 cases, 6590 samples, 69.8% done)`
+21. [`2702030`](https://github.com/jinglongjiang/Gmony/commit/2702030) - `stage2: record 300-minute monitoring row (315/400 cases, 7509 samples, 78.8% done)`
+22. [`9c68968`](https://github.com/jinglongjiang/Gmony/commit/9c68968) - `stage2: enforce single-thread constraints in null_branch_gate.py, archive partial_v1 results, and correct resource statement in STATUS`
 
 ---
 
@@ -46,7 +48,8 @@
 
 - **测试案例范围**：Case 99000 – 99019（共 20 例）
 - **判定阈值**：容差 $10^{-9}$，动作序列与折现回报必须逐步完全相等
-- **当前进度**：已完成 10 / 20 个案例，已通过分支步：155 / 155 步（注：闸门运行耗时超 90 分钟，依协议继续在后台全速运行，不中断）
+- **单线程重跑状态**：已以 2 进程单线程（OMP/MKL/OPENBLAS 环境变量 + `torch.set_num_threads(1)`）重新运行，启动 10 分钟实测 CPU：PID 1688315 @ 98.8%、PID 1688317 @ 99.1%（严格符合单线程要求，彻底消除此前 365% 争用）。
+- **当前进度与 partial_v1 逐例比对**：当前重跑已完成 7 / 20 例（Case 99000, 99001, 99002, 99003, 99005, 99006, 99007），累计 95 个被采样步全过（`max_act_diff = 0.00e+00`, `max_g_diff = 0.00e+00`），且与归档的 `null_branch_gate_partial_v1.json` 逐例、逐步 100% 精确一致。
 
 ### 实时案例比对数据表
 
@@ -115,3 +118,4 @@
 | 20:50:00 | 249m | 245 / 400 | 5959 | 61.1s/Case (综合墙上耗时) | 约 2.6 小时 (实测累计吞吐 0.982 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 21:21:25 | 281m | 279 / 400 | 6590 | 60.4s/Case (综合墙上耗时) | 约 2.0 小时 (实测累计吞吐 0.994 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 21:52:40 | 312m | 315 / 400 | 7509 | 59.4s/Case (综合墙上耗时) | 约 1.4 小时 (实测累计吞吐 1.009 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
+| 22:28:50 | 348m | 347 / 400 | 8298 | 60.2s/Case (综合墙上耗时) | 约 0.9 小时 (实测累计吞吐 0.997 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
