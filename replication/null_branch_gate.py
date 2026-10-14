@@ -212,65 +212,69 @@ def worker_fn(case_id):
         res = run_case_null_branch_gate(case_id)
         print(f"[NullBranchGate] Case {case_id}: {res['sampled_steps']} sampled steps, "
               f"max_act_diff={res['max_act_diff']:.2e}, max_g_diff={res['max_g_diff']:.2e}, "
-              f"passed={res['case_passed']}")
+              f"passed={res['case_passed']}", flush=True)
         return res
     except Exception as e:
-        print(f"[NullBranchGate] ERROR in case {case_id}: {e}")
+        print(f"[NullBranchGate] ERROR in case {case_id}: {e}", flush=True)
         raise
 
 def main():
     cases = list(range(99000, 99020))
     assert_case_guard(cases[0], len(cases))
-    print(f"=== Starting Null Branch Gate for {len(cases)} cases ({cases[0]} - {cases[-1]}) ===")
+    print(f"=== Starting Null Branch Gate for {len(cases)} cases ({cases[0]} - {cases[-1]}) | WORKERS=2 ===", flush=True)
     t0 = time.time()
 
-    # Constraint: max 4 parallel worker processes
-    num_workers = 4
+    # Constraint: parallel workers = 2
+    num_workers = 2
+    case_results = {}
+
     with Pool(processes=num_workers) as pool:
-        case_results_list = pool.map(worker_fn, cases)
+        for res in pool.imap_unordered(worker_fn, cases):
+            case_results[res['case_id']] = res
 
-    case_results = {r['case_id']: r for r in case_results_list}
+            # Incremental save
+            current_list = list(case_results.values())
+            total_sampled = sum(r['sampled_steps'] for r in current_list)
+            passed_sampled = sum(sum(1 for s in r['step_details'] if s['passed']) for r in current_list)
+            all_passed = all(r['case_passed'] for r in current_list)
+            overall_max_g_diff = max(r['max_g_diff'] for r in current_list) if current_list else 0.0
+            overall_max_act_diff = max(r['max_act_diff'] for r in current_list) if current_list else 0.0
+            overall_max_pos_diff = max(r['max_pos_diff'] for r in current_list) if current_list else 0.0
+            overall_max_rew_diff = max(r['max_rew_diff'] for r in current_list) if current_list else 0.0
 
-    total_sampled = sum(r['sampled_steps'] for r in case_results_list)
-    passed_sampled = sum(sum(1 for s in r['step_details'] if s['passed']) for r in case_results_list)
-    all_passed = all(r['case_passed'] for r in case_results_list)
-    overall_max_g_diff = max(r['max_g_diff'] for r in case_results_list)
-    overall_max_act_diff = max(r['max_act_diff'] for r in case_results_list)
-    overall_max_pos_diff = max(r['max_pos_diff'] for r in case_results_list)
-    overall_max_rew_diff = max(r['max_rew_diff'] for r in case_results_list)
+            summary = {
+                'gate_name': 'Stage 2 Null Branch Replay Gate',
+                'status': 'PASSED' if (len(case_results) == len(cases) and all_passed) else ('IN_PROGRESS' if len(case_results) < len(cases) else 'FAILED'),
+                'total_cases': len(cases),
+                'completed_cases': len(case_results),
+                'case_range': [cases[0], cases[-1]],
+                'total_sampled_steps': total_sampled,
+                'passed_sampled_steps': passed_sampled,
+                'all_passed': bool(all_passed),
+                'tolerance': 1e-9,
+                'max_return_diff': float(overall_max_g_diff),
+                'max_action_diff': float(overall_max_act_diff),
+                'max_robot_pos_diff': float(overall_max_pos_diff),
+                'max_reward_diff': float(overall_max_rew_diff),
+                'elapsed_seconds': round(time.time() - t0, 2)
+            }
 
-    summary = {
-        'gate_name': 'Stage 2 Null Branch Replay Gate',
-        'status': 'PASSED' if all_passed else 'FAILED',
-        'total_cases': len(cases),
-        'case_range': [cases[0], cases[-1]],
-        'total_sampled_steps': total_sampled,
-        'passed_sampled_steps': passed_sampled,
-        'all_passed': bool(all_passed),
-        'tolerance': 1e-9,
-        'max_return_diff': float(overall_max_g_diff),
-        'max_action_diff': float(overall_max_act_diff),
-        'max_robot_pos_diff': float(overall_max_pos_diff),
-        'max_reward_diff': float(overall_max_rew_diff),
-        'elapsed_seconds': round(time.time() - t0, 2)
-    }
+            gate_payload = {
+                'summary': summary,
+                'cases': case_results
+            }
 
-    gate_payload = {
-        'summary': summary,
-        'cases': case_results
-    }
+            with open(OUT_GATE_JSON, 'w') as f:
+                json.dump(gate_payload, f, indent=2)
 
-    with open(OUT_GATE_JSON, 'w') as f:
-        json.dump(gate_payload, f, indent=2)
-
-    print("\n=== Null Branch Gate Evaluation Complete ===")
-    print(f"Status: {summary['status']}")
-    print(f"Sampled Steps: {passed_sampled} / {total_sampled} passed")
-    print(f"Max G diff: {overall_max_g_diff:.2e}")
-    print(f"Max Act diff: {overall_max_act_diff:.2e}")
-    print(f"Max Pos diff: {overall_max_pos_diff:.2e}")
-    print(f"Elapsed: {summary['elapsed_seconds']}s")
-    print(f"Saved results to: {OUT_GATE_JSON}")
+    all_passed = all(r['case_passed'] for r in case_results.values()) and (len(case_results) == len(cases))
+    print(f"\n=== Null Branch Gate Evaluation Complete (All 20 Cases Finished) ===", flush=True)
+    print(f"Status: {summary['status']}", flush=True)
+    print(f"Sampled Steps: {passed_sampled} / {total_sampled} passed", flush=True)
+    print(f"Max G diff: {overall_max_g_diff:.2e}", flush=True)
+    print(f"Max Act diff: {overall_max_act_diff:.2e}", flush=True)
+    print(f"Elapsed: {summary['elapsed_seconds']}s", flush=True)
+    print(f"Saved results to: {OUT_GATE_JSON}", flush=True)
 
     if not all_passed:
         sys.exit(1)
