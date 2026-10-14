@@ -1,0 +1,15 @@
+{
+  "name": "hyst_alpha_0.10",
+  "type": "hysteresis",
+  "mode": "action_hysteresis",
+  "alpha_a": 0.1,
+  "k_repeat": 1,
+  "n_cases": 200,
+  "success_rate": 2.0,
+  "collision_rate": 21.5,
+  "timeout_rate": 76.5,
+  "avg_time": 21.0,
+  "mean_grid_switch_rate": 0.1173,
+  "mean_vel_switch_rate": 0.1584,
+  "wall_time_s": 6489.7
+}

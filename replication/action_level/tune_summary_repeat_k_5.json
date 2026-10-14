@@ -1,0 +1,15 @@
+{
+  "name": "repeat_k_5",
+  "type": "repeat",
+  "mode": "action_repeat",
+  "alpha_a": 0.0,
+  "k_repeat": 5,
+  "n_cases": 200,
+  "success_rate": 43.0,
+  "collision_rate": 47.5,
+  "timeout_rate": 9.5,
+  "avg_time": 22.22,
+  "mean_grid_switch_rate": 0.307,
+  "mean_vel_switch_rate": 0.6479,
+  "wall_time_s": 3070.4
+}
