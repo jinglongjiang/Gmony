@@ -32,6 +32,7 @@
 11. [`f9e8fa7`](https://github.com/jinglongjiang/Gmony/commit/f9e8fa7) - `stage2: record 15-minute collection milestone in STATUS_WHILE_AWAY.md`
 12. [`f9dc6cc`](https://github.com/jinglongjiang/Gmony/commit/f9dc6cc) - `stage2: record 30-minute monitoring row in STATUS_WHILE_AWAY.md`
 13. [`b1af868`](https://github.com/jinglongjiang/Gmony/commit/b1af868) - `stage2: record 60-minute monitoring row (44/400 cases, 1175 samples, case 99010 passed)`
+14. [`ed35c54`](https://github.com/jinglongjiang/Gmony/commit/ed35c54) - `stage2: record 90-minute monitoring row (64/400 cases, 1962 samples, gate running past 90m per protocol)`
 
 ---
 
@@ -101,3 +102,4 @@
 | 17:10:45 | 30m | 29 / 400 | 559 | 62.1s/Case (综合墙上耗时) | 约 6.4 小时 (实测累计吞吐 0.967 Case/min) | 6 个进程健康运行（CPU 85%–88%），0 报错，磁盘剩余 47GB |
 | 17:42:01 | 60m | 44 / 400 | 1175 | 83.9s/Case (综合墙上耗时) | 约 8.3 小时 (实测累计吞吐 0.715 Case/min) | 6 个进程健康运行（CPU 85%–88%），0 报错，磁盘剩余 47GB |
 | 18:13:00 | 92m | 64 / 400 | 1962 | 86.7s/Case (综合墙上耗时) | 约 8.1 小时 (实测累计吞吐 0.692 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
+| 18:45:00 | 124m | 94 / 400 | 2757 | 79.3s/Case (综合墙上耗时) | 约 6.7 小时 (实测累计吞吐 0.757 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
