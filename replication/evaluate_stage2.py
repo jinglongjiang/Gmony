@@ -1,4 +1,9 @@
 import os
+os.environ['OMP_NUM_THREADS'] = '1'
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
+os.environ['NUMEXPR_NUM_THREADS'] = '1'
 import sys
 import json
 import math
@@ -6,6 +11,7 @@ import time
 from pathlib import Path
 import numpy as np
 import torch
+torch.set_num_threads(1)
 import joblib
 from scipy.stats import binom_test
 
