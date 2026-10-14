@@ -249,7 +249,7 @@ def main():
         return
 
     assert_case_guard(args.start_case, args.total_cases)
-    num_workers = min(args.workers, 4)
+    num_workers = min(args.workers, 6)
 
     print("=" * 95)
     print(f"STAGE 2 DATA COLLECTION: CASES {args.start_case}..{args.start_case + args.total_cases - 1} | WORKERS={num_workers}")
