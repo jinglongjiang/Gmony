@@ -1,0 +1,27 @@
+{
+  "total_samples": 9783,
+  "train_samples": 6584,
+  "train_cases": 280,
+  "train_pos_label": 3044,
+  "train_pos_ratio": 46.23,
+  "val_samples": 3199,
+  "val_cases": 120,
+  "val_pos_label": 1756,
+  "val_pos_ratio": 54.89,
+  "feature_keys": [
+    "dmin_curr",
+    "closing_speed",
+    "travel_4s",
+    "disp_4s",
+    "ratio_4s",
+    "reversals_4s",
+    "dist_to_goal",
+    "goal_heading_error",
+    "safe_actions_ratio",
+    "current_speed",
+    "dwell_step",
+    "score_gap",
+    "intent_compat_curr",
+    "clearance_margin"
+  ]
+}
