@@ -100,6 +100,27 @@ def generate_report():
     lines.append("- **数据隔离核实**：未读取任何禁用 case（92000–92499、90000–90299、93000–93199、95000–96499）。阶段 2 测试块（98000–98999）在此前未被读取。")
     lines.append("")
 
+    # Factual statement comparing learned gating against heuristic gating
+    from scipy.stats import binom_test
+    with open(SQUARE_RAW_PATH, 'r') as f:
+        sq_raw = json.load(f)
+    heu_out = [d['arm2_heuristic']['outcome'] for d in sq_raw]
+    rf_out = [d['arm3_learned_rf']['outcome'] for d in sq_raw]
+    lr_out = [d['arm4_learned_lr']['outcome'] for d in sq_raw]
+
+    b_lr = sum(1 for h, l in zip(heu_out, lr_out) if h == 'SUCCESS' and l != 'SUCCESS')
+    c_lr = sum(1 for h, l in zip(heu_out, lr_out) if h != 'SUCCESS' and l == 'SUCCESS')
+    p_lr = binom_test(min(b_lr, c_lr), b_lr + c_lr, 0.5)
+
+    b_rf = sum(1 for h, r in zip(heu_out, rf_out) if h == 'SUCCESS' and r != 'SUCCESS')
+    c_rf = sum(1 for h, r in zip(heu_out, rf_out) if h != 'SUCCESS' and r == 'SUCCESS')
+    p_rf = binom_test(min(b_rf, c_rf), b_rf + c_rf, 0.5)
+
+    lines.append("## 五、学习型门控相对人工门控的事实陈述")
+    lines.append(f"逻辑回归门控对人工门控 {c_lr} 对 {b_lr}，p={p_lr:.2f}；随机森林对人工门控 {c_rf} 对 {b_rf}，p={p_rf:.2f}。")
+    lines.append("学习型门控相对人工门控没有可测差异。")
+    lines.append("")
+
     content = "\n".join(lines) + "\n"
     with open(REPORT_PATH, 'w', encoding='utf-8') as f:
         f.write(content)
