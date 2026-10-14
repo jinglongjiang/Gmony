@@ -1,4 +1,9 @@
 import os
+os.environ['OMP_NUM_THREADS'] = '1'
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
+os.environ['NUMEXPR_NUM_THREADS'] = '1'
 import sys
 import json
 import math
@@ -7,6 +12,7 @@ from pathlib import Path
 from multiprocessing import Pool
 import numpy as np
 import torch
+torch.set_num_threads(1)
 
 REPO_ROOT = Path('/home/abc/workspace/autonomous_research_20261012')
 sys.path.insert(0, str(REPO_ROOT))
@@ -38,6 +44,7 @@ def assert_case_guard(start_case, num_cases):
 
 def run_case_null_branch_gate(case_id, gamma=0.99):
     assert_case_guard(case_id, 1)
+    t_case_start = time.time()
 
     env, env_config = create_environment()
     robot = Robot(env_config, 'robot')
@@ -105,7 +112,7 @@ def run_case_null_branch_gate(case_id, gamma=0.99):
     case_max_pos_diff = 0.0
     case_max_rew_diff = 0.0
 
-    for target_t in sampled_indices:
+    for idx, target_t in enumerate(sampled_indices):
         target_rec = orig_records[target_t]
         # Replay prefix 0..target_t - 1
         obs, _ = env.reset(options={'test_case': case_id})
@@ -179,6 +186,9 @@ def run_case_null_branch_gate(case_id, gamma=0.99):
         case_max_pos_diff = max(case_max_pos_diff, step_max_pos_diff)
         case_max_rew_diff = max(case_max_rew_diff, step_max_rew_diff)
 
+        if (idx + 1) % 10 == 0 or (idx + 1) == len(sampled_indices):
+            print(f"[NullBranchGate] Case {case_id}: step {idx+1}/{len(sampled_indices)} evaluated (elapsed: {time.time()-t_case_start:.1f}s)", flush=True)
+
         step_details.append({
             'step': target_t,
             'dwell_held': target_rec['dwell_held'],
@@ -195,6 +205,7 @@ def run_case_null_branch_gate(case_id, gamma=0.99):
             'passed': bool(step_passed)
         })
 
+    elapsed_case = round(time.time() - t_case_start, 2)
     return {
         'case_id': case_id,
         'total_steps': total_steps,
@@ -204,13 +215,23 @@ def run_case_null_branch_gate(case_id, gamma=0.99):
         'max_act_diff': float(case_max_act_diff),
         'max_pos_diff': float(case_max_pos_diff),
         'max_rew_diff': float(case_max_rew_diff),
+        'elapsed_sec': elapsed_case,
         'step_details': step_details
     }
 
+def worker_init():
+    os.environ['OMP_NUM_THREADS'] = '1'
+    os.environ['MKL_NUM_THREADS'] = '1'
+    os.environ['OPENBLAS_NUM_THREADS'] = '1'
+    os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
+    os.environ['NUMEXPR_NUM_THREADS'] = '1'
+    torch.set_num_threads(1)
+
 def worker_fn(case_id):
+    worker_init()
     try:
         res = run_case_null_branch_gate(case_id)
-        print(f"[NullBranchGate] Case {case_id}: {res['sampled_steps']} sampled steps, "
+        print(f"[NullBranchGate] Case {case_id} DONE in {res['elapsed_sec']:.1f}s: {res['sampled_steps']} sampled steps, "
               f"max_act_diff={res['max_act_diff']:.2e}, max_g_diff={res['max_g_diff']:.2e}, "
               f"passed={res['case_passed']}", flush=True)
         return res
@@ -228,7 +249,7 @@ def main():
     num_workers = 2
     case_results = {}
 
-    with Pool(processes=num_workers) as pool:
+    with Pool(processes=num_workers, initializer=worker_init) as pool:
         for res in pool.imap_unordered(worker_fn, cases):
             case_results[res['case_id']] = res
 
