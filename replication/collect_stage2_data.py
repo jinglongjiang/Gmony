@@ -277,6 +277,7 @@ def main():
             '--device', args.device,
             '--out_file', str(w_out)
         ]
+        log_f = open(REPLICATION_DIR / f'stage2_data_worker_{w}.log', 'w')
         sub_env = dict(os.environ, OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1')
         proc = subprocess.Popen(cmd, stdout=log_f, stderr=subprocess.STDOUT, env=sub_env)
         processes.append((proc, log_f, w))
