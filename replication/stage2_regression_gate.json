@@ -1,0 +1,195 @@
+{
+  "gate": "Stage 2 Regression Gate (Forced Step 4 == Learned LR K=4)",
+  "status": "PASSED",
+  "cases_tested": 20,
+  "case_range": [
+    99000,
+    99019
+  ],
+  "overall_max_action_diff": 0.0,
+  "tolerance": 1e-09,
+  "all_passed": true,
+  "elapsed_seconds": 153.72,
+  "results": [
+    {
+      "case_id": 99000,
+      "steps_orig": 75,
+      "steps_s2": 75,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99001,
+      "steps_orig": 59,
+      "steps_s2": 59,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99002,
+      "steps_orig": 121,
+      "steps_s2": 121,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99003,
+      "steps_orig": 61,
+      "steps_s2": 61,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99004,
+      "steps_orig": 201,
+      "steps_s2": 201,
+      "event_orig": "timeout",
+      "event_s2": "timeout",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99005,
+      "steps_orig": 55,
+      "steps_s2": 55,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99006,
+      "steps_orig": 64,
+      "steps_s2": 64,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99007,
+      "steps_orig": 68,
+      "steps_s2": 68,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99008,
+      "steps_orig": 55,
+      "steps_s2": 55,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99009,
+      "steps_orig": 70,
+      "steps_s2": 70,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99010,
+      "steps_orig": 84,
+      "steps_s2": 84,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99011,
+      "steps_orig": 201,
+      "steps_s2": 201,
+      "event_orig": "timeout",
+      "event_s2": "timeout",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99012,
+      "steps_orig": 201,
+      "steps_s2": 201,
+      "event_orig": "timeout",
+      "event_s2": "timeout",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99013,
+      "steps_orig": 66,
+      "steps_s2": 66,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99014,
+      "steps_orig": 55,
+      "steps_s2": 55,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99015,
+      "steps_orig": 74,
+      "steps_s2": 74,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99016,
+      "steps_orig": 65,
+      "steps_s2": 65,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99017,
+      "steps_orig": 62,
+      "steps_s2": 62,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99018,
+      "steps_orig": 21,
+      "steps_s2": 21,
+      "event_orig": "collision",
+      "event_s2": "collision",
+      "max_act_diff": 0.0,
+      "passed": true
+    },
+    {
+      "case_id": 99019,
+      "steps_orig": 81,
+      "steps_s2": 81,
+      "event_orig": "reach_goal",
+      "event_s2": "reach_goal",
+      "max_act_diff": 0.0,
+      "passed": true
+    }
+  ]
+}
