@@ -1,6 +1,6 @@
 # 离线执行与阶段 2 状态监控报告 (STATUS_WHILE_AWAY)
 
-> 更新时间：2026-10-14 22:17:00  
+> 更新时间：2026-10-15 00:01:00  
 > 工作分支：`research/option-critic-cf-10h`  
 > 运行资源更正说明：此前第一版闸门（PID 1574308，2 进程）启动早于单线程重构，实测各占约 365% CPU（未受单线程限制，此前 STATUS 概括为"全部单线程"与事实不符，在此更正）。已遵照指示终止旧闸门，原 10 例结果归档为 `null_branch_gate_partial_v1.json`；已为 `null_branch_gate.py` 补充完整单线程限制（环境变量 + `torch.set_num_threads(1)`）并重新启动。数据采集 6 进程始终严格单线程（每进程 CPU 78%–81%）。
 
@@ -12,8 +12,8 @@
 | :--- | :--- | :--- |
 | **第 1 步：立即执行与冒烟测试** | **已验证通过** | 旧采集已杀；修复 `log_f` NameError 并提交；冒烟测试 99000–99001 成功通过（单线程 97.5%–98.3% CPU、逐 case 刷新日志、逐 case 写入均验证通过，已提交） |
 | **第 2 步：空分叉闸门（Case 99000–99019）** | **已验证通过 (PASSED)** | 2 进程单线程重跑全部 20 例已全量完成；540/540 分叉步全部通过（max_act_diff=0.00e+00, max_g_diff=0.00e+00）；与 partial_v1 前 10 例逐例核验 100% 精确一致 |
-| **第 3 步：阶段 2 正式数据采集（99000–99399）** | **进行中（已完成 315/400）** | 6 个 worker 进程持续稳定运行，严格单线程（CPU 78%–81%），已完成 78.8% |
-| **第 4 步：CUSUM 调参与终止头训练** | **未验证** | 严格遵循契约：等待闸门全 PASS 且采集完全结束后方才启动 |
+| **第 3 步：阶段 2 正式数据采集（99000–99399）** | **已验证通过 (全量完成)** | 6 个 worker 进程全部正常完成（退出码 0），总耗时 25,965.9s (~7.2h)，完成全部 400 个 Case，产出 9,783 个分叉样本并完成合并与统计分析 |
+| **第 4 步：CUSUM 调参与终止头训练** | **进行中** | 闸门全 PASS、数据集全量合并且加入测试块禁区保护后已正式启动（严格禁止测试块 98000–98999） |
 
 ---
 
@@ -41,6 +41,10 @@
 20. [`ac457c8`](https://github.com/jinglongjiang/Gmony/commit/ac457c8) - `stage2: record 270-minute monitoring row (279/400 cases, 6590 samples, 69.8% done)`
 21. [`2702030`](https://github.com/jinglongjiang/Gmony/commit/2702030) - `stage2: record 300-minute monitoring row (315/400 cases, 7509 samples, 78.8% done)`
 22. [`9c68968`](https://github.com/jinglongjiang/Gmony/commit/9c68968) - `stage2: enforce single-thread constraints in null_branch_gate.py, archive partial_v1 results, and correct resource statement in STATUS`
+23. [`fab5311`](https://github.com/jinglongjiang/Gmony/commit/fab5311) - `stage2: record 10m gate CPU check (99% single-core, 7/7 cases match partial_v1) and 348m collection milestone (347/400 cases)`
+24. [`9ff707b`](https://github.com/jinglongjiang/Gmony/commit/9ff707b) - `stage2: null branch gate PASSED across all 20 cases (540/540 steps, diff 0.00e+00, 100% matched partial_v1)`
+25. [`b9744e9`](https://github.com/jinglongjiang/Gmony/commit/b9744e9) - `stage2: add test block (98000, 98999) to FORBIDDEN_RANGES in tune_cusum.py and train_stage2_termination.py`
+26. [`9b7a188`](https://github.com/jinglongjiang/Gmony/commit/9b7a188) - `stage2: save formal branching dataset (9783 samples across 400 cases) and stats`
 
 ---
 
@@ -123,3 +127,53 @@
 | 21:21:25 | 281m | 279 / 400 | 6590 | 60.4s/Case (综合墙上耗时) | 约 2.0 小时 (实测累计吞吐 0.994 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 21:52:40 | 312m | 315 / 400 | 7509 | 59.4s/Case (综合墙上耗时) | 约 1.4 小时 (实测累计吞吐 1.009 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 22:28:50 | 348m | 347 / 400 | 8298 | 60.2s/Case (综合墙上耗时) | 约 0.9 小时 (实测累计吞吐 0.997 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
+| 23:53:20 | 432m | 400 / 400 | 9783 | 64.9s/Case (综合墙上耗时) | 0 小时 (已全量完成) | 6 个进程全部退出码 0 正常完成，合并为 stage2_branching_dataset.json |
+
+---
+
+## 五、阶段 2 分叉数据集统计明细 (N=9,783)
+
+### 1. 划分分布 (Split Distribution)
+- **样本总数**：9,783 个分叉样本（覆盖 Case 99000 – 99399 共 400 个 Case）
+- **训练块 (Cases 99000 – 99279, N=280)**：6,584 样本 (67.30%)
+- **验证块 (Cases 99280 – 99399, N=120)**：3,199 样本 (32.70%)
+- **测试块 (Cases 98000 – 98999)**：严格禁止接触，0 样本
+
+### 2. 放弃分支优于继续分支比例 ($G_{abandon} > G_{continue}$, 正样本率)
+- **全集总体**：4,800 / 9,783 = **49.06%**（正负样本高度均衡）
+- **训练块**：3,044 / 6,584 = **46.23%**
+- **验证块**：1,756 / 3,199 = **54.89%**
+- **回报差 $\Delta G = G_{abandon} - G_{continue}$ 分布**：
+  - 均值 (Mean)：+0.0768
+  - 标准差 (Std)：0.1937
+  - 中位数 (Median)：0.0000
+  - 极值范围：[-1.1506, +1.4298]
+
+### 3. 按 Case 的样本与正样本率分布
+- 400 个 Case 中，产生承诺分叉样本的 Case：**355 / 400 (88.8%)**
+- 未产生承诺分叉样本的 Case（即全程未触发承诺门控或仅单步）：**45 / 400 (11.2%)**
+- 在 355 个有效 Case 中的样本量分布：
+  - 最小值：1
+  - 第 25 百分位数 (p25)：11.0
+  - 中位数 (Median)：18.0
+  - 第 75 百分位数 (p75)：29.5
+  - 第 90 百分位数 (p90)：54.0
+  - 最大值：179
+  - 均值 $\pm$ 标准差：27.56 $\pm$ 31.39
+- 各 Case 放弃分支占优比例（正样本率）：
+  - 跨 Case 平均正样本率：28.30%
+  - 仅继续更优（正样本率 = 0.0%）：73 个 Case (20.6%)
+  - 仅放弃更优（正样本率 = 100.0%）：31 个 Case (8.7%)
+  - 混合正负样本（0.0% < 正样本率 < 100.0%）：251 个 Case (70.7%)
+
+### 4. 采样时已保持步数 (Dwell Step) 分布
+- `dwell_step = 1`：3,558 样本 (36.4%) | 放弃更优：1,987 (55.8%)
+- `dwell_step = 2`：2,483 样本 (25.4%) | 放弃更优：1,348 (54.3%)
+- `dwell_step = 3`：2,009 样本 (20.5%) | 放弃更优：996 (49.6%)
+- `dwell_step = 4`：1,733 样本 (17.7%) | 放弃更优：469 (27.1%)
+
+### 5. 放弃后重新承诺动态 (Re-commitment Dynamics)
+- 放弃后在回合内重新承诺：9,029 / 9,783 (**92.3%**)
+- 重新承诺选择**相同意图**：4,426 (49.0%)
+- 重新承诺选择**不同意图**：4,603 (51.0%)
+- 重新承诺间隔步数：均值 2.26 步，中位数 1.0 步（极值范围 1 ~ 86 步）

@@ -8,6 +8,7 @@ import sys
 import json
 import math
 import time
+import subprocess
 from pathlib import Path
 import numpy as np
 import torch
@@ -55,7 +56,7 @@ CANDIDATE_CUSUM_GRID = [
     {'name': 'cusum_cand8_persistent', 'decay': 1.00, 'threshold': 0.30, 'floor': 0.10},
 ]
 
-def evaluate_param_set(param_set, val_cases, device='cpu'):
+def evaluate_param_set(param_set, val_cases, device='cpu', print_case_progress=True):
     env, env_config = create_environment()
     env.test_sim = 'square_crossing'
     robot = Robot(env_config, 'robot')
@@ -74,14 +75,28 @@ def evaluate_param_set(param_set, val_cases, device='cpu'):
     outcomes = []
     times = []
     dwell_all = []
+    cand_name = param_set.get('name', 'custom')
 
-    for case_id in val_cases:
+    t_eval_start = time.time()
+    for idx, case_id in enumerate(val_cases):
         assert_case_guard(case_id, 1)
+        t_case = time.time()
         res = run_single_episode(policy, env, case_id)
+        dt_case = time.time() - t_case
         outcomes.append(res['outcome'])
         if res['outcome'] == 'SUCCESS':
             times.append(res['final_time'])
         dwell_all.extend(policy.dwell_history)
+
+        if print_case_progress:
+            cum_sr = float(np.mean([1.0 if o == 'SUCCESS' else 0.0 for o in outcomes]) * 100.0)
+            print(
+                f"[{cand_name}] Case {case_id} ({idx+1}/{n_cases}) in {dt_case:.1f}s | "
+                f"outcome={res['outcome']} | cum_SR={cum_sr:.1f}% | "
+                f"last_dwell={policy.dwell_history[-1] if policy.dwell_history else 0} | "
+                f"elapsed={time.time() - t_eval_start:.1f}s",
+                flush=True
+            )
 
     sr = float(np.mean([1.0 if o == 'SUCCESS' else 0.0 for o in outcomes]) * 100.0)
     cr = float(np.mean([1.0 if o == 'COLLISION' else 0.0 for o in outcomes]) * 100.0)
@@ -90,7 +105,7 @@ def evaluate_param_set(param_set, val_cases, device='cpu'):
     mean_dwell = float(np.mean(dwell_all)) if dwell_all else 0.0
 
     return {
-        'name': param_set.get('name', 'custom'),
+        'name': cand_name,
         'decay': param_set['decay'],
         'threshold': param_set['threshold'],
         'floor': param_set['floor'],
@@ -103,26 +118,89 @@ def evaluate_param_set(param_set, val_cases, device='cpu'):
         'dwell_count': len(dwell_all)
     }
 
-def run_tuning(device='cpu'):
-    # Validation cases strictly: 99280..99399 (120 cases, 30% split)
+def run_chunk_candidates(cand_indices, out_file, device='cpu'):
+    val_cases = list(range(99280, 99400))
+    assert_case_guard(val_cases[0], len(val_cases))
+
+    results = []
+    for c_idx in cand_indices:
+        cand = CANDIDATE_CUSUM_GRID[c_idx]
+        t0 = time.time()
+        print(f"--- Starting {cand['name']} (idx={c_idx}) ---", flush=True)
+        res = evaluate_param_set(cand, val_cases, device=device, print_case_progress=True)
+        elapsed = time.time() - t0
+        res['eval_time_s'] = round(elapsed, 1)
+        results.append(res)
+        print(f"[{res['name']:<22}] FINISHED | decay={res['decay']:.2f}, thr={res['threshold']:.2f}, floor={res['floor']:.2f} | "
+              f"SR={res['success_rate']:5.1f}% | CR={res['collision_rate']:4.1f}% | Time={res['avg_time']:5.2f}s | "
+              f"MeanDwell={res['mean_dwell_steps']:4.1f} | Elapsed={elapsed:.1f}s", flush=True)
+
+        if out_file:
+            with open(out_file, 'w') as f:
+                json.dump(results, f, indent=2)
+
+    return results
+
+def run_tuning(device='cpu', workers=4):
     val_cases = list(range(99280, 99400))
     assert_case_guard(val_cases[0], len(val_cases))
 
     print("=" * 95)
     print(f"CUSUM PARAMETER TUNING ON VALIDATION SPLIT (Cases {val_cases[0]}..{val_cases[-1]}, N={len(val_cases)})")
-    print(f"Candidates to evaluate: {len(CANDIDATE_CUSUM_GRID)}")
-    print("=" * 95)
+    print(f"Candidates to evaluate: {len(CANDIDATE_CUSUM_GRID)} | Workers: {workers}")
+    print("=" * 95, flush=True)
 
+    t_start = time.time()
     results = []
-    for cand in CANDIDATE_CUSUM_GRID:
-        t0 = time.time()
-        res = evaluate_param_set(cand, val_cases, device=device)
-        elapsed = time.time() - t0
-        res['eval_time_s'] = round(elapsed, 1)
-        results.append(res)
-        print(f"[{res['name']:<22}] decay={res['decay']:.2f}, thr={res['threshold']:.2f}, floor={res['floor']:.2f} | "
-              f"SR={res['success_rate']:5.1f}% | CR={res['collision_rate']:4.1f}% | Time={res['avg_time']:5.2f}s | "
-              f"MeanDwell={res['mean_dwell_steps']:4.1f} | Elapsed={elapsed:.1f}s")
+
+    if workers <= 1:
+        for idx, cand in enumerate(CANDIDATE_CUSUM_GRID):
+            t0 = time.time()
+            res = evaluate_param_set(cand, val_cases, device=device, print_case_progress=True)
+            elapsed = time.time() - t0
+            res['eval_time_s'] = round(elapsed, 1)
+            results.append(res)
+            print(f"[{res['name']:<22}] decay={res['decay']:.2f}, thr={res['threshold']:.2f}, floor={res['floor']:.2f} | "
+                  f"SR={res['success_rate']:5.1f}% | CR={res['collision_rate']:4.1f}% | Time={res['avg_time']:5.2f}s | "
+                  f"MeanDwell={res['mean_dwell_steps']:4.1f} | Elapsed={elapsed:.1f}s", flush=True)
+            with open(OUT_GRID_RESULTS, 'w') as f:
+                json.dump(results, f, indent=2)
+    else:
+        num_workers = min(workers, len(CANDIDATE_CUSUM_GRID))
+        worker_cand_lists = [[] for _ in range(num_workers)]
+        for i in range(len(CANDIDATE_CUSUM_GRID)):
+            worker_cand_lists[i % num_workers].append(i)
+
+        processes = []
+        part_files = []
+        for w in range(num_workers):
+            part_out = REPLICATION_DIR / f'cusum_tune_part{w}.json'
+            part_files.append(part_out)
+            indices_str = ','.join(str(idx) for idx in worker_cand_lists[w])
+            cmd = [
+                sys.executable,
+                str(Path(__file__).resolve()),
+                '--chunk_mode',
+                '--cand_indices', indices_str,
+                '--out_file', str(part_out),
+                '--device', device
+            ]
+            log_f = open(REPLICATION_DIR / f'cusum_tune_worker_{w}.log', 'w')
+            sub_env = dict(os.environ, OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1')
+            proc = subprocess.Popen(cmd, stdout=log_f, stderr=subprocess.STDOUT, env=sub_env)
+            processes.append((proc, log_f, w, worker_cand_lists[w]))
+            print(f"Launched CUSUM Worker {w} for candidates {worker_cand_lists[w]} -> log: cusum_tune_worker_{w}.log", flush=True)
+
+        for proc, log_f, wid, c_list in processes:
+            proc.wait()
+            log_f.close()
+            print(f"CUSUM Worker {wid} (candidates {c_list}) finished with exit code {proc.returncode}.", flush=True)
+            if proc.returncode != 0:
+                raise RuntimeError(f"CUSUM Worker {wid} failed! Check cusum_tune_worker_{wid}.log")
+
+        for pf in part_files:
+            with open(pf, 'r') as f:
+                results.extend(json.load(f))
 
     # Select champion: Highest SR -> Lowest CR -> Lowest avg_time
     results.sort(key=lambda x: (-x['success_rate'], x['collision_rate'], x['avg_time']))
@@ -153,16 +231,28 @@ def run_tuning(device='cpu'):
     with open(OUT_SELECTED_PARAMS, 'w') as f:
         json.dump(selected, f, indent=2)
 
+    total_elapsed = time.time() - t_start
     print("=" * 95)
     print(f"CUSUM SELECTION WINNER: {champion['name']}")
     print(f"  decay={champion['decay']}, threshold={champion['threshold']}, floor={champion['floor']}")
     print(f"  Validation SR={champion['success_rate']}%, CR={champion['collision_rate']}%, Time={champion['avg_time']}s")
     print(f"Saved selected parameters to: {OUT_SELECTED_PARAMS}")
-    print("=" * 95)
+    print(f"Saved all grid results to: {OUT_GRID_RESULTS}")
+    print(f"Total Tuning Wall Time: {total_elapsed:.1f}s")
+    print("=" * 95, flush=True)
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--device', type=str, default='cpu')
+    parser.add_argument('--workers', type=int, default=4)
+    parser.add_argument('--chunk_mode', action='store_true')
+    parser.add_argument('--cand_indices', type=str, default='')
+    parser.add_argument('--out_file', type=str, default=None)
     args = parser.parse_args()
-    run_tuning(device=args.device)
+
+    if args.chunk_mode:
+        c_indices = [int(x.strip()) for x in args.cand_indices.split(',') if x.strip()]
+        run_chunk_candidates(c_indices, args.out_file, device=args.device)
+    else:
+        run_tuning(device=args.device, workers=args.workers)
