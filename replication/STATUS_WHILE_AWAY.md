@@ -1,6 +1,6 @@
 # 离线执行与阶段 2 状态监控报告 (STATUS_WHILE_AWAY)
 
-> 更新时间：2026-10-15 00:01:00  
+> 更新时间：2026-10-15 01:35:00  
 > 工作分支：`research/option-critic-cf-10h`  
 > 运行资源更正说明：此前第一版闸门（PID 1574308，2 进程）启动早于单线程重构，实测各占约 365% CPU（未受单线程限制，此前 STATUS 概括为"全部单线程"与事实不符，在此更正）。已遵照指示终止旧闸门，原 10 例结果归档为 `null_branch_gate_partial_v1.json`；已为 `null_branch_gate.py` 补充完整单线程限制（环境变量 + `torch.set_num_threads(1)`）并重新启动。数据采集 6 进程始终严格单线程（每进程 CPU 78%–81%）。
 
@@ -13,7 +13,7 @@
 | **第 1 步：立即执行与冒烟测试** | **已验证通过** | 旧采集已杀；修复 `log_f` NameError 并提交；冒烟测试 99000–99001 成功通过（单线程 97.5%–98.3% CPU、逐 case 刷新日志、逐 case 写入均验证通过，已提交） |
 | **第 2 步：空分叉闸门（Case 99000–99019）** | **已验证通过 (PASSED)** | 2 进程单线程重跑全部 20 例已全量完成；540/540 分叉步全部通过（max_act_diff=0.00e+00, max_g_diff=0.00e+00）；与 partial_v1 前 10 例逐例核验 100% 精确一致 |
 | **第 3 步：阶段 2 正式数据采集（99000–99399）** | **已验证通过 (全量完成)** | 6 个 worker 进程全部正常完成（退出码 0），总耗时 25,965.9s (~7.2h)，完成全部 400 个 Case，产出 9,783 个分叉样本并完成合并与统计分析 |
-| **第 4 步：CUSUM 调参与终止头训练** | **进行中** | 闸门全 PASS、数据集全量合并且加入测试块禁区保护后已正式启动（严格禁止测试块 98000–98999） |
+| **第 4 步：CUSUM 调参与终止头训练** | **已验证通过 (全量完成)** | CUSUM 调参完成（8 候选评测，胜出者 cusum_cand1_fast，SR 80.83% 已提交）；终止头 4 候选模型训练及验证块闭环评测完成，胜出者 cand4_mlp_h32_16 (SR 85.83%, CR 6.67%)；打乱标签对照组闭环评测完成 (SR 88.33%, CR 6.67%)；ΔSR=-2.50%, ΔCR=0.00%, ΔTime=-0.37s；全量模型与元数据已提交；测试块 98000–98999 严格未运行 |
 
 ---
 
@@ -45,6 +45,8 @@
 24. [`9ff707b`](https://github.com/jinglongjiang/Gmony/commit/9ff707b) - `stage2: null branch gate PASSED across all 20 cases (540/540 steps, diff 0.00e+00, 100% matched partial_v1)`
 25. [`b9744e9`](https://github.com/jinglongjiang/Gmony/commit/b9744e9) - `stage2: add test block (98000, 98999) to FORBIDDEN_RANGES in tune_cusum.py and train_stage2_termination.py`
 26. [`9b7a188`](https://github.com/jinglongjiang/Gmony/commit/9b7a188) - `stage2: save formal branching dataset (9783 samples across 400 cases) and stats`
+27. [`f23faaa`](https://github.com/jinglongjiang/Gmony/commit/f23faaa) - `stage2: add flush logging and 4-worker multiprocessing to tune_cusum and train_stage2_termination, update STATUS with dataset stats`
+28. [`3fae424`](https://github.com/jinglongjiang/Gmony/commit/3fae424) - `stage2: commit CUSUM grid search results and selected parameters on validation split`
 
 ---
 
@@ -177,3 +179,58 @@
 - 重新承诺选择**相同意图**：4,426 (49.0%)
 - 重新承诺选择**不同意图**：4,603 (51.0%)
 - 重新承诺间隔步数：均值 2.26 步，中位数 1.0 步（极值范围 1 ~ 86 步）
+
+---
+
+## 六、CUSUM 参数网格调优结果 (Cases 99280–99399, N=120)
+
+- **评估方法**：4 个单线程 worker 并行评估 8 组候选参数，严格隔离于验证块（99280–99399），禁区拦截生效。
+- **总耗时**：3,193.4s (~53.2 分钟)
+- **产物文件**：[`replication/cusum_selected_params.json`](file:///home/abc/workspace/autonomous_research_20261012/replication/cusum_selected_params.json)
+
+| 候选名称 | decay | threshold | floor | 闭环 SR (%) | 闭环 CR (%) | 闭环 TR (%) | 平均耗时 (s) | 平均 Dwell |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **cusum_cand1_fast (Champion)** | **0.80** | **0.10** | **0.00** | **80.83%** | **8.33%** | **10.83%** | **18.19** | **4.11** |
+| cusum_cand2_med_low | 0.85 | 0.15 | 0.00 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand3_med | 0.90 | 0.20 | 0.00 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand4_med_floor | 0.90 | 0.15 | 0.05 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand5_slow | 0.95 | 0.25 | 0.00 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand6_slow_floor | 0.95 | 0.20 | 0.05 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand7_conservative | 0.98 | 0.35 | 0.05 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+| cusum_cand8_persistent | 1.00 | 0.30 | 0.10 | 80.83% | 8.33% | 10.83% | 18.19 | 4.11 |
+
+*注：8 组参数结果相同，因多数步数中未受限最佳动作与受限动作一致（$\text{score\_gap} \approx 0$），CUSUM 均由安全硬上限或紧急避障释放触发。*
+
+---
+
+## 七、阶段 2 可学习终止头训练与打乱标签对照组结果
+
+### 1. 候选模型筛选（训练集 Cases 99000–99279，验证块 Cases 99280–99399 闭环评选）
+
+| 候选模型 | 离线 Acc (%) | 离线 AUC | 离线 F1 | 闭环验证 SR (%) | 闭环验证 CR (%) | 闭环验证 TR (%) | 闭环验证时间 (s) | 平均 Dwell |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| `cand1_lr_c1.0` (逻辑回归 C=1.0) | 72.71% | 0.8092 | 0.7141 | 81.67% | 7.50% | 10.83% | 17.95s | 2.03 |
+| `cand2_lr_c0.1` (逻辑回归 C=0.1) | 72.74% | 0.8093 | 0.7143 | 82.50% | 7.50% | 10.00% | 18.08s | 2.07 |
+| `cand3_rf_d4_n50` (随机森林 d=4) | 73.12% | 0.8281 | 0.7037 | 80.00% | 9.17% | 10.83% | 18.12s | 2.18 |
+| **`cand4_mlp_h32_16` (MLP 冠军)** | **72.21%** | **0.8155** | **0.7267** | **85.83%** | **6.67%** | **7.50%** | **17.79s** | **2.14** |
+
+### 2. 真实标签冠军 vs 打乱标签对照组（Shuffled Label Control Arm）对比与差值
+
+对照组采用与 Champion 完全相同的 MLP 网络结构（隐层 32, 16），在训练集特征上拟合随机打乱的标签（随机置换种子 42），并在完全相同的验证块（120 例）上进行闭环仿真评测。
+
+| 指标项 | 真实标签 Champion (`cand4_mlp_h32_16`) | 打乱标签对照组 (Shuffled Control) | 差值 ($\Delta = \text{Real} - \text{Shuffled}$) |
+| :--- | :---: | :---: | :---: |
+| **离线验证 Acc** | 72.21% | 50.92% | **+21.29%** |
+| **离线验证 AUC** | 0.8155 | 0.5477 | **+0.2678** |
+| **离线验证 F1** | 0.7267 | 0.4120 | **+0.3147** |
+| **闭环成功率 (SR)** | **85.83%** | **88.33%** | **-2.50%** |
+| **闭环碰撞率 (CR)** | **6.67%** | **6.67%** | **+0.00%** |
+| **闭环超时率 (TR)** | **7.50%** | **5.00%** | **+2.50%** |
+| **导航耗时 (Time)** | **17.79s** | **18.16s** | **-0.37s** |
+| **平均保持步数 (Dwell)** | **2.14** | **2.02** | **+0.12 步** |
+
+### 3. 产物提交
+- 元数据文件：[`replication/stage2_champion_metadata.json`](file:///home/abc/workspace/autonomous_research_20261012/replication/stage2_champion_metadata.json)
+- 模型权重：[`replication/stage2_champion_model.joblib`](file:///home/abc/workspace/autonomous_research_20261012/replication/stage2_champion_model.joblib)
+- 对照组模型：[`replication/stage2_shuffled_model.joblib`](file:///home/abc/workspace/autonomous_research_20261012/replication/stage2_shuffled_model.joblib)
+- 测试块（Cases 98000–98999）：**严格未运行，做到第 4 步立即停机等待指示**。
