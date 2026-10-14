@@ -1,4 +1,9 @@
 import os
+os.environ['OMP_NUM_THREADS'] = '1'
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+os.environ['VECLIB_MAXIMUM_THREADS'] = '1'
+os.environ['NUMEXPR_NUM_THREADS'] = '1'
 import sys
 import json
 import math
@@ -6,6 +11,7 @@ import time
 from pathlib import Path
 import numpy as np
 import torch
+torch.set_num_threads(1)
 
 REPO_ROOT = Path('/home/abc/workspace/autonomous_research_20261012')
 sys.path.insert(0, str(REPO_ROOT))
@@ -204,15 +210,25 @@ def collect_chunk(start_case, num_cases, device='cpu', out_file=None):
 
     for idx in range(num_cases):
         case_id = start_case + idx
+        t_case_start = time.time()
         samples = collect_single_case_counterfactuals(case_id, env, policy)
         all_samples.extend(samples)
+        case_elapsed = time.time() - t_case_start
+        total_elapsed = time.time() - t_start
 
-        if (idx + 1) % 10 == 0 or idx == num_cases - 1:
-            if out_file:
-                with open(out_file, 'w') as f:
-                    json.dump(all_samples, f, indent=2)
-            elapsed = time.time() - t_start
-            print(f"[{Path(out_file).name if out_file else 'Worker'}] Done {idx+1}/{num_cases} cases | Samples: {len(all_samples)} | Elapsed: {elapsed:.1f}s", flush=True)
+        # Per-case incremental save
+        if out_file:
+            with open(out_file, 'w') as f:
+                json.dump(all_samples, f, indent=2)
+
+        # Per-case progress logging with explicit flush
+        prefix = Path(out_file).name if out_file else f'Worker-{start_case}'
+        print(
+            f"[{prefix}] Case {case_id} ({idx+1}/{num_cases}) done in {case_elapsed:.1f}s | "
+            f"Case samples: {len(samples)} | Cumulative samples: {len(all_samples)} | "
+            f"Elapsed: {total_elapsed:.1f}s",
+            flush=True
+        )
 
     return all_samples
 
@@ -261,8 +277,8 @@ def main():
             '--device', args.device,
             '--out_file', str(w_out)
         ]
-        log_f = open(REPLICATION_DIR / f'stage2_data_worker_{w}.log', 'w')
-        proc = subprocess.Popen(cmd, stdout=log_f, stderr=subprocess.STDOUT)
+        sub_env = dict(os.environ, OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1')
+        proc = subprocess.Popen(cmd, stdout=log_f, stderr=subprocess.STDOUT, env=sub_env)
         processes.append((proc, log_f, w))
         curr_start += w_cases
 
