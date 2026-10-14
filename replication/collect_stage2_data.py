@@ -61,15 +61,18 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
         else:
             phys_clearance = 999.0
 
-        is_committed_before_predict = (policy.committed_intent is not None and policy.dwell_steps_held > 0)
+        # Capture complete internal policy state BEFORE prediction
+        saved_pol_state = policy.capture_internal_state()
+        was_committed = (policy.committed_intent is not None)
+        dwell_held = policy.dwell_steps_held
+        orig_intent = policy.committed_intent
+
+        # Step is eligible for termination sampling if commitment is currently active
+        is_sampled = (was_committed and dwell_held >= 1)
 
         # Predict
         act = policy.predict(state)
         history_actions.append(ActionXY(act.vx, act.vy))
-
-        # Check if commitment was active during decision
-        was_committed = (policy.committed_intent is not None)
-        dwell_held = policy.dwell_steps_held
 
         feat = None
         if was_committed:
@@ -78,12 +81,6 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
             elif hasattr(policy, 'last_base_res') and policy.last_base_res is not None:
                 feat = policy.extract_termination_features(state, policy.last_base_res, phys_clearance)
 
-        # Save snapshot of policy history up to step t
-        from collections import deque
-        policy_history_snapshot = list(policy._history)
-        policy_pos_snapshot = list(policy.history_pos)
-        policy_vel_snapshot = list(policy.history_vel)
-
         obs, rew, term, trunc, info = env.step(act)
         done = bool(term or trunc)
 
@@ -91,13 +88,13 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
             'step': step,
             'was_committed': was_committed,
             'dwell_held': dwell_held,
+            'orig_intent': orig_intent,
+            'is_sampled': is_sampled,
             'feat': feat,
             'reward': float(rew),
             'done': done,
             'event': info.get('event', 'nothing'),
-            'pol_hist': policy_history_snapshot,
-            'pol_pos': policy_pos_snapshot,
-            'pol_vel': policy_vel_snapshot
+            'saved_pol_state': saved_pol_state
         })
 
     total_steps = len(step_records)
@@ -113,7 +110,7 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
 
     for t_idx, rec in enumerate(step_records):
         # We sample termination decisions for steps where an intent is being held (dwell_held >= 1)
-        if not rec['was_committed'] or rec['feat'] is None or rec['dwell_held'] < 1:
+        if not rec['is_sampled'] or rec['feat'] is None:
             continue
 
         target_step = rec['step']
@@ -124,12 +121,11 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
         for p_idx in range(t_idx):
             env.step(history_actions[p_idx])
 
-        # Restore authentic policy history at state s_t
-        policy._history = deque(rec['pol_hist'], maxlen=policy.seq_len)
-        policy.history_pos = list(rec['pol_pos'])
-        policy.history_vel = list(rec['pol_vel'])
+        # Restore authentic policy state using identical function as null branch gate
+        policy.restore_internal_state(rec['saved_pol_state'])
 
         # At target step: force abandon commitment!
+        held_intent = policy.committed_intent
         policy.committed_intent = None
         policy.dwell_steps_held = 0
         policy.dwell_steps_remaining = 0
@@ -139,14 +135,26 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
         cf_step = target_step
         cf_done = False
         cf_rewards = []
+        recommitted = False
+        steps_to_recommit = -1
+        recommitted_intent = None
+        intent_matched = False
 
         while not cf_done and cf_step < 201:
-            cf_step += 1
             state = JointState(env.robot.get_full_state(), [h.get_observable_state() for h in env.humans])
             act = policy.predict(state)
+
+            # Track re-commitment after abandon
+            if not recommitted and policy.committed_intent is not None:
+                recommitted = True
+                steps_to_recommit = (cf_step - target_step) + 1
+                recommitted_intent = int(policy.committed_intent)
+                intent_matched = (held_intent is not None and recommitted_intent == int(held_intent))
+
             obs, rew, term, trunc, info = env.step(act)
             cf_done = bool(term or trunc)
             cf_rewards.append(float(rew))
+            cf_step += 1
 
         # Compute G_abandon
         cur_cf_g = 0.0
@@ -163,6 +171,11 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
             'case_id': case_id,
             'step': target_step,
             'dwell_held': rec['dwell_held'],
+            'orig_intent': int(held_intent) if held_intent is not None else None,
+            'recommitted': recommitted,
+            'steps_to_recommit': steps_to_recommit,
+            'recommitted_intent': recommitted_intent,
+            'intent_matched': intent_matched,
             'features': rec['feat'],
             'g_continue': round(g_continue, 4),
             'g_abandon': round(g_abandon, 4),
