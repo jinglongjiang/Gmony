@@ -1,0 +1,95 @@
+# 离线执行与阶段 2 状态监控报告 (STATUS_WHILE_AWAY)
+
+> 更新时间：2026-10-14 16:41:00  
+> 工作分支：`research/option-critic-cf-10h`  
+> 运行资源：严格占用 ≤8 核（空分叉闸门 2 进程 + 采集 6 进程，全部单线程）
+
+---
+
+## 一、每一步的状态总览
+
+| 阶段 / 任务 | 状态 | 简要说明 |
+| :--- | :--- | :--- |
+| **第 1 步：立即执行与冒烟测试** | **已验证通过** | 旧采集已杀；修复 `log_f` NameError 并提交；冒烟测试 99000–99001 成功通过（单线程 97.5%–98.3% CPU、逐 case 刷新日志、逐 case 写入均验证通过，已提交） |
+| **第 2 步：空分叉闸门（Case 99000–99019）** | **进行中（已完成 9/20）** | 2 个 worker 进程持续运行，已完成的 9 个案例全部 100% 通过（`max_act_diff = 0.00e+00`, `max_g_diff = 0.00e+00`） |
+| **第 3 步：阶段 2 正式数据采集（99000–99399）** | **进行中** | 6 个 worker 进程已启动，各占单线程（CPU 85%–88%），覆盖 400 个 Case |
+| **第 4 步：CUSUM 调参与终止头训练** | **未验证** | 严格遵循契约：等待闸门全 PASS 且采集完全结束后方才启动 |
+
+---
+
+## 二、所有 Git 提交号汇总
+
+1. [`ffe52e2`](https://github.com/jinglongjiang/Gmony/commit/ffe52e2) - `stage2: add capture_internal_state and restore_internal_state to policy and implement null branch gate`
+2. [`93e34fe`](https://github.com/jinglongjiang/Gmony/commit/93e34fe) - `stage2: refactor collect_stage2_data to use policy.restore_internal_state and add recommitment tracking`
+3. [`ae69a1b`](https://github.com/jinglongjiang/Gmony/commit/ae69a1b) - `stage2: re-run forced step 4 regression parity gate across 20 cases (100% parity passed, 0.00e+00 diff)`
+4. [`a87c6ad`](https://github.com/jinglongjiang/Gmony/commit/a87c6ad) - `stage2: configure null_branch_gate for workers=2 with real-time incremental saving`
+5. [`b2a2454`](https://github.com/jinglongjiang/Gmony/commit/b2a2454) - `stage2: add per-case flush logging, per-case incremental save, and single-thread constraints to collect_stage2_data`
+6. [`6096157`](https://github.com/jinglongjiang/Gmony/commit/6096157) - `stage2: enforce single-thread constraints across tuning, training, and evaluation scripts`
+7. [`71e2f85`](https://github.com/jinglongjiang/Gmony/commit/71e2f85) - `stage2: fix NameError by restoring log_f file opening before subprocess launch`
+8. [`ee8aadb`](https://github.com/jinglongjiang/Gmony/commit/ee8aadb) - `stage2: verify smoke test on cases 99000-99001 (per-case flush log, incremental save, single-thread 98% CPU verified)`
+9. [`ed2ea55`](https://github.com/jinglongjiang/Gmony/commit/ed2ea55) - `stage2: allow up to 6 workers for stage2 collection`
+
+---
+
+## 三、空分叉闸门（Null Branch Gate）实时明细
+
+- **测试案例范围**：Case 99000 – 99019（共 20 例）
+- **判定阈值**：容差 $10^{-9}$，动作序列与折现回报必须逐步完全相等
+- **当前进度**：已完成 9 / 20 个案例，已通过分支步：117 / 117 步
+
+### 实时案例比对数据表
+
+| Case ID | 回合总步数 | 承诺分支步数 | `max_act_diff` | `max_g_diff` | 状态 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 99000 | 75 | 27 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99001 | 59 | 16 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99002 | 121 | 12 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99003 | 61 | 12 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99004 | 201 | 106 | *(计算中)* | *(计算中)* | 进行中 |
+| 99005 | 55 | 4 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99006 | 64 | 8 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99007 | 68 | 16 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99008 | 55 | 4 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99009 | 70 | 18 | 0.00e+00 | 0.00e+00 | **已验证通过** |
+| 99010 | 84 | 38 | *(排队中)* | *(排队中)* | 待运行 |
+| 99011 | 201 | 164 | *(排队中)* | *(排队中)* | 待运行 |
+| 99012 | 201 | 28 | *(排队中)* | *(排队中)* | 待运行 |
+| 99013 | 66 | 12 | *(排队中)* | *(排队中)* | 待运行 |
+| 99014 | 55 | 7 | *(排队中)* | *(排队中)* | 待运行 |
+| 99015 | 74 | 20 | *(排队中)* | *(排队中)* | 待运行 |
+| 99016 | 65 | 14 | *(排队中)* | *(排队中)* | 待运行 |
+| 99017 | 62 | 15 | *(排队中)* | *(排队中)* | 待运行 |
+| 99018 | 21 | 0 | 0.00e+00 | 0.00e+00 | **已验证通过 (无承诺步)** |
+| 99019 | 81 | 19 | *(排队中)* | *(排队中)* | 待运行 |
+
+### 最新 Summary 原文（增量 JSON）
+```json
+{
+  "gate_name": "Stage 2 Null Branch Replay Gate",
+  "status": "IN_PROGRESS",
+  "total_cases": 20,
+  "completed_cases": 9,
+  "case_range": [99000, 99019],
+  "total_sampled_steps": 117,
+  "passed_sampled_steps": 117,
+  "all_passed": true,
+  "tolerance": 1e-09,
+  "max_return_diff": 0.0,
+  "max_action_diff": 0.0,
+  "max_robot_pos_diff": 0.0,
+  "max_reward_diff": 0.0,
+  "elapsed_seconds": 2378.98
+}
+```
+
+---
+
+## 四、数据采集进度与速度跟踪表
+
+> 监控规则：每 30 分钟检查各分卷文件与日志并追加记录。
+> 实测基准（冒烟测试实测）：Case 99000 耗时 195.1s（27 样本，7.2s/样本），Case 99001 耗时 77.8s（16 样本，4.9s/样本），单线程平均约 136.5s/Case。
+> 6 个 worker 承担 400 个 Case（约 67 Case/worker），总期望时长推算：$67 \times 136.5\text{s} \approx 9,145\text{s} \approx 2.54\text{小时}$。
+
+| 记录时间 | 运行墙上时长 | 已完成 Case 数 | 累计采集样本数 | 实测均速 (s/Case) | 剩余时间估算 | 进程健康状态 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 16:40:34 | 0m | 0 / 400 | 0 | *(启动中)* | 约 2.5～3.0 小时 *(推测)* | 6 个进程全部正常运行，单核 CPU 85%–88% |
