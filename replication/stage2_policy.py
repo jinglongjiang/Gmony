@@ -151,6 +151,7 @@ class Stage2TerminationPolicy(Stage4ControllerPolicy):
 
     def score_sarl_candidates(self, state: JointState):
         base_res = super(Stage4ControllerPolicy, self).score_sarl_candidates(state)
+        self.last_base_res = base_res
         rob = state.self_state
 
         if len(state.human_states):
