@@ -115,6 +115,8 @@ def load_stage2_evaluation_policies(device='cpu'):
         'shuffled_ctrl': shuffled_policy
     }
 
+from crowd_sim.envs.utils.state import JointState
+
 def run_single_episode_with_switching(policy, env, case_id):
     """
     Runs single episode, tracking outcome, trajectory, dwell history,
@@ -130,37 +132,31 @@ def run_single_episode_with_switching(policy, env, case_id):
 
     action_indices = []
 
-    while not done:
-        action = policy.predict(obs)
+    while not done and step < 201:
+        step += 1
+        state = JointState(env.robot.get_full_state(), [h.get_observable_state() for h in env.humans])
+        if len(env.humans):
+            dists = [math.hypot(env.robot.px - h.px, env.robot.py - h.py) - env.robot.radius - h.radius for h in env.humans]
+            min_clearance = min(min_clearance, min(dists))
+
+        act = policy.predict(state)
         act_idx = getattr(policy, '_last_grid_index', None)
         action_indices.append(act_idx)
 
-        obs, reward, terminated, truncated, info = env.step(action)
-        step += 1
-        done = terminated or truncated
-        last_info = info
+        obs, rew, term, trunc, last_info = env.step(act)
+        done = term or trunc
 
-        # Track clearance
-        rob = env.robot
-        if len(env.humans):
-            curr_clear = min(
-                math.hypot(rob.px - h.px, rob.py - h.py) - rob.radius - h.radius
-                for h in env.humans
-            )
-            if curr_clear < min_clearance:
-                min_clearance = curr_clear
+    last_event = last_info.get('event', 'nothing') if last_info else 'nothing'
+    if last_event == 'collision':
+        outcome = 'COLLISION'
+    elif last_event in ('reach_goal', 'reachgoal') or env.robot.reached_destination():
+        outcome = 'SUCCESS'
+    elif last_event in ('timeout', 'time_out') or env.global_time >= env.time_limit - 1e-4:
+        outcome = 'TIMEOUT'
+    else:
+        outcome = 'TIMEOUT'
 
-    outcome = 'UNKNOWN'
-    if last_info:
-        from crowd_sim.envs.utils.info import ReachGoal, Collision, Timeout
-        if isinstance(last_info, ReachGoal):
-            outcome = 'SUCCESS'
-        elif isinstance(last_info, Collision):
-            outcome = 'COLLISION'
-        elif isinstance(last_info, Timeout):
-            outcome = 'TIMEOUT'
-
-    final_time = env.global_time
+    final_time = float(env.global_time)
     total_steps = step
 
     # Calculate switching rate: switches / max(1, steps - 1)
