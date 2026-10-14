@@ -78,6 +78,12 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
             elif hasattr(policy, 'last_base_res') and policy.last_base_res is not None:
                 feat = policy.extract_termination_features(state, policy.last_base_res, phys_clearance)
 
+        # Save snapshot of policy history up to step t
+        from collections import deque
+        policy_history_snapshot = list(policy._history)
+        policy_pos_snapshot = list(policy.history_pos)
+        policy_vel_snapshot = list(policy.history_vel)
+
         obs, rew, term, trunc, info = env.step(act)
         done = bool(term or trunc)
 
@@ -88,7 +94,10 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
             'feat': feat,
             'reward': float(rew),
             'done': done,
-            'event': info.get('event', 'nothing')
+            'event': info.get('event', 'nothing'),
+            'pol_hist': policy_history_snapshot,
+            'pol_pos': policy_pos_snapshot,
+            'pol_vel': policy_vel_snapshot
         })
 
     total_steps = len(step_records)
@@ -114,6 +123,11 @@ def collect_single_case_counterfactuals(case_id, env, policy, gamma=0.99):
 
         for p_idx in range(t_idx):
             env.step(history_actions[p_idx])
+
+        # Restore authentic policy history at state s_t
+        policy._history = deque(rec['pol_hist'], maxlen=policy.seq_len)
+        policy.history_pos = list(rec['pol_pos'])
+        policy.history_vel = list(rec['pol_vel'])
 
         # At target step: force abandon commitment!
         policy.committed_intent = None
