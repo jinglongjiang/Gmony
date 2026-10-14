@@ -1,0 +1,88 @@
+{
+  "dataset": "Smoke_10cases_Square",
+  "n_cases": 10,
+  "decision": "INCONCLUSIVE",
+  "primary_comparison": {
+    "comparison": "Arm 4 (Learned LR Gated) vs Arm 1 (Base B0)",
+    "delta_sr_pp": 30.0,
+    "mcnemar_p_value": 0.25,
+    "base_won_b": 0,
+    "candidate_won_c": 3,
+    "delta_cr_pp": 0.0,
+    "cr_diff_95ci_low_pp": 0.0,
+    "cr_diff_95ci_up_pp": 0.0,
+    "cr_bound_pass": true
+  },
+  "secondary_comparisons": {
+    "heuristic_vs_base": {
+      "delta_sr_pp": 20.0,
+      "p_value": 0.5,
+      "b": 0,
+      "c": 2
+    },
+    "rf_vs_base": {
+      "delta_sr_pp": 30.0,
+      "p_value": 0.25,
+      "b": 0,
+      "c": 3
+    }
+  },
+  "arms_summary": {
+    "arm1_base": {
+      "label": "Pure B0 Baseline",
+      "n_cases": 10,
+      "success_count": 7,
+      "collision_count": 0,
+      "timeout_count": 3,
+      "stagnation_count": 1,
+      "sr": 70.0,
+      "cr": 0.0,
+      "tr": 30.0,
+      "sor": 10.0,
+      "avg_time": 19.54,
+      "avg_interv": 0.0
+    },
+    "arm2_heuristic": {
+      "label": "Heuristic Gated (K=4)",
+      "n_cases": 10,
+      "success_count": 9,
+      "collision_count": 0,
+      "timeout_count": 1,
+      "stagnation_count": 1,
+      "sr": 90.0,
+      "cr": 0.0,
+      "tr": 10.0,
+      "sor": 10.0,
+      "avg_time": 17.39,
+      "avg_interv": 3.8
+    },
+    "arm3_learned_rf": {
+      "label": "Champion Learned RF (K=4)",
+      "n_cases": 10,
+      "success_count": 10,
+      "collision_count": 0,
+      "timeout_count": 0,
+      "stagnation_count": 0,
+      "sr": 100.0,
+      "cr": 0.0,
+      "tr": 0.0,
+      "sor": 0.0,
+      "avg_time": 20.62,
+      "avg_interv": 5.5
+    },
+    "arm4_learned_lr": {
+      "label": "Champion Learned LR (K=4)",
+      "n_cases": 10,
+      "success_count": 10,
+      "collision_count": 0,
+      "timeout_count": 0,
+      "stagnation_count": 0,
+      "sr": 100.0,
+      "cr": 0.0,
+      "tr": 0.0,
+      "sor": 0.0,
+      "avg_time": 21.05,
+      "avg_interv": 7.2
+    }
+  }
+}

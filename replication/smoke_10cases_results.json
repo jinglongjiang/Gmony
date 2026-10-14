@@ -1,0 +1,362 @@
+[
+  {
+    "case_id": 97000,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.155,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.155,
+      "stagnation": false,
+      "interventions": 1
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.155,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 16.0,
+      "total_steps": 64,
+      "min_clearance": 0.155,
+      "stagnation": false,
+      "interventions": 1
+    }
+  },
+  {
+    "case_id": 97001,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.14,
+      "stagnation": true,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.14,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 25.25,
+      "total_steps": 101,
+      "min_clearance": 0.14,
+      "stagnation": false,
+      "interventions": 9
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 24.75,
+      "total_steps": 99,
+      "min_clearance": 0.14,
+      "stagnation": false,
+      "interventions": 10
+    }
+  },
+  {
+    "case_id": 97002,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 24.25,
+      "total_steps": 97,
+      "min_clearance": 0.186,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.25,
+      "total_steps": 77,
+      "min_clearance": 0.149,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 24.75,
+      "total_steps": 99,
+      "min_clearance": 0.133,
+      "stagnation": false,
+      "interventions": 12
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 25.5,
+      "total_steps": 102,
+      "min_clearance": 0.133,
+      "stagnation": false,
+      "interventions": 12
+    }
+  },
+  {
+    "case_id": 97003,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.11,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 17.0,
+      "total_steps": 68,
+      "min_clearance": 0.19,
+      "stagnation": false,
+      "interventions": 3
+    }
+  },
+  {
+    "case_id": 97004,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.75,
+      "total_steps": 71,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 20.0,
+      "total_steps": 80,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 5
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.203,
+      "stagnation": false,
+      "interventions": 6
+    }
+  },
+  {
+    "case_id": 97005,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 22.0,
+      "total_steps": 88,
+      "min_clearance": 0.118,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 19.75,
+      "total_steps": 79,
+      "min_clearance": 0.118,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 32.75,
+      "total_steps": 131,
+      "min_clearance": 0.118,
+      "stagnation": false,
+      "interventions": 6
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 39.75,
+      "total_steps": 159,
+      "min_clearance": 0.118,
+      "stagnation": false,
+      "interventions": 17
+    }
+  },
+  {
+    "case_id": 97006,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "TIMEOUT",
+      "final_time": 50.25,
+      "total_steps": 201,
+      "min_clearance": 0.196,
+      "stagnation": true,
+      "interventions": 15
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 21.75,
+      "total_steps": 87,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 8
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 21.5,
+      "total_steps": 86,
+      "min_clearance": 0.196,
+      "stagnation": false,
+      "interventions": 12
+    }
+  },
+  {
+    "case_id": 97007,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.5,
+      "total_steps": 66,
+      "min_clearance": 0.109,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.109,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.109,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 16.25,
+      "total_steps": 65,
+      "min_clearance": 0.109,
+      "stagnation": false,
+      "interventions": 4
+    }
+  },
+  {
+    "case_id": 97008,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 16.75,
+      "total_steps": 67,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 15.75,
+      "total_steps": 63,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 2
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 15.25,
+      "total_steps": 61,
+      "min_clearance": 0.177,
+      "stagnation": false,
+      "interventions": 2
+    }
+  },
+  {
+    "case_id": 97009,
+    "sim_rule": "square_crossing",
+    "arm1_base": {
+      "outcome": "SUCCESS",
+      "final_time": 23.75,
+      "total_steps": 95,
+      "min_clearance": 0.2,
+      "stagnation": false,
+      "interventions": 0
+    },
+    "arm2_heuristic": {
+      "outcome": "SUCCESS",
+      "final_time": 17.25,
+      "total_steps": 69,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 3
+    },
+    "arm3_learned_rf": {
+      "outcome": "SUCCESS",
+      "final_time": 17.5,
+      "total_steps": 70,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 4
+    },
+    "arm4_learned_lr": {
+      "outcome": "SUCCESS",
+      "final_time": 18.0,
+      "total_steps": 72,
+      "min_clearance": 0.201,
+      "stagnation": false,
+      "interventions": 5
+    }
+  }
+]
