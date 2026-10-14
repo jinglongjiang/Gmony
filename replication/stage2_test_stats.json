@@ -1,0 +1,124 @@
+{
+  "dataset": "Stage2_Test_Square_1000cases",
+  "n_cases": 1000,
+  "arms": {
+    "mother": {
+      "label": "\u6bcd\u4f53 (Mother GRU s443)",
+      "n_cases": 1000,
+      "success_count": 790,
+      "collision_count": 46,
+      "timeout_count": 164,
+      "sr": 79.0,
+      "cr": 4.6,
+      "tr": 16.4,
+      "avg_time": 19.19,
+      "avg_interventions": 0.0,
+      "mean_dwell": 0.0,
+      "mean_switch_rate": 0.7838
+    },
+    "rule_k4": {
+      "label": "\u4eba\u5de5\u89c4\u5219 K=4 (Fixed K=4)",
+      "n_cases": 1000,
+      "success_count": 841,
+      "collision_count": 52,
+      "timeout_count": 107,
+      "sr": 84.1,
+      "cr": 5.2,
+      "tr": 10.7,
+      "avg_time": 18.12,
+      "avg_interventions": 9.8,
+      "mean_dwell": 2.78,
+      "mean_switch_rate": 0.7471
+    },
+    "learned_champ": {
+      "label": "Champion \u5b66\u4e60\u5934 (cand4_mlp_h32_16)",
+      "n_cases": 1000,
+      "success_count": 839,
+      "collision_count": 52,
+      "timeout_count": 109,
+      "sr": 83.9,
+      "cr": 5.2,
+      "tr": 10.9,
+      "avg_time": 18.07,
+      "avg_interventions": 12.96,
+      "mean_dwell": 2.19,
+      "mean_switch_rate": 0.7411
+    },
+    "shuffled_ctrl": {
+      "label": "\u6253\u4e71\u6807\u7b7e\u5934 (Shuffled Control)",
+      "n_cases": 1000,
+      "success_count": 849,
+      "collision_count": 50,
+      "timeout_count": 101,
+      "sr": 84.9,
+      "cr": 5.0,
+      "tr": 10.1,
+      "avg_time": 18.31,
+      "avg_interventions": 14.46,
+      "mean_dwell": 1.98,
+      "mean_switch_rate": 0.7462
+    }
+  },
+  "comparisons": {
+    "learned_vs_rule_k4": {
+      "arm_a": "learned_champ",
+      "arm_b": "rule_k4",
+      "label_a": "Champion \u5b66\u4e60\u5934 (cand4_mlp_h32_16)",
+      "label_b": "\u4eba\u5de5\u89c4\u5219 K=4 (Fixed K=4)",
+      "delta_sr": -0.2,
+      "b": 39,
+      "c": 41,
+      "p_value": 0.9110721212260927
+    },
+    "learned_vs_shuffled": {
+      "arm_a": "learned_champ",
+      "arm_b": "shuffled_ctrl",
+      "label_a": "Champion \u5b66\u4e60\u5934 (cand4_mlp_h32_16)",
+      "label_b": "\u6253\u4e71\u6807\u7b7e\u5934 (Shuffled Control)",
+      "delta_sr": -1.0,
+      "b": 43,
+      "c": 53,
+      "p_value": 0.35839763219162646
+    },
+    "learned_vs_mother": {
+      "arm_a": "learned_champ",
+      "arm_b": "mother",
+      "label_a": "Champion \u5b66\u4e60\u5934 (cand4_mlp_h32_16)",
+      "label_b": "\u6bcd\u4f53 (Mother GRU s443)",
+      "delta_sr": 4.9,
+      "b": 92,
+      "c": 43,
+      "p_value": 2.9909603590126025e-05
+    },
+    "shuffled_vs_rule_k4": {
+      "arm_a": "shuffled_ctrl",
+      "arm_b": "rule_k4",
+      "label_a": "\u6253\u4e71\u6807\u7b7e\u5934 (Shuffled Control)",
+      "label_b": "\u4eba\u5de5\u89c4\u5219 K=4 (Fixed K=4)",
+      "delta_sr": 0.8,
+      "b": 52,
+      "c": 44,
+      "p_value": 0.4751520499865729
+    },
+    "shuffled_vs_mother": {
+      "arm_a": "shuffled_ctrl",
+      "arm_b": "mother",
+      "label_a": "\u6253\u4e71\u6807\u7b7e\u5934 (Shuffled Control)",
+      "label_b": "\u6bcd\u4f53 (Mother GRU s443)",
+      "delta_sr": 5.9,
+      "b": 100,
+      "c": 41,
+      "p_value": 7.237095141299414e-07
+    },
+    "rule_k4_vs_mother": {
+      "arm_a": "rule_k4",
+      "arm_b": "mother",
+      "label_a": "\u4eba\u5de5\u89c4\u5219 K=4 (Fixed K=4)",
+      "label_b": "\u6bcd\u4f53 (Mother GRU s443)",
+      "delta_sr": 5.1,
+      "b": 90,
+      "c": 39,
+      "p_value": 8.288290960676906e-06
+    }
+  }
+}

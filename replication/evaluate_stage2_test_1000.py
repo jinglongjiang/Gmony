@@ -278,13 +278,13 @@ def generate_stage2_test_report(records, stats_summary, out_report_path):
     comp_learned_mother = stats_summary['comparisons']['learned_vs_mother']
 
     lines.append(f"1. **Champion 学习头 vs 人工规则 K=4**：")
-    lines.append(f"   - 配对结果：$b={comp_learned_rule['b']}$ 对 $c={comp_learned_rule['c']}$，精确双侧 $p={comp_learned_rule['p_value']:.4e}$，$\\Delta\\text{SR}={comp_learned_rule['delta_sr']:+.2f}\\%$。")
+    lines.append(f"   - 配对结果：$b={comp_learned_rule['b']}$ 对 $c={comp_learned_rule['c']}$，精确双侧 $p={comp_learned_rule['p_value']:.4e}$，$\\Delta\\text{{SR}}={comp_learned_rule['delta_sr']:+.2f}\\%$。")
     lines.append(f"2. **Champion 学习头 vs 打乱标签对照组**：")
-    lines.append(f"   - 配对结果：$b={comp_learned_shuf['b']}$ 对 $c={comp_learned_shuf['c']}$，精确双侧 $p={comp_learned_shuf['p_value']:.4e}$，$\\Delta\\text{SR}={comp_learned_shuf['delta_sr']:+.2f}\\%$。")
+    lines.append(f"   - 配对结果：$b={comp_learned_shuf['b']}$ 对 $c={comp_learned_shuf['c']}$，精确双侧 $p={comp_learned_shuf['p_value']:.4e}$，$\\Delta\\text{{SR}}={comp_learned_shuf['delta_sr']:+.2f}\\%$。")
     lines.append(f"3. **打乱标签对照组 vs 人工规则 K=4**：")
-    lines.append(f"   - 配对结果：$b={comp_shuf_rule['b']}$ 对 $c={comp_shuf_rule['c']}$，精确双侧 $p={comp_shuf_rule['p_value']:.4e}$，$\\Delta\\text{SR}={comp_shuf_rule['delta_sr']:+.2f}\\%$。")
+    lines.append(f"   - 配对结果：$b={comp_shuf_rule['b']}$ 对 $c={comp_shuf_rule['c']}$，精确双侧 $p={comp_shuf_rule['p_value']:.4e}$，$\\Delta\\text{{SR}}={comp_shuf_rule['delta_sr']:+.2f}\\%$。")
     lines.append(f"4. **Champion 学习头 vs 母体基线**：")
-    lines.append(f"   - 配对结果：$b={comp_learned_mother['b']}$ 对 $c={comp_learned_mother['c']}$，精确双侧 $p={comp_learned_mother['p_value']:.4e}$，$\\Delta\\text{SR}={comp_learned_mother['delta_sr']:+.2f}\\%$。")
+    lines.append(f"   - 配对结果：$b={comp_learned_mother['b']}$ 对 $c={comp_learned_mother['c']}$，精确双侧 $p={comp_learned_mother['p_value']:.4e}$，$\\Delta\\text{{SR}}={comp_learned_mother['delta_sr']:+.2f}\\%$。")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -435,11 +435,18 @@ if __name__ == '__main__':
     parser.add_argument('--start_case', type=int, default=TEST_START_CASE)
     parser.add_argument('--num_cases', type=int, default=TEST_NUM_CASES)
     parser.add_argument('--out_file', type=str, default=None)
+    parser.add_argument('--report_only', action='store_true', help='Generate report from existing merged files')
     parser.add_argument('--workers', type=int, default=8)
     parser.add_argument('--device', type=str, default='cpu')
     args = parser.parse_args()
 
-    if args.chunk_mode:
+    if args.report_only:
+        with open(OUT_MASTER, 'r') as fp:
+            merged = json.load(fp)
+        with open(OUT_STATS, 'r') as fp:
+            stats_summary = json.load(fp)
+        generate_stage2_test_report(merged, stats_summary, REPORT_PATH)
+    elif args.chunk_mode:
         run_chunk_eval(args.start_case, args.num_cases, out_file=args.out_file, device=args.device)
     else:
         run_evaluation(workers=args.workers, device=args.device)
