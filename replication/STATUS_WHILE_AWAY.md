@@ -37,6 +37,7 @@
 16. [`853c248`](https://github.com/jinglongjiang/Gmony/commit/853c248) - `stage2: record 150-minute monitoring row (139/400 cases, 3716 samples, 45 new cases)`
 17. [`acb35ad`](https://github.com/jinglongjiang/Gmony/commit/acb35ad) - `stage2: record 180-minute monitoring row (174/400 cases, 4319 samples, 43.5% done)`
 18. [`e714719`](https://github.com/jinglongjiang/Gmony/commit/e714719) - `stage2: record 210-minute monitoring row (211/400 cases, 5332 samples, 52.8% done)`
+19. [`c399a6c`](https://github.com/jinglongjiang/Gmony/commit/c399a6c) - `stage2: record 240-minute monitoring row (245/400 cases, 5959 samples, 61.3% done)`
 
 ---
 
@@ -111,3 +112,4 @@
 | 19:47:30 | 187m | 174 / 400 | 4319 | 64.5s/Case (综合墙上耗时) | 约 4.1 小时 (实测累计吞吐 0.930 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 20:18:50 | 218m | 211 / 400 | 5332 | 62.0s/Case (综合墙上耗时) | 约 3.3 小时 (实测累计吞吐 0.968 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
 | 20:50:00 | 249m | 245 / 400 | 5959 | 61.1s/Case (综合墙上耗时) | 约 2.6 小时 (实测累计吞吐 0.982 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
+| 21:21:25 | 281m | 279 / 400 | 6590 | 60.4s/Case (综合墙上耗时) | 约 2.0 小时 (实测累计吞吐 0.994 Case/min) | 6 个进程健康运行（CPU 78%–81%），0 报错，磁盘剩余 47GB |
